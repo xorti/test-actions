@@ -99,8 +99,9 @@ foreach ($parsedData as $release) {
 
     if (is_dir($sourceFolder)) {
       `rm -rf $sourceFolder`;
-      `mkdir $sourceFolder`;
     }
+
+    `mkdir $sourceFolder`;
 
     $version = $release['tag_name'];
 
