@@ -6,8 +6,8 @@ stages:
 update-versions:
   stage: build
   before_script:
-    - git config --global user.email $GITHUB_USER_EMAIL
-    - git config --global user.name $GITHUB_USER_NAME
+    - git config --global user.email "$GITHUB_USER_EMAIL"
+    - git config --global user.name "$GITHUB_USER_NAME"
   script:
     - composer install --ansi --no-progress --prefer-dist -n
     - git clone https://${GITHUB_USER_LOGIN}:${CI_PUSH_TOKEN}@github.com/xorti/composer.js-dist.git tmp/target
