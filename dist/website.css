@@ -5936,17 +5936,9 @@ a.text-dark:hover, a.text-dark:focus {
 .fade-in {
   opacity: 0;
   /* make things invisible upon start */
-  -webkit-animation-name: fadein;
-  -moz-animation-name: fadein;
   animation-name: fadein;
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
   animation-duration: 1s;
-  -webkit-animation-timing-function: ease;
-  -moz-animation-timing-function: ease;
   animation-timing-function: ease; }
 
 html {
