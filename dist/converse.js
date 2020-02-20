@@ -36,14 +36,14 @@
 /******/ 	// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 	// Promise = chunk loading, 0 = chunk loaded
 /******/ 	var installedChunks = {
-/******/ 		161: 0
+/******/ 		162: 0
 /******/ 	};
 /******/
 /******/
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "" + ({"0":"locales/dayjs/af","1":"locales/dayjs/ar","2":"locales/dayjs/ar-dz","3":"locales/dayjs/ar-kw","4":"locales/dayjs/ar-ly","5":"locales/dayjs/ar-ma","6":"locales/dayjs/ar-sa","7":"locales/dayjs/ar-tn","8":"locales/dayjs/az","9":"locales/dayjs/be","10":"locales/dayjs/bg","11":"locales/dayjs/bm","12":"locales/dayjs/bn","13":"locales/dayjs/bo","14":"locales/dayjs/br","15":"locales/dayjs/bs","16":"locales/dayjs/ca","17":"locales/dayjs/cs","18":"locales/dayjs/cv","19":"locales/dayjs/cy","20":"locales/dayjs/da","21":"locales/dayjs/de","22":"locales/dayjs/de-at","23":"locales/dayjs/de-ch","24":"locales/dayjs/dv","25":"locales/dayjs/el","26":"locales/dayjs/en","27":"locales/dayjs/en-SG","28":"locales/dayjs/en-au","29":"locales/dayjs/en-ca","30":"locales/dayjs/en-gb","31":"locales/dayjs/en-ie","32":"locales/dayjs/en-il","33":"locales/dayjs/en-nz","34":"locales/dayjs/eo","35":"locales/dayjs/es","36":"locales/dayjs/es-do","37":"locales/dayjs/es-us","38":"locales/dayjs/et","39":"locales/dayjs/eu","40":"locales/dayjs/fa","41":"locales/dayjs/fi","42":"locales/dayjs/fo","43":"locales/dayjs/fr","44":"locales/dayjs/fr-ca","45":"locales/dayjs/fr-ch","46":"locales/dayjs/fy","47":"locales/dayjs/ga","48":"locales/dayjs/gd","49":"locales/dayjs/gl","50":"locales/dayjs/gom-latn","51":"locales/dayjs/gu","52":"locales/dayjs/he","53":"locales/dayjs/hi","54":"locales/dayjs/hr","55":"locales/dayjs/hu","56":"locales/dayjs/hy-am","57":"locales/dayjs/id","58":"locales/dayjs/is","59":"locales/dayjs/it","60":"locales/dayjs/it-ch","61":"locales/dayjs/ja","62":"locales/dayjs/jv","63":"locales/dayjs/ka","64":"locales/dayjs/kk","65":"locales/dayjs/km","66":"locales/dayjs/kn","67":"locales/dayjs/ko","68":"locales/dayjs/ku","69":"locales/dayjs/ky","70":"locales/dayjs/lb","71":"locales/dayjs/lo","72":"locales/dayjs/lt","73":"locales/dayjs/lv","74":"locales/dayjs/me","75":"locales/dayjs/mi","76":"locales/dayjs/mk","77":"locales/dayjs/ml","78":"locales/dayjs/mn","79":"locales/dayjs/mr","80":"locales/dayjs/ms","81":"locales/dayjs/ms-my","82":"locales/dayjs/mt","83":"locales/dayjs/my","84":"locales/dayjs/nb","85":"locales/dayjs/ne","86":"locales/dayjs/nl","87":"locales/dayjs/nl-be","88":"locales/dayjs/nn","89":"locales/dayjs/oc-lnc","90":"locales/dayjs/pa-in","91":"locales/dayjs/pl","92":"locales/dayjs/pt","93":"locales/dayjs/pt-br","94":"locales/dayjs/ro","95":"locales/dayjs/ru","96":"locales/dayjs/sd","97":"locales/dayjs/se","98":"locales/dayjs/si","99":"locales/dayjs/sk","100":"locales/dayjs/sl","101":"locales/dayjs/sq","102":"locales/dayjs/sr","103":"locales/dayjs/sr-cyrl","104":"locales/dayjs/ss","105":"locales/dayjs/sv","106":"locales/dayjs/sw","107":"locales/dayjs/ta","108":"locales/dayjs/te","109":"locales/dayjs/tet","110":"locales/dayjs/tg","111":"locales/dayjs/th","112":"locales/dayjs/tl-ph","113":"locales/dayjs/tlh","114":"locales/dayjs/tr","115":"locales/dayjs/tzl","116":"locales/dayjs/tzm","117":"locales/dayjs/tzm-latn","118":"locales/dayjs/ug-cn","119":"locales/dayjs/uk","120":"locales/dayjs/ur","121":"locales/dayjs/uz","122":"locales/dayjs/uz-latn","123":"locales/dayjs/vi","124":"locales/dayjs/x-pseudo","125":"locales/dayjs/yo","126":"locales/dayjs/zh-cn","127":"locales/dayjs/zh-hk","128":"locales/dayjs/zh-tw","129":"emojis","130":"locales/af-LC_MESSAGES-converse-po","131":"locales/ar-LC_MESSAGES-converse-po","132":"locales/bg-LC_MESSAGES-converse-po","133":"locales/ca-LC_MESSAGES-converse-po","134":"locales/cs-LC_MESSAGES-converse-po","135":"locales/de-LC_MESSAGES-converse-po","136":"locales/eo-LC_MESSAGES-converse-po","137":"locales/es-LC_MESSAGES-converse-po","138":"locales/eu-LC_MESSAGES-converse-po","139":"locales/fr-LC_MESSAGES-converse-po","140":"locales/gl-LC_MESSAGES-converse-po","141":"locales/he-LC_MESSAGES-converse-po","142":"locales/hi-LC_MESSAGES-converse-po","143":"locales/hu-LC_MESSAGES-converse-po","144":"locales/id-LC_MESSAGES-converse-po","145":"locales/it-LC_MESSAGES-converse-po","146":"locales/ja-LC_MESSAGES-converse-po","147":"locales/lt-LC_MESSAGES-converse-po","148":"locales/nb-LC_MESSAGES-converse-po","149":"locales/nl-LC_MESSAGES-converse-po","150":"locales/nl_BE-LC_MESSAGES-converse-po","151":"locales/oc-LC_MESSAGES-converse-po","152":"locales/pl-LC_MESSAGES-converse-po","153":"locales/pt-LC_MESSAGES-converse-po","154":"locales/pt_BR-LC_MESSAGES-converse-po","155":"locales/ro-LC_MESSAGES-converse-po","156":"locales/ru-LC_MESSAGES-converse-po","157":"locales/tr-LC_MESSAGES-converse-po","158":"locales/uk-LC_MESSAGES-converse-po","159":"locales/zh_CN-LC_MESSAGES-converse-po","160":"locales/zh_TW-LC_MESSAGES-converse-po"}[chunkId]||chunkId) + ".js"
+/******/ 		return __webpack_require__.p + "" + ({"0":"locales/dayjs/af","1":"locales/dayjs/ar","2":"locales/dayjs/ar-dz","3":"locales/dayjs/ar-kw","4":"locales/dayjs/ar-ly","5":"locales/dayjs/ar-ma","6":"locales/dayjs/ar-sa","7":"locales/dayjs/ar-tn","8":"locales/dayjs/az","9":"locales/dayjs/be","10":"locales/dayjs/bg","11":"locales/dayjs/bm","12":"locales/dayjs/bn","13":"locales/dayjs/bo","14":"locales/dayjs/br","15":"locales/dayjs/bs","16":"locales/dayjs/ca","17":"locales/dayjs/cs","18":"locales/dayjs/cv","19":"locales/dayjs/cy","20":"locales/dayjs/da","21":"locales/dayjs/de","22":"locales/dayjs/de-at","23":"locales/dayjs/de-ch","24":"locales/dayjs/dv","25":"locales/dayjs/el","26":"locales/dayjs/en","27":"locales/dayjs/en-SG","28":"locales/dayjs/en-au","29":"locales/dayjs/en-ca","30":"locales/dayjs/en-gb","31":"locales/dayjs/en-ie","32":"locales/dayjs/en-il","33":"locales/dayjs/en-nz","34":"locales/dayjs/eo","35":"locales/dayjs/es","36":"locales/dayjs/es-do","37":"locales/dayjs/es-us","38":"locales/dayjs/et","39":"locales/dayjs/eu","40":"locales/dayjs/fa","41":"locales/dayjs/fi","42":"locales/dayjs/fo","43":"locales/dayjs/fr","44":"locales/dayjs/fr-ca","45":"locales/dayjs/fr-ch","46":"locales/dayjs/fy","47":"locales/dayjs/ga","48":"locales/dayjs/gd","49":"locales/dayjs/gl","50":"locales/dayjs/gom-latn","51":"locales/dayjs/gu","52":"locales/dayjs/he","53":"locales/dayjs/hi","54":"locales/dayjs/hr","55":"locales/dayjs/hu","56":"locales/dayjs/hy-am","57":"locales/dayjs/id","58":"locales/dayjs/is","59":"locales/dayjs/it","60":"locales/dayjs/it-ch","61":"locales/dayjs/ja","62":"locales/dayjs/jv","63":"locales/dayjs/ka","64":"locales/dayjs/kk","65":"locales/dayjs/km","66":"locales/dayjs/kn","67":"locales/dayjs/ko","68":"locales/dayjs/ku","69":"locales/dayjs/ky","70":"locales/dayjs/lb","71":"locales/dayjs/lo","72":"locales/dayjs/lt","73":"locales/dayjs/lv","74":"locales/dayjs/me","75":"locales/dayjs/mi","76":"locales/dayjs/mk","77":"locales/dayjs/ml","78":"locales/dayjs/mn","79":"locales/dayjs/mr","80":"locales/dayjs/ms","81":"locales/dayjs/ms-my","82":"locales/dayjs/mt","83":"locales/dayjs/my","84":"locales/dayjs/nb","85":"locales/dayjs/ne","86":"locales/dayjs/nl","87":"locales/dayjs/nl-be","88":"locales/dayjs/nn","89":"locales/dayjs/oc-lnc","90":"locales/dayjs/pa-in","91":"locales/dayjs/pl","92":"locales/dayjs/pt","93":"locales/dayjs/pt-br","94":"locales/dayjs/ro","95":"locales/dayjs/ru","96":"locales/dayjs/sd","97":"locales/dayjs/se","98":"locales/dayjs/si","99":"locales/dayjs/sk","100":"locales/dayjs/sl","101":"locales/dayjs/sq","102":"locales/dayjs/sr","103":"locales/dayjs/sr-cyrl","104":"locales/dayjs/ss","105":"locales/dayjs/sv","106":"locales/dayjs/sw","107":"locales/dayjs/ta","108":"locales/dayjs/te","109":"locales/dayjs/tet","110":"locales/dayjs/tg","111":"locales/dayjs/th","112":"locales/dayjs/tl-ph","113":"locales/dayjs/tlh","114":"locales/dayjs/tr","115":"locales/dayjs/tzl","116":"locales/dayjs/tzm","117":"locales/dayjs/tzm-latn","118":"locales/dayjs/ug-cn","119":"locales/dayjs/uk","120":"locales/dayjs/ur","121":"locales/dayjs/uz","122":"locales/dayjs/uz-latn","123":"locales/dayjs/vi","124":"locales/dayjs/x-pseudo","125":"locales/dayjs/yo","126":"locales/dayjs/zh-cn","127":"locales/dayjs/zh-hk","128":"locales/dayjs/zh-tw","129":"emojis","130":"locales/af-LC_MESSAGES-converse-po","131":"locales/ar-LC_MESSAGES-converse-po","132":"locales/bg-LC_MESSAGES-converse-po","133":"locales/ca-LC_MESSAGES-converse-po","134":"locales/cs-LC_MESSAGES-converse-po","135":"locales/de-LC_MESSAGES-converse-po","136":"locales/eo-LC_MESSAGES-converse-po","137":"locales/es-LC_MESSAGES-converse-po","138":"locales/eu-LC_MESSAGES-converse-po","139":"locales/fr-LC_MESSAGES-converse-po","140":"locales/gl-LC_MESSAGES-converse-po","141":"locales/he-LC_MESSAGES-converse-po","142":"locales/hi-LC_MESSAGES-converse-po","143":"locales/hu-LC_MESSAGES-converse-po","144":"locales/id-LC_MESSAGES-converse-po","145":"locales/it-LC_MESSAGES-converse-po","146":"locales/ja-LC_MESSAGES-converse-po","147":"locales/lt-LC_MESSAGES-converse-po","148":"locales/nb-LC_MESSAGES-converse-po","149":"locales/nl-LC_MESSAGES-converse-po","150":"locales/nl_BE-LC_MESSAGES-converse-po","151":"locales/oc-LC_MESSAGES-converse-po","152":"locales/pl-LC_MESSAGES-converse-po","153":"locales/pt-LC_MESSAGES-converse-po","154":"locales/pt_BR-LC_MESSAGES-converse-po","155":"locales/ro-LC_MESSAGES-converse-po","156":"locales/ru-LC_MESSAGES-converse-po","157":"locales/tr-LC_MESSAGES-converse-po","158":"locales/uk-LC_MESSAGES-converse-po","159":"locales/vi-LC_MESSAGES-converse-po","160":"locales/zh_CN-LC_MESSAGES-converse-po","161":"locales/zh_TW-LC_MESSAGES-converse-po"}[chunkId]||chunkId) + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -196,14 +196,14 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 464);
+/******/ 	return __webpack_require__(__webpack_require__.s = 329);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var escapeHtmlChar = __webpack_require__(448),
+var escapeHtmlChar = __webpack_require__(449),
     toString = __webpack_require__(108);
 
 /** Used to match HTML entities and HTML characters. */
@@ -17380,7 +17380,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
  */
 (function (root, factory) {
   if (true) {
-    module.exports = factory(__webpack_require__(11), __webpack_require__(27));
+    module.exports = factory(__webpack_require__(9), __webpack_require__(27));
   } else {}
 }(this, function(Backbone, _) {
 // A simple module to replace `Backbone.sync` with *browser storage*-based
@@ -22352,60 +22352,14 @@ module.exports = isArray;
 /* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var _ = {escape:__webpack_require__(0)};
-module.exports = function(o) {
-var __t, __p = '';
-__p += '<!-- src/templates/spinner.html -->\n<span class="spinner fa fa-spinner centered"/>\n';
-return __p
-};
-
-/***/ }),
-/* 10 */
-/***/ (function(module, exports) {
-
-/**
- * Checks if `value` is the
- * [language type](http://www.ecma-international.org/ecma-262/7.0/#sec-ecmascript-language-types)
- * of `Object`. (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
- *
- * @static
- * @memberOf _
- * @since 0.1.0
- * @category Lang
- * @param {*} value The value to check.
- * @returns {boolean} Returns `true` if `value` is an object, else `false`.
- * @example
- *
- * _.isObject({});
- * // => true
- *
- * _.isObject([1, 2, 3]);
- * // => true
- *
- * _.isObject(_.noop);
- * // => true
- *
- * _.isObject(null);
- * // => false
- */
-function isObject(value) {
-  var type = typeof value;
-  return value != null && (type == 'object' || type == 'function');
-}
-
-module.exports = isObject;
-
-
-/***/ }),
-/* 11 */
-/***/ (function(module, exports, __webpack_require__) {
-
 /* WEBPACK VAR INJECTION */(function(global) {var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;//     Backbone.js 1.4.0
 
 //     (c) 2010-2019 Jeremy Ashkenas and DocumentCloud
 //     Backbone may be freely distributed under the MIT license.
 //     For all details and documentation:
 //     http://backbonejs.org
+
+/* global global */
 
 (function(factory) {
 
@@ -22416,7 +22370,7 @@ module.exports = isObject;
 
   // Set up Backbone appropriately for the environment. Start with AMD.
   if (true) {
-    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(27), __webpack_require__(329), exports], __WEBPACK_AMD_DEFINE_RESULT__ = (function(_, $, exports) {
+    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(27), __webpack_require__(330), exports], __WEBPACK_AMD_DEFINE_RESULT__ = (function(_, $, exports) {
       // Export global even in AMD case in case this script is loaded with
       // others that may still expect a global Backbone.
       root.Backbone = factory(root, exports, _, $);
@@ -24491,6 +24445,54 @@ module.exports = isObject;
 });
 
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(18)))
+
+/***/ }),
+/* 10 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var _ = {escape:__webpack_require__(0)};
+module.exports = function(o) {
+var __t, __p = '';
+__p += '<!-- src/templates/spinner.html -->\n<span class="spinner fa fa-spinner centered"/>\n';
+return __p
+};
+
+/***/ }),
+/* 11 */
+/***/ (function(module, exports) {
+
+/**
+ * Checks if `value` is the
+ * [language type](http://www.ecma-international.org/ecma-262/7.0/#sec-ecmascript-language-types)
+ * of `Object`. (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
+ *
+ * @static
+ * @memberOf _
+ * @since 0.1.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is an object, else `false`.
+ * @example
+ *
+ * _.isObject({});
+ * // => true
+ *
+ * _.isObject([1, 2, 3]);
+ * // => true
+ *
+ * _.isObject(_.noop);
+ * // => true
+ *
+ * _.isObject(null);
+ * // => false
+ */
+function isObject(value) {
+  var type = typeof value;
+  return value != null && (type == 'object' || type == 'function');
+}
+
+module.exports = isObject;
+
 
 /***/ }),
 /* 12 */
@@ -27718,8 +27720,8 @@ exports["filterCSS"] = (filterCSS);
 /***/ (function(module, exports, __webpack_require__) {
 
 var Symbol = __webpack_require__(30),
-    getRawTag = __webpack_require__(335),
-    objectToString = __webpack_require__(336);
+    getRawTag = __webpack_require__(336),
+    objectToString = __webpack_require__(337);
 
 /** `Object#toString` result references. */
 var nullTag = '[object Null]',
@@ -27751,8 +27753,8 @@ module.exports = baseGetTag;
 /* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseIsNative = __webpack_require__(353),
-    getValue = __webpack_require__(356);
+var baseIsNative = __webpack_require__(354),
+    getValue = __webpack_require__(357);
 
 /**
  * Gets the native function at `key` of `object`.
@@ -28033,14 +28035,14 @@ module.exports = toKey;
 /* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(337);
+module.exports = __webpack_require__(338);
 
 
 /***/ }),
 /* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(351);
+module.exports = __webpack_require__(352);
 
 
 /***/ }),
@@ -28175,7 +28177,7 @@ module.exports = eq;
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseCreate = __webpack_require__(51),
-    isObject = __webpack_require__(10);
+    isObject = __webpack_require__(11);
 
 /**
  * Creates a function that produces an instance of `Ctor` regardless of
@@ -28252,11 +28254,11 @@ module.exports = replaceHolders;
 /* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var listCacheClear = __webpack_require__(388),
-    listCacheDelete = __webpack_require__(389),
-    listCacheGet = __webpack_require__(390),
-    listCacheHas = __webpack_require__(391),
-    listCacheSet = __webpack_require__(392);
+var listCacheClear = __webpack_require__(389),
+    listCacheDelete = __webpack_require__(390),
+    listCacheGet = __webpack_require__(391),
+    listCacheHas = __webpack_require__(392),
+    listCacheSet = __webpack_require__(393);
 
 /**
  * Creates an list cache object.
@@ -28329,7 +28331,7 @@ module.exports = nativeCreate;
 /* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isKeyable = __webpack_require__(406);
+var isKeyable = __webpack_require__(407);
 
 /**
  * Gets the data for `map`.
@@ -28355,7 +28357,7 @@ module.exports = getMapData;
 
 var isArray = __webpack_require__(8),
     isKey = __webpack_require__(58),
-    stringToPath = __webpack_require__(429),
+    stringToPath = __webpack_require__(430),
     toString = __webpack_require__(108);
 
 /**
@@ -28389,7 +28391,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 //     https://github.com/akre54/Backbone.NativeView
 
 (function (factory) {
-  if (true) { !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(27), __webpack_require__(11)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+  if (true) { !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(27), __webpack_require__(9)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -28565,7 +28567,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         for (var i = 0, len = this._domEvents.length; i < len; i++) {
           var item = this._domEvents[i];
           elementRemoveEventListener.call(item.el, item.eventName, item.handler, false);
-        };
+        }
         this._domEvents.length = 0;
       }
       return this;
@@ -29011,7 +29013,7 @@ if (typeof Blob === 'function' && (typeof FormData === 'undefined' || !FormData.
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseGetTag = __webpack_require__(15),
-    isObject = __webpack_require__(10);
+    isObject = __webpack_require__(11);
 
 /** `Object#toString` result references. */
 var asyncTag = '[object AsyncFunction]',
@@ -29061,7 +29063,7 @@ module.exports = isFunction;
  *
  * @copyright 2019 Jason Mulligan <jason.mulligan@avoidwork.com>
  * @license BSD-3-Clause
- * @version 4.2.0
+ * @version 4.2.1
  */
 (function (global) {
   var b = /^(b|B)$/,
@@ -29171,6 +29173,12 @@ module.exports = isFunction;
       }
 
       result[0] = Number(val.toFixed(e > 0 ? round : 0));
+
+      if (result[0] === ceil && e < 8 && descriptor.exponent === void 0) {
+        result[0] = 1;
+        e++;
+      }
+
       result[1] = base === 10 && e === 1 ? bits ? "kb" : "kB" : symbol[standard][bits ? "bits" : "bytes"][e];
 
       if (unix) {
@@ -30368,7 +30376,7 @@ return parser;
 /* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var toFinite = __webpack_require__(333);
+var toFinite = __webpack_require__(334);
 
 /**
  * Converts `value` to an integer.
@@ -30505,7 +30513,7 @@ module.exports = arrayMap;
 /* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isObject = __webpack_require__(10);
+var isObject = __webpack_require__(11);
 
 /** Built-in value references. */
 var objectCreate = Object.create;
@@ -30623,11 +30631,11 @@ module.exports = Map;
 /* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var mapCacheClear = __webpack_require__(398),
-    mapCacheDelete = __webpack_require__(405),
-    mapCacheGet = __webpack_require__(407),
-    mapCacheHas = __webpack_require__(408),
-    mapCacheSet = __webpack_require__(409);
+var mapCacheClear = __webpack_require__(399),
+    mapCacheDelete = __webpack_require__(406),
+    mapCacheGet = __webpack_require__(408),
+    mapCacheHas = __webpack_require__(409),
+    mapCacheSet = __webpack_require__(410);
 
 /**
  * Creates a map cache object to store key-value pairs.
@@ -30726,7 +30734,7 @@ module.exports = isKey;
 /* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseValues = __webpack_require__(367),
+var baseValues = __webpack_require__(368),
     keys = __webpack_require__(20);
 
 /**
@@ -30795,7 +30803,7 @@ return __p
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseRest = __webpack_require__(80),
-    createWrap = __webpack_require__(368),
+    createWrap = __webpack_require__(369),
     getHolder = __webpack_require__(54),
     replaceHolders = __webpack_require__(33);
 
@@ -30961,7 +30969,7 @@ module.exports = arrayEach;
 /* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseTimes = __webpack_require__(342),
+var baseTimes = __webpack_require__(343),
     isArguments = __webpack_require__(70),
     isArray = __webpack_require__(8),
     isBuffer = __webpack_require__(71),
@@ -31016,7 +31024,7 @@ module.exports = arrayLikeKeys;
 /* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseIsArguments = __webpack_require__(343),
+var baseIsArguments = __webpack_require__(344),
     isObjectLike = __webpack_require__(13);
 
 /** Used for built-in method references. */
@@ -31059,7 +31067,7 @@ module.exports = isArguments;
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(module) {var root = __webpack_require__(7),
-    stubFalse = __webpack_require__(344);
+    stubFalse = __webpack_require__(345);
 
 /** Detect free variable `exports`. */
 var freeExports =  true && exports && !exports.nodeType && exports;
@@ -31103,9 +31111,9 @@ module.exports = isBuffer;
 /* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseIsTypedArray = __webpack_require__(345),
-    baseUnary = __webpack_require__(346),
-    nodeUtil = __webpack_require__(347);
+var baseIsTypedArray = __webpack_require__(346),
+    baseUnary = __webpack_require__(347),
+    nodeUtil = __webpack_require__(348);
 
 /* Node.js helper references. */
 var nodeIsTypedArray = nodeUtil && nodeUtil.isTypedArray;
@@ -31137,7 +31145,7 @@ module.exports = isTypedArray;
 /***/ (function(module, exports, __webpack_require__) {
 
 var isPrototype = __webpack_require__(74),
-    nativeKeys = __webpack_require__(348);
+    nativeKeys = __webpack_require__(349);
 
 /** Used for built-in method references. */
 var objectProto = Object.prototype;
@@ -31332,7 +31340,7 @@ module.exports = toSource;
 /***/ (function(module, exports, __webpack_require__) {
 
 var identity = __webpack_require__(23),
-    overRest = __webpack_require__(358),
+    overRest = __webpack_require__(359),
     setToString = __webpack_require__(81);
 
 /**
@@ -31354,7 +31362,7 @@ module.exports = baseRest;
 /* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseSetToString = __webpack_require__(359),
+var baseSetToString = __webpack_require__(360),
     shortOut = __webpack_require__(82);
 
 /**
@@ -31418,7 +31426,7 @@ module.exports = shortOut;
 /***/ (function(module, exports, __webpack_require__) {
 
 var arrayLikeKeys = __webpack_require__(69),
-    baseKeysIn = __webpack_require__(362),
+    baseKeysIn = __webpack_require__(363),
     isArrayLike = __webpack_require__(19);
 
 /**
@@ -31455,9 +31463,9 @@ module.exports = keysIn;
 /* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseFindIndex = __webpack_require__(364),
-    baseIsNaN = __webpack_require__(365),
-    strictIndexOf = __webpack_require__(366);
+var baseFindIndex = __webpack_require__(365),
+    baseIsNaN = __webpack_require__(366),
+    strictIndexOf = __webpack_require__(367);
 
 /**
  * The base implementation of `_.indexOf` without `fromIndex` bounds checks.
@@ -31567,11 +31575,11 @@ module.exports = WeakMap;
 
 var composeArgs = __webpack_require__(90),
     composeArgsRight = __webpack_require__(91),
-    countHolders = __webpack_require__(371),
+    countHolders = __webpack_require__(372),
     createCtor = __webpack_require__(32),
     createRecurry = __webpack_require__(92),
     getHolder = __webpack_require__(54),
-    reorder = __webpack_require__(382),
+    reorder = __webpack_require__(383),
     replaceHolders = __webpack_require__(33),
     root = __webpack_require__(7);
 
@@ -31755,7 +31763,7 @@ module.exports = composeArgsRight;
 /* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isLaziable = __webpack_require__(372),
+var isLaziable = __webpack_require__(373),
     setData = __webpack_require__(96),
     setWrapToString = __webpack_require__(97);
 
@@ -31818,7 +31826,7 @@ module.exports = createRecurry;
 /***/ (function(module, exports, __webpack_require__) {
 
 var metaMap = __webpack_require__(87),
-    noop = __webpack_require__(373);
+    noop = __webpack_require__(374);
 
 /**
  * Gets metadata for `func`.
@@ -31918,10 +31926,10 @@ module.exports = setData;
 /* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var getWrapDetails = __webpack_require__(378),
-    insertWrapDetails = __webpack_require__(379),
+var getWrapDetails = __webpack_require__(379),
+    insertWrapDetails = __webpack_require__(380),
     setToString = __webpack_require__(81),
-    updateWrapDetails = __webpack_require__(380);
+    updateWrapDetails = __webpack_require__(381);
 
 /**
  * Sets the `toString` method of `wrapper` to mimic the source of `reference`
@@ -31946,11 +31954,11 @@ module.exports = setWrapToString;
 /***/ (function(module, exports, __webpack_require__) {
 
 var ListCache = __webpack_require__(34),
-    stackClear = __webpack_require__(393),
-    stackDelete = __webpack_require__(394),
-    stackGet = __webpack_require__(395),
-    stackHas = __webpack_require__(396),
-    stackSet = __webpack_require__(397);
+    stackClear = __webpack_require__(394),
+    stackDelete = __webpack_require__(395),
+    stackGet = __webpack_require__(396),
+    stackHas = __webpack_require__(397),
+    stackSet = __webpack_require__(398);
 
 /**
  * Creates a stack cache object to store key-value pairs.
@@ -31978,7 +31986,7 @@ module.exports = Stack;
 /* 99 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseIsEqualDeep = __webpack_require__(410),
+var baseIsEqualDeep = __webpack_require__(411),
     isObjectLike = __webpack_require__(13);
 
 /**
@@ -32012,9 +32020,9 @@ module.exports = baseIsEqual;
 /* 100 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var SetCache = __webpack_require__(411),
-    arraySome = __webpack_require__(414),
-    cacheHas = __webpack_require__(415);
+var SetCache = __webpack_require__(412),
+    arraySome = __webpack_require__(415),
+    cacheHas = __webpack_require__(416);
 
 /** Used to compose bitmasks for value comparisons. */
 var COMPARE_PARTIAL_FLAG = 1,
@@ -32153,7 +32161,7 @@ module.exports = arrayPush;
 /* 103 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var arrayFilter = __webpack_require__(422),
+var arrayFilter = __webpack_require__(423),
     stubArray = __webpack_require__(104);
 
 /** Used for built-in method references. */
@@ -32218,10 +32226,10 @@ module.exports = stubArray;
 /* 105 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var DataView = __webpack_require__(423),
+var DataView = __webpack_require__(424),
     Map = __webpack_require__(55),
-    Promise = __webpack_require__(424),
-    Set = __webpack_require__(425),
+    Promise = __webpack_require__(425),
+    Set = __webpack_require__(426),
     WeakMap = __webpack_require__(88),
     baseGetTag = __webpack_require__(15),
     toSource = __webpack_require__(79);
@@ -32282,7 +32290,7 @@ module.exports = getTag;
 /* 106 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isObject = __webpack_require__(10);
+var isObject = __webpack_require__(11);
 
 /**
  * Checks if `value` is suitable for strict equality comparisons, i.e. `===`.
@@ -32329,7 +32337,7 @@ module.exports = matchesStrictComparable;
 /* 108 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseToString = __webpack_require__(432);
+var baseToString = __webpack_require__(433);
 
 /**
  * Converts `value` to a string. An empty string is returned for `null`
@@ -33365,15 +33373,15 @@ backbone.nativeview = __webpack_require__(39);
 (function (root, factory) {
     if (true) {
         !(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-            __webpack_require__(450),
             __webpack_require__(451),
             __webpack_require__(452),
             __webpack_require__(453),
             __webpack_require__(454),
             __webpack_require__(455),
             __webpack_require__(456),
+            __webpack_require__(457),
             __webpack_require__(27),
-            __webpack_require__(11)
+            __webpack_require__(9)
         ], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
@@ -33481,7 +33489,7 @@ backbone.nativeview = __webpack_require__(39);
 /* 115 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseSlice = __webpack_require__(332),
+var baseSlice = __webpack_require__(333),
     toInteger = __webpack_require__(47);
 
 /**
@@ -33592,9 +33600,9 @@ module.exports = isNil;
 /***/ (function(module, exports, __webpack_require__) {
 
 var arrayMap = __webpack_require__(50),
-    baseIteratee = __webpack_require__(385),
-    basePickBy = __webpack_require__(438),
-    getAllKeysIn = __webpack_require__(440);
+    baseIteratee = __webpack_require__(386),
+    basePickBy = __webpack_require__(439),
+    getAllKeysIn = __webpack_require__(441);
 
 /**
  * Creates an object composed of the `object` properties `predicate` returns
@@ -33638,7 +33646,7 @@ var baseKeys = __webpack_require__(73),
     getTag = __webpack_require__(105),
     isArrayLike = __webpack_require__(19),
     isString = __webpack_require__(85),
-    stringSize = __webpack_require__(443);
+    stringSize = __webpack_require__(444);
 
 /** `Object#toString` result references. */
 var mapTag = '[object Map]',
@@ -34171,7 +34179,7 @@ __e(o.__('This message has been edited')) +
 '" class="fa fa-edit chat-msg__edit-modal"></i> ';
  } ;
 __p += '\n            ';
- if (o.type !== 'headline' && o.sender === 'me') { ;
+ if (o.editable) { ;
 __p += '\n                <div class="chat-msg__actions">\n                    <button class="chat-msg__action chat-msg__action-edit fa fa-pencil-alt" title="' +
 __e(o.__('Edit this message')) +
 '"></button>\n                </div>\n            ';
@@ -36758,6 +36766,83 @@ return __p
 /* 327 */,
 /* 328 */,
 /* 329 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// Converse.js
+// https://conversejs.org
+//
+// Copyright (c) 2013-2019, the Converse.js developers
+// Licensed under the Mozilla Public License (MPLv2)
+//
+// Webpack entry file
+//
+// The purpose of this file is to provide an initial temporary public API
+// (window.converse) for **before** the rest of converse.js is loaded so
+// that we can set the __webpack_public_path__ global variable.
+//
+// Once the rest converse.js has been loaded, window.converse will be replaced
+// with the full-fledged public API.
+const plugins = {};
+const converse = {
+  plugins: {
+    add(name, plugin) {
+      if (plugins[name] !== undefined) {
+        throw new TypeError("Error: plugin with name \"".concat(name, "\" has already been ") + 'registered!');
+      }
+
+      plugins[name] = plugin;
+    }
+
+  },
+
+  initialize() {
+    let settings = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+    converse.load(settings).initialize(settings);
+  },
+
+  /**
+   * Public API method which explicitly loads Converse and allows you the
+   * possibility to pass in configuration settings which need to be defined
+   * before loading. Currently this is only the [assets_path](https://conversejs.org/docs/html/configuration.html#assets_path)
+   * setting.
+   *
+   * If not called explicitly, this method will be called implicitly once
+   * {@link converse.initialize} is called.
+   *
+   * In most cases, you probably don't need to explicitly call this method,
+   * however, until converse.js has been loaded you won't have access to the
+   * utility methods and globals exposed via {@link converse.env}. So if you
+   * need to access `converse.env` outside of any plugins and before
+   * `converse.initialize` has been called, then you need to call
+   * `converse.load` first.
+   *
+   * @memberOf converse
+   * @method load
+   * @param {object} settings A map of configuration-settings that are needed at load time.
+   * @example
+   * converse.load({assets_path: '/path/to/assets/'});
+   */
+  load() {
+    let settings = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+    if (settings.assets_path) {
+      __webpack_require__.p = settings.assets_path; // eslint-disable-line no-undef
+    }
+
+    __webpack_require__(465);
+
+    Object.keys(plugins).forEach(name => converse.plugins.add(name, plugins[name]));
+    return converse;
+  }
+
+};
+window.converse = converse;
+/* harmony default export */ __webpack_exports__["default"] = (converse);
+
+/***/ }),
+/* 330 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = (function () {
@@ -36766,133 +36851,137 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
 /***/ }),
-/* 330 */
+/* 331 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
 	"./af/LC_MESSAGES/converse.po": [
-		465,
+		466,
 		130
 	],
 	"./ar/LC_MESSAGES/converse.po": [
-		466,
+		467,
 		131
 	],
 	"./bg/LC_MESSAGES/converse.po": [
-		467,
+		468,
 		132
 	],
 	"./ca/LC_MESSAGES/converse.po": [
-		468,
+		469,
 		133
 	],
 	"./cs/LC_MESSAGES/converse.po": [
-		469,
+		470,
 		134
 	],
 	"./de/LC_MESSAGES/converse.po": [
-		470,
+		471,
 		135
 	],
 	"./eo/LC_MESSAGES/converse.po": [
-		471,
+		472,
 		136
 	],
 	"./es/LC_MESSAGES/converse.po": [
-		472,
+		473,
 		137
 	],
 	"./eu/LC_MESSAGES/converse.po": [
-		473,
+		474,
 		138
 	],
 	"./fr/LC_MESSAGES/converse.po": [
-		474,
+		475,
 		139
 	],
 	"./gl/LC_MESSAGES/converse.po": [
-		475,
+		476,
 		140
 	],
 	"./he/LC_MESSAGES/converse.po": [
-		476,
+		477,
 		141
 	],
 	"./hi/LC_MESSAGES/converse.po": [
-		477,
+		478,
 		142
 	],
 	"./hu/LC_MESSAGES/converse.po": [
-		478,
+		479,
 		143
 	],
 	"./id/LC_MESSAGES/converse.po": [
-		479,
+		480,
 		144
 	],
 	"./it/LC_MESSAGES/converse.po": [
-		480,
+		481,
 		145
 	],
 	"./ja/LC_MESSAGES/converse.po": [
-		481,
+		482,
 		146
 	],
 	"./lt/LC_MESSAGES/converse.po": [
-		482,
+		483,
 		147
 	],
 	"./nb/LC_MESSAGES/converse.po": [
-		483,
+		484,
 		148
 	],
 	"./nl/LC_MESSAGES/converse.po": [
-		484,
+		485,
 		149
 	],
 	"./nl_BE/LC_MESSAGES/converse.po": [
-		485,
+		486,
 		150
 	],
 	"./oc/LC_MESSAGES/converse.po": [
-		486,
+		487,
 		151
 	],
 	"./pl/LC_MESSAGES/converse.po": [
-		487,
+		488,
 		152
 	],
 	"./pt/LC_MESSAGES/converse.po": [
-		488,
+		489,
 		153
 	],
 	"./pt_BR/LC_MESSAGES/converse.po": [
-		489,
+		490,
 		154
 	],
 	"./ro/LC_MESSAGES/converse.po": [
-		490,
+		491,
 		155
 	],
 	"./ru/LC_MESSAGES/converse.po": [
-		491,
+		492,
 		156
 	],
 	"./tr/LC_MESSAGES/converse.po": [
-		492,
+		493,
 		157
 	],
 	"./uk/LC_MESSAGES/converse.po": [
-		493,
+		494,
 		158
 	],
-	"./zh_CN/LC_MESSAGES/converse.po": [
-		494,
+	"./vi/LC_MESSAGES/converse.po": [
+		495,
 		159
 	],
-	"./zh_TW/LC_MESSAGES/converse.po": [
-		495,
+	"./zh_CN/LC_MESSAGES/converse.po": [
+		496,
 		160
+	],
+	"./zh_TW/LC_MESSAGES/converse.po": [
+		497,
+		161
 	]
 };
 function webpackAsyncContext(req) {
@@ -36912,11 +37001,11 @@ function webpackAsyncContext(req) {
 webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 	return Object.keys(map);
 };
-webpackAsyncContext.id = 330;
+webpackAsyncContext.id = 331;
 module.exports = webpackAsyncContext;
 
 /***/ }),
-/* 331 */
+/* 332 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
@@ -37970,11 +38059,11 @@ function webpackAsyncContext(req) {
 webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 	return Object.keys(map);
 };
-webpackAsyncContext.id = 331;
+webpackAsyncContext.id = 332;
 module.exports = webpackAsyncContext;
 
 /***/ }),
-/* 332 */
+/* 333 */
 /***/ (function(module, exports) {
 
 /**
@@ -38011,10 +38100,10 @@ module.exports = baseSlice;
 
 
 /***/ }),
-/* 333 */
+/* 334 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var toNumber = __webpack_require__(334);
+var toNumber = __webpack_require__(335);
 
 /** Used as references for various `Number` constants. */
 var INFINITY = 1 / 0,
@@ -38059,10 +38148,10 @@ module.exports = toFinite;
 
 
 /***/ }),
-/* 334 */
+/* 335 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isObject = __webpack_require__(10),
+var isObject = __webpack_require__(11),
     isSymbol = __webpack_require__(29);
 
 /** Used as references for various `Number` constants. */
@@ -38131,7 +38220,7 @@ module.exports = toNumber;
 
 
 /***/ }),
-/* 335 */
+/* 336 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Symbol = __webpack_require__(30);
@@ -38183,7 +38272,7 @@ module.exports = getRawTag;
 
 
 /***/ }),
-/* 336 */
+/* 337 */
 /***/ (function(module, exports) {
 
 /** Used for built-in method references. */
@@ -38211,12 +38300,12 @@ module.exports = objectToString;
 
 
 /***/ }),
-/* 337 */
+/* 338 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var arrayEach = __webpack_require__(68),
-    baseEach = __webpack_require__(338),
-    castFunction = __webpack_require__(350),
+    baseEach = __webpack_require__(339),
+    castFunction = __webpack_require__(351),
     isArray = __webpack_require__(8);
 
 /**
@@ -38258,11 +38347,11 @@ module.exports = forEach;
 
 
 /***/ }),
-/* 338 */
+/* 339 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseForOwn = __webpack_require__(339),
-    createBaseEach = __webpack_require__(349);
+var baseForOwn = __webpack_require__(340),
+    createBaseEach = __webpack_require__(350);
 
 /**
  * The base implementation of `_.forEach` without support for iteratee shorthands.
@@ -38278,10 +38367,10 @@ module.exports = baseEach;
 
 
 /***/ }),
-/* 339 */
+/* 340 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseFor = __webpack_require__(340),
+var baseFor = __webpack_require__(341),
     keys = __webpack_require__(20);
 
 /**
@@ -38300,10 +38389,10 @@ module.exports = baseForOwn;
 
 
 /***/ }),
-/* 340 */
+/* 341 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var createBaseFor = __webpack_require__(341);
+var createBaseFor = __webpack_require__(342);
 
 /**
  * The base implementation of `baseForOwn` which iterates over `object`
@@ -38322,7 +38411,7 @@ module.exports = baseFor;
 
 
 /***/ }),
-/* 341 */
+/* 342 */
 /***/ (function(module, exports) {
 
 /**
@@ -38353,7 +38442,7 @@ module.exports = createBaseFor;
 
 
 /***/ }),
-/* 342 */
+/* 343 */
 /***/ (function(module, exports) {
 
 /**
@@ -38379,7 +38468,7 @@ module.exports = baseTimes;
 
 
 /***/ }),
-/* 343 */
+/* 344 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseGetTag = __webpack_require__(15),
@@ -38403,7 +38492,7 @@ module.exports = baseIsArguments;
 
 
 /***/ }),
-/* 344 */
+/* 345 */
 /***/ (function(module, exports) {
 
 /**
@@ -38427,7 +38516,7 @@ module.exports = stubFalse;
 
 
 /***/ }),
-/* 345 */
+/* 346 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseGetTag = __webpack_require__(15),
@@ -38493,7 +38582,7 @@ module.exports = baseIsTypedArray;
 
 
 /***/ }),
-/* 346 */
+/* 347 */
 /***/ (function(module, exports) {
 
 /**
@@ -38513,7 +38602,7 @@ module.exports = baseUnary;
 
 
 /***/ }),
-/* 347 */
+/* 348 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(module) {var freeGlobal = __webpack_require__(67);
@@ -38550,7 +38639,7 @@ module.exports = nodeUtil;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(28)(module)))
 
 /***/ }),
-/* 348 */
+/* 349 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var overArg = __webpack_require__(75);
@@ -38562,7 +38651,7 @@ module.exports = nativeKeys;
 
 
 /***/ }),
-/* 349 */
+/* 350 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isArrayLike = __webpack_require__(19);
@@ -38600,7 +38689,7 @@ module.exports = createBaseEach;
 
 
 /***/ }),
-/* 350 */
+/* 351 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var identity = __webpack_require__(23);
@@ -38620,11 +38709,11 @@ module.exports = castFunction;
 
 
 /***/ }),
-/* 351 */
+/* 352 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var copyObject = __webpack_require__(352),
-    createAssigner = __webpack_require__(357),
+var copyObject = __webpack_require__(353),
+    createAssigner = __webpack_require__(358),
     keysIn = __webpack_require__(83);
 
 /**
@@ -38666,7 +38755,7 @@ module.exports = assignIn;
 
 
 /***/ }),
-/* 352 */
+/* 353 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var assignValue = __webpack_require__(76),
@@ -38712,12 +38801,12 @@ module.exports = copyObject;
 
 
 /***/ }),
-/* 353 */
+/* 354 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isFunction = __webpack_require__(41),
-    isMasked = __webpack_require__(354),
-    isObject = __webpack_require__(10),
+    isMasked = __webpack_require__(355),
+    isObject = __webpack_require__(11),
     toSource = __webpack_require__(79);
 
 /**
@@ -38765,10 +38854,10 @@ module.exports = baseIsNative;
 
 
 /***/ }),
-/* 354 */
+/* 355 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var coreJsData = __webpack_require__(355);
+var coreJsData = __webpack_require__(356);
 
 /** Used to detect methods masquerading as native. */
 var maskSrcKey = (function() {
@@ -38791,7 +38880,7 @@ module.exports = isMasked;
 
 
 /***/ }),
-/* 355 */
+/* 356 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var root = __webpack_require__(7);
@@ -38803,7 +38892,7 @@ module.exports = coreJsData;
 
 
 /***/ }),
-/* 356 */
+/* 357 */
 /***/ (function(module, exports) {
 
 /**
@@ -38822,11 +38911,11 @@ module.exports = getValue;
 
 
 /***/ }),
-/* 357 */
+/* 358 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseRest = __webpack_require__(80),
-    isIterateeCall = __webpack_require__(361);
+    isIterateeCall = __webpack_require__(362);
 
 /**
  * Creates a function like `_.assign`.
@@ -38865,7 +38954,7 @@ module.exports = createAssigner;
 
 
 /***/ }),
-/* 358 */
+/* 359 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var apply = __webpack_require__(49);
@@ -38907,10 +38996,10 @@ module.exports = overRest;
 
 
 /***/ }),
-/* 359 */
+/* 360 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var constant = __webpack_require__(360),
+var constant = __webpack_require__(361),
     defineProperty = __webpack_require__(78),
     identity = __webpack_require__(23);
 
@@ -38935,7 +39024,7 @@ module.exports = baseSetToString;
 
 
 /***/ }),
-/* 360 */
+/* 361 */
 /***/ (function(module, exports) {
 
 /**
@@ -38967,13 +39056,13 @@ module.exports = constant;
 
 
 /***/ }),
-/* 361 */
+/* 362 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var eq = __webpack_require__(31),
     isArrayLike = __webpack_require__(19),
     isIndex = __webpack_require__(22),
-    isObject = __webpack_require__(10);
+    isObject = __webpack_require__(11);
 
 /**
  * Checks if the given arguments are from an iteratee call.
@@ -39003,12 +39092,12 @@ module.exports = isIterateeCall;
 
 
 /***/ }),
-/* 362 */
+/* 363 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isObject = __webpack_require__(10),
+var isObject = __webpack_require__(11),
     isPrototype = __webpack_require__(74),
-    nativeKeysIn = __webpack_require__(363);
+    nativeKeysIn = __webpack_require__(364);
 
 /** Used for built-in method references. */
 var objectProto = Object.prototype;
@@ -39042,7 +39131,7 @@ module.exports = baseKeysIn;
 
 
 /***/ }),
-/* 363 */
+/* 364 */
 /***/ (function(module, exports) {
 
 /**
@@ -39068,7 +39157,7 @@ module.exports = nativeKeysIn;
 
 
 /***/ }),
-/* 364 */
+/* 365 */
 /***/ (function(module, exports) {
 
 /**
@@ -39098,7 +39187,7 @@ module.exports = baseFindIndex;
 
 
 /***/ }),
-/* 365 */
+/* 366 */
 /***/ (function(module, exports) {
 
 /**
@@ -39116,7 +39205,7 @@ module.exports = baseIsNaN;
 
 
 /***/ }),
-/* 366 */
+/* 367 */
 /***/ (function(module, exports) {
 
 /**
@@ -39145,7 +39234,7 @@ module.exports = strictIndexOf;
 
 
 /***/ }),
-/* 367 */
+/* 368 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var arrayMap = __webpack_require__(50);
@@ -39170,16 +39259,16 @@ module.exports = baseValues;
 
 
 /***/ }),
-/* 368 */
+/* 369 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseSetData = __webpack_require__(86),
-    createBind = __webpack_require__(369),
-    createCurry = __webpack_require__(370),
+    createBind = __webpack_require__(370),
+    createCurry = __webpack_require__(371),
     createHybrid = __webpack_require__(89),
-    createPartial = __webpack_require__(383),
+    createPartial = __webpack_require__(384),
     getData = __webpack_require__(93),
-    mergeData = __webpack_require__(384),
+    mergeData = __webpack_require__(385),
     setData = __webpack_require__(96),
     setWrapToString = __webpack_require__(97),
     toInteger = __webpack_require__(47);
@@ -39282,7 +39371,7 @@ module.exports = createWrap;
 
 
 /***/ }),
-/* 369 */
+/* 370 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var createCtor = __webpack_require__(32),
@@ -39316,7 +39405,7 @@ module.exports = createBind;
 
 
 /***/ }),
-/* 370 */
+/* 371 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var apply = __webpack_require__(49),
@@ -39368,7 +39457,7 @@ module.exports = createCurry;
 
 
 /***/ }),
-/* 371 */
+/* 372 */
 /***/ (function(module, exports) {
 
 /**
@@ -39395,13 +39484,13 @@ module.exports = countHolders;
 
 
 /***/ }),
-/* 372 */
+/* 373 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var LazyWrapper = __webpack_require__(52),
     getData = __webpack_require__(93),
-    getFuncName = __webpack_require__(374),
-    lodash = __webpack_require__(376);
+    getFuncName = __webpack_require__(375),
+    lodash = __webpack_require__(377);
 
 /**
  * Checks if `func` has a lazy counterpart.
@@ -39429,7 +39518,7 @@ module.exports = isLaziable;
 
 
 /***/ }),
-/* 373 */
+/* 374 */
 /***/ (function(module, exports) {
 
 /**
@@ -39452,10 +39541,10 @@ module.exports = noop;
 
 
 /***/ }),
-/* 374 */
+/* 375 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var realNames = __webpack_require__(375);
+var realNames = __webpack_require__(376);
 
 /** Used for built-in method references. */
 var objectProto = Object.prototype;
@@ -39489,7 +39578,7 @@ module.exports = getFuncName;
 
 
 /***/ }),
-/* 375 */
+/* 376 */
 /***/ (function(module, exports) {
 
 /** Used to lookup unminified function names. */
@@ -39499,7 +39588,7 @@ module.exports = realNames;
 
 
 /***/ }),
-/* 376 */
+/* 377 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var LazyWrapper = __webpack_require__(52),
@@ -39507,7 +39596,7 @@ var LazyWrapper = __webpack_require__(52),
     baseLodash = __webpack_require__(53),
     isArray = __webpack_require__(8),
     isObjectLike = __webpack_require__(13),
-    wrapperClone = __webpack_require__(377);
+    wrapperClone = __webpack_require__(378);
 
 /** Used for built-in method references. */
 var objectProto = Object.prototype;
@@ -39652,7 +39741,7 @@ module.exports = lodash;
 
 
 /***/ }),
-/* 377 */
+/* 378 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var LazyWrapper = __webpack_require__(52),
@@ -39681,7 +39770,7 @@ module.exports = wrapperClone;
 
 
 /***/ }),
-/* 378 */
+/* 379 */
 /***/ (function(module, exports) {
 
 /** Used to match wrap detail comments. */
@@ -39704,7 +39793,7 @@ module.exports = getWrapDetails;
 
 
 /***/ }),
-/* 379 */
+/* 380 */
 /***/ (function(module, exports) {
 
 /** Used to match wrap detail comments. */
@@ -39733,11 +39822,11 @@ module.exports = insertWrapDetails;
 
 
 /***/ }),
-/* 380 */
+/* 381 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var arrayEach = __webpack_require__(68),
-    arrayIncludes = __webpack_require__(381);
+    arrayIncludes = __webpack_require__(382);
 
 /** Used to compose bitmasks for function metadata. */
 var WRAP_BIND_FLAG = 1,
@@ -39785,7 +39874,7 @@ module.exports = updateWrapDetails;
 
 
 /***/ }),
-/* 381 */
+/* 382 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseIndexOf = __webpack_require__(84);
@@ -39808,7 +39897,7 @@ module.exports = arrayIncludes;
 
 
 /***/ }),
-/* 382 */
+/* 383 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var copyArray = __webpack_require__(95),
@@ -39843,7 +39932,7 @@ module.exports = reorder;
 
 
 /***/ }),
-/* 383 */
+/* 384 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var apply = __webpack_require__(49),
@@ -39892,7 +39981,7 @@ module.exports = createPartial;
 
 
 /***/ }),
-/* 384 */
+/* 385 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var composeArgs = __webpack_require__(90),
@@ -39988,14 +40077,14 @@ module.exports = mergeData;
 
 
 /***/ }),
-/* 385 */
+/* 386 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseMatches = __webpack_require__(386),
-    baseMatchesProperty = __webpack_require__(427),
+var baseMatches = __webpack_require__(387),
+    baseMatchesProperty = __webpack_require__(428),
     identity = __webpack_require__(23),
     isArray = __webpack_require__(8),
-    property = __webpack_require__(436);
+    property = __webpack_require__(437);
 
 /**
  * The base implementation of `_.iteratee`.
@@ -40025,11 +40114,11 @@ module.exports = baseIteratee;
 
 
 /***/ }),
-/* 386 */
+/* 387 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseIsMatch = __webpack_require__(387),
-    getMatchData = __webpack_require__(426),
+var baseIsMatch = __webpack_require__(388),
+    getMatchData = __webpack_require__(427),
     matchesStrictComparable = __webpack_require__(107);
 
 /**
@@ -40053,7 +40142,7 @@ module.exports = baseMatches;
 
 
 /***/ }),
-/* 387 */
+/* 388 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Stack = __webpack_require__(98),
@@ -40121,7 +40210,7 @@ module.exports = baseIsMatch;
 
 
 /***/ }),
-/* 388 */
+/* 389 */
 /***/ (function(module, exports) {
 
 /**
@@ -40140,7 +40229,7 @@ module.exports = listCacheClear;
 
 
 /***/ }),
-/* 389 */
+/* 390 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var assocIndexOf = __webpack_require__(35);
@@ -40181,7 +40270,7 @@ module.exports = listCacheDelete;
 
 
 /***/ }),
-/* 390 */
+/* 391 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var assocIndexOf = __webpack_require__(35);
@@ -40206,7 +40295,7 @@ module.exports = listCacheGet;
 
 
 /***/ }),
-/* 391 */
+/* 392 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var assocIndexOf = __webpack_require__(35);
@@ -40228,7 +40317,7 @@ module.exports = listCacheHas;
 
 
 /***/ }),
-/* 392 */
+/* 393 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var assocIndexOf = __webpack_require__(35);
@@ -40260,7 +40349,7 @@ module.exports = listCacheSet;
 
 
 /***/ }),
-/* 393 */
+/* 394 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var ListCache = __webpack_require__(34);
@@ -40281,7 +40370,7 @@ module.exports = stackClear;
 
 
 /***/ }),
-/* 394 */
+/* 395 */
 /***/ (function(module, exports) {
 
 /**
@@ -40305,7 +40394,7 @@ module.exports = stackDelete;
 
 
 /***/ }),
-/* 395 */
+/* 396 */
 /***/ (function(module, exports) {
 
 /**
@@ -40325,7 +40414,7 @@ module.exports = stackGet;
 
 
 /***/ }),
-/* 396 */
+/* 397 */
 /***/ (function(module, exports) {
 
 /**
@@ -40345,7 +40434,7 @@ module.exports = stackHas;
 
 
 /***/ }),
-/* 397 */
+/* 398 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var ListCache = __webpack_require__(34),
@@ -40385,10 +40474,10 @@ module.exports = stackSet;
 
 
 /***/ }),
-/* 398 */
+/* 399 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Hash = __webpack_require__(399),
+var Hash = __webpack_require__(400),
     ListCache = __webpack_require__(34),
     Map = __webpack_require__(55);
 
@@ -40412,14 +40501,14 @@ module.exports = mapCacheClear;
 
 
 /***/ }),
-/* 399 */
+/* 400 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var hashClear = __webpack_require__(400),
-    hashDelete = __webpack_require__(401),
-    hashGet = __webpack_require__(402),
-    hashHas = __webpack_require__(403),
-    hashSet = __webpack_require__(404);
+var hashClear = __webpack_require__(401),
+    hashDelete = __webpack_require__(402),
+    hashGet = __webpack_require__(403),
+    hashHas = __webpack_require__(404),
+    hashSet = __webpack_require__(405);
 
 /**
  * Creates a hash object.
@@ -40450,7 +40539,7 @@ module.exports = Hash;
 
 
 /***/ }),
-/* 400 */
+/* 401 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var nativeCreate = __webpack_require__(36);
@@ -40471,7 +40560,7 @@ module.exports = hashClear;
 
 
 /***/ }),
-/* 401 */
+/* 402 */
 /***/ (function(module, exports) {
 
 /**
@@ -40494,7 +40583,7 @@ module.exports = hashDelete;
 
 
 /***/ }),
-/* 402 */
+/* 403 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var nativeCreate = __webpack_require__(36);
@@ -40530,7 +40619,7 @@ module.exports = hashGet;
 
 
 /***/ }),
-/* 403 */
+/* 404 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var nativeCreate = __webpack_require__(36);
@@ -40559,7 +40648,7 @@ module.exports = hashHas;
 
 
 /***/ }),
-/* 404 */
+/* 405 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var nativeCreate = __webpack_require__(36);
@@ -40588,7 +40677,7 @@ module.exports = hashSet;
 
 
 /***/ }),
-/* 405 */
+/* 406 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var getMapData = __webpack_require__(37);
@@ -40612,7 +40701,7 @@ module.exports = mapCacheDelete;
 
 
 /***/ }),
-/* 406 */
+/* 407 */
 /***/ (function(module, exports) {
 
 /**
@@ -40633,7 +40722,7 @@ module.exports = isKeyable;
 
 
 /***/ }),
-/* 407 */
+/* 408 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var getMapData = __webpack_require__(37);
@@ -40655,7 +40744,7 @@ module.exports = mapCacheGet;
 
 
 /***/ }),
-/* 408 */
+/* 409 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var getMapData = __webpack_require__(37);
@@ -40677,7 +40766,7 @@ module.exports = mapCacheHas;
 
 
 /***/ }),
-/* 409 */
+/* 410 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var getMapData = __webpack_require__(37);
@@ -40705,13 +40794,13 @@ module.exports = mapCacheSet;
 
 
 /***/ }),
-/* 410 */
+/* 411 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Stack = __webpack_require__(98),
     equalArrays = __webpack_require__(100),
-    equalByTag = __webpack_require__(416),
-    equalObjects = __webpack_require__(420),
+    equalByTag = __webpack_require__(417),
+    equalObjects = __webpack_require__(421),
     getTag = __webpack_require__(105),
     isArray = __webpack_require__(8),
     isBuffer = __webpack_require__(71),
@@ -40794,12 +40883,12 @@ module.exports = baseIsEqualDeep;
 
 
 /***/ }),
-/* 411 */
+/* 412 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var MapCache = __webpack_require__(56),
-    setCacheAdd = __webpack_require__(412),
-    setCacheHas = __webpack_require__(413);
+    setCacheAdd = __webpack_require__(413),
+    setCacheHas = __webpack_require__(414);
 
 /**
  *
@@ -40827,7 +40916,7 @@ module.exports = SetCache;
 
 
 /***/ }),
-/* 412 */
+/* 413 */
 /***/ (function(module, exports) {
 
 /** Used to stand-in for `undefined` hash values. */
@@ -40852,7 +40941,7 @@ module.exports = setCacheAdd;
 
 
 /***/ }),
-/* 413 */
+/* 414 */
 /***/ (function(module, exports) {
 
 /**
@@ -40872,7 +40961,7 @@ module.exports = setCacheHas;
 
 
 /***/ }),
-/* 414 */
+/* 415 */
 /***/ (function(module, exports) {
 
 /**
@@ -40901,7 +40990,7 @@ module.exports = arraySome;
 
 
 /***/ }),
-/* 415 */
+/* 416 */
 /***/ (function(module, exports) {
 
 /**
@@ -40920,15 +41009,15 @@ module.exports = cacheHas;
 
 
 /***/ }),
-/* 416 */
+/* 417 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Symbol = __webpack_require__(30),
-    Uint8Array = __webpack_require__(417),
+    Uint8Array = __webpack_require__(418),
     eq = __webpack_require__(31),
     equalArrays = __webpack_require__(100),
-    mapToArray = __webpack_require__(418),
-    setToArray = __webpack_require__(419);
+    mapToArray = __webpack_require__(419),
+    setToArray = __webpack_require__(420);
 
 /** Used to compose bitmasks for value comparisons. */
 var COMPARE_PARTIAL_FLAG = 1,
@@ -41038,7 +41127,7 @@ module.exports = equalByTag;
 
 
 /***/ }),
-/* 417 */
+/* 418 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var root = __webpack_require__(7);
@@ -41050,7 +41139,7 @@ module.exports = Uint8Array;
 
 
 /***/ }),
-/* 418 */
+/* 419 */
 /***/ (function(module, exports) {
 
 /**
@@ -41074,7 +41163,7 @@ module.exports = mapToArray;
 
 
 /***/ }),
-/* 419 */
+/* 420 */
 /***/ (function(module, exports) {
 
 /**
@@ -41098,10 +41187,10 @@ module.exports = setToArray;
 
 
 /***/ }),
-/* 420 */
+/* 421 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var getAllKeys = __webpack_require__(421);
+var getAllKeys = __webpack_require__(422);
 
 /** Used to compose bitmasks for value comparisons. */
 var COMPARE_PARTIAL_FLAG = 1;
@@ -41193,7 +41282,7 @@ module.exports = equalObjects;
 
 
 /***/ }),
-/* 421 */
+/* 422 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseGetAllKeys = __webpack_require__(101),
@@ -41215,7 +41304,7 @@ module.exports = getAllKeys;
 
 
 /***/ }),
-/* 422 */
+/* 423 */
 /***/ (function(module, exports) {
 
 /**
@@ -41246,7 +41335,7 @@ module.exports = arrayFilter;
 
 
 /***/ }),
-/* 423 */
+/* 424 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var getNative = __webpack_require__(16),
@@ -41259,7 +41348,7 @@ module.exports = DataView;
 
 
 /***/ }),
-/* 424 */
+/* 425 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var getNative = __webpack_require__(16),
@@ -41272,7 +41361,7 @@ module.exports = Promise;
 
 
 /***/ }),
-/* 425 */
+/* 426 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var getNative = __webpack_require__(16),
@@ -41285,7 +41374,7 @@ module.exports = Set;
 
 
 /***/ }),
-/* 426 */
+/* 427 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isStrictComparable = __webpack_require__(106),
@@ -41315,12 +41404,12 @@ module.exports = getMatchData;
 
 
 /***/ }),
-/* 427 */
+/* 428 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseIsEqual = __webpack_require__(99),
-    get = __webpack_require__(428),
-    hasIn = __webpack_require__(433),
+    get = __webpack_require__(429),
+    hasIn = __webpack_require__(434),
     isKey = __webpack_require__(58),
     isStrictComparable = __webpack_require__(106),
     matchesStrictComparable = __webpack_require__(107),
@@ -41354,7 +41443,7 @@ module.exports = baseMatchesProperty;
 
 
 /***/ }),
-/* 428 */
+/* 429 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseGet = __webpack_require__(57);
@@ -41393,10 +41482,10 @@ module.exports = get;
 
 
 /***/ }),
-/* 429 */
+/* 430 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var memoizeCapped = __webpack_require__(430);
+var memoizeCapped = __webpack_require__(431);
 
 /** Used to match property names within property paths. */
 var rePropName = /[^.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|$))/g;
@@ -41426,10 +41515,10 @@ module.exports = stringToPath;
 
 
 /***/ }),
-/* 430 */
+/* 431 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var memoize = __webpack_require__(431);
+var memoize = __webpack_require__(432);
 
 /** Used as the maximum memoize cache size. */
 var MAX_MEMOIZE_SIZE = 500;
@@ -41458,7 +41547,7 @@ module.exports = memoizeCapped;
 
 
 /***/ }),
-/* 431 */
+/* 432 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var MapCache = __webpack_require__(56);
@@ -41537,7 +41626,7 @@ module.exports = memoize;
 
 
 /***/ }),
-/* 432 */
+/* 433 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Symbol = __webpack_require__(30),
@@ -41580,11 +41669,11 @@ module.exports = baseToString;
 
 
 /***/ }),
-/* 433 */
+/* 434 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseHasIn = __webpack_require__(434),
-    hasPath = __webpack_require__(435);
+var baseHasIn = __webpack_require__(435),
+    hasPath = __webpack_require__(436);
 
 /**
  * Checks if `path` is a direct or inherited property of `object`.
@@ -41620,7 +41709,7 @@ module.exports = hasIn;
 
 
 /***/ }),
-/* 434 */
+/* 435 */
 /***/ (function(module, exports) {
 
 /**
@@ -41639,7 +41728,7 @@ module.exports = baseHasIn;
 
 
 /***/ }),
-/* 435 */
+/* 436 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var castPath = __webpack_require__(38),
@@ -41684,11 +41773,11 @@ module.exports = hasPath;
 
 
 /***/ }),
-/* 436 */
+/* 437 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseProperty = __webpack_require__(109),
-    basePropertyDeep = __webpack_require__(437),
+    basePropertyDeep = __webpack_require__(438),
     isKey = __webpack_require__(58),
     toKey = __webpack_require__(24);
 
@@ -41722,7 +41811,7 @@ module.exports = property;
 
 
 /***/ }),
-/* 437 */
+/* 438 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseGet = __webpack_require__(57);
@@ -41744,11 +41833,11 @@ module.exports = basePropertyDeep;
 
 
 /***/ }),
-/* 438 */
+/* 439 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseGet = __webpack_require__(57),
-    baseSet = __webpack_require__(439),
+    baseSet = __webpack_require__(440),
     castPath = __webpack_require__(38);
 
 /**
@@ -41780,13 +41869,13 @@ module.exports = basePickBy;
 
 
 /***/ }),
-/* 439 */
+/* 440 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var assignValue = __webpack_require__(76),
     castPath = __webpack_require__(38),
     isIndex = __webpack_require__(22),
-    isObject = __webpack_require__(10),
+    isObject = __webpack_require__(11),
     toKey = __webpack_require__(24);
 
 /**
@@ -41833,11 +41922,11 @@ module.exports = baseSet;
 
 
 /***/ }),
-/* 440 */
+/* 441 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseGetAllKeys = __webpack_require__(101),
-    getSymbolsIn = __webpack_require__(441),
+    getSymbolsIn = __webpack_require__(442),
     keysIn = __webpack_require__(83);
 
 /**
@@ -41856,11 +41945,11 @@ module.exports = getAllKeysIn;
 
 
 /***/ }),
-/* 441 */
+/* 442 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var arrayPush = __webpack_require__(102),
-    getPrototype = __webpack_require__(442),
+    getPrototype = __webpack_require__(443),
     getSymbols = __webpack_require__(103),
     stubArray = __webpack_require__(104);
 
@@ -41887,7 +41976,7 @@ module.exports = getSymbolsIn;
 
 
 /***/ }),
-/* 442 */
+/* 443 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var overArg = __webpack_require__(75);
@@ -41899,12 +41988,12 @@ module.exports = getPrototype;
 
 
 /***/ }),
-/* 443 */
+/* 444 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var asciiSize = __webpack_require__(444),
-    hasUnicode = __webpack_require__(445),
-    unicodeSize = __webpack_require__(446);
+var asciiSize = __webpack_require__(445),
+    hasUnicode = __webpack_require__(446),
+    unicodeSize = __webpack_require__(447);
 
 /**
  * Gets the number of symbols in `string`.
@@ -41923,7 +42012,7 @@ module.exports = stringSize;
 
 
 /***/ }),
-/* 444 */
+/* 445 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseProperty = __webpack_require__(109);
@@ -41941,7 +42030,7 @@ module.exports = asciiSize;
 
 
 /***/ }),
-/* 445 */
+/* 446 */
 /***/ (function(module, exports) {
 
 /** Used to compose unicode character classes. */
@@ -41973,7 +42062,7 @@ module.exports = hasUnicode;
 
 
 /***/ }),
-/* 446 */
+/* 447 */
 /***/ (function(module, exports) {
 
 /** Used to compose unicode character classes. */
@@ -42023,7 +42112,7 @@ module.exports = unicodeSize;
 
 
 /***/ }),
-/* 447 */
+/* 448 */
 /***/ (function(module, exports) {
 
 function CustomEvent(event, params) {
@@ -42093,10 +42182,10 @@ if (!String.prototype.trim) {
 }
 
 /***/ }),
-/* 448 */
+/* 449 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var basePropertyOf = __webpack_require__(449);
+var basePropertyOf = __webpack_require__(450);
 
 /** Used to map characters to HTML entities. */
 var htmlEscapes = {
@@ -42120,7 +42209,7 @@ module.exports = escapeHtmlChar;
 
 
 /***/ }),
-/* 449 */
+/* 450 */
 /***/ (function(module, exports) {
 
 /**
@@ -42140,7 +42229,7 @@ module.exports = basePropertyOf;
 
 
 /***/ }),
-/* 450 */
+/* 451 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var require;var require;(function(f){if(true){module.exports=f()}else { var g; }})(function(){var define,module,exports;return (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return require(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
@@ -42652,7 +42741,7 @@ exports.default = vnode;
 
 
 /***/ }),
-/* 451 */
+/* 452 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var require;var require;(function(f){if(true){module.exports=f()}else { var g; }})(function(){var define,module,exports;return (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return require(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
@@ -42729,7 +42818,7 @@ exports.default = exports.attributesModule;
 
 
 /***/ }),
-/* 452 */
+/* 453 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var require;var require;(function(f){if(true){module.exports=f()}else { var g; }})(function(){var define,module,exports;return (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return require(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
@@ -42764,7 +42853,7 @@ exports.default = exports.classModule;
 
 
 /***/ }),
-/* 453 */
+/* 454 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var require;var require;(function(f){if(true){module.exports=f()}else { var g; }})(function(){var define,module,exports;return (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return require(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
@@ -42812,7 +42901,7 @@ exports.default = exports.datasetModule;
 
 
 /***/ }),
-/* 454 */
+/* 455 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var require;var require;(function(f){if(true){module.exports=f()}else { var g; }})(function(){var define,module,exports;return (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return require(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
@@ -42848,7 +42937,7 @@ exports.default = exports.propsModule;
 
 
 /***/ }),
-/* 455 */
+/* 456 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var require;var require;(function(f){if(true){module.exports=f()}else { var g; }})(function(){var define,module,exports;return (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return require(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
@@ -42944,7 +43033,7 @@ exports.default = exports.styleModule;
 
 
 /***/ }),
-/* 456 */
+/* 457 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var require;var require;(function(f){if(true){module.exports=f()}else { var g; }})(function(){var define,module,exports;return (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return require(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
@@ -43076,7 +43165,7 @@ exports.default = vnode;
 
 
 /***/ }),
-/* 457 */
+/* 458 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var _ = {escape:__webpack_require__(0)};
@@ -43095,7 +43184,7 @@ return __p
 };
 
 /***/ }),
-/* 458 */
+/* 459 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var _ = {escape:__webpack_require__(0)};
@@ -43110,11 +43199,11 @@ return __p
 };
 
 /***/ }),
-/* 459 */
+/* 460 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(460);
+var content = __webpack_require__(461);
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -43128,23 +43217,23 @@ var options = {"hmr":true}
 options.transform = transform
 options.insertInto = undefined;
 
-var update = __webpack_require__(462)(content, options);
+var update = __webpack_require__(463)(content, options);
 
 if(content.locals) module.exports = content.locals;
 
 if(false) {}
 
 /***/ }),
-/* 460 */
+/* 461 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(461)(true);
+exports = module.exports = __webpack_require__(462)(true);
 // Module
 exports.push([module.i, "", "",{"version":3,"sources":[],"names":[],"mappings":"","file":"converse.scss"}]);
 
 
 /***/ }),
-/* 461 */
+/* 462 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43240,7 +43329,7 @@ function toComment(sourceMap) {
 }
 
 /***/ }),
-/* 462 */
+/* 463 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -43309,7 +43398,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(463);
+var	fixUrls = __webpack_require__(464);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -43644,7 +43733,7 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 463 */
+/* 464 */
 /***/ (function(module, exports) {
 
 
@@ -43739,7 +43828,7 @@ module.exports = function (css) {
 
 
 /***/ }),
-/* 464 */
+/* 465 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -47817,923 +47906,6 @@ Strophe.SASLXOAuth2.prototype.onChallenge = function (connection) {
     'str_sha1':        SHA1.str_sha1
 });
 
-// CONCATENATED MODULE: ./node_modules/strophe.js/src/bosh.js
-/*
-    This program is distributed under the terms of the MIT license.
-    Please see the LICENSE file for details.
-
-    Copyright 2006-2008, OGG, LLC
-*/
-
-/* global window, setTimeout, clearTimeout, XMLHttpRequest, ActiveXObject */
-
-
-
-const bosh_Strophe = core.Strophe;
-const bosh_$build = core.$build;
-
-
-/** PrivateClass: Strophe.Request
- *  _Private_ helper class that provides a cross implementation abstraction
- *  for a BOSH related XMLHttpRequest.
- *
- *  The Strophe.Request class is used internally to encapsulate BOSH request
- *  information.  It is not meant to be used from user's code.
- */
-
-/** PrivateConstructor: Strophe.Request
- *  Create and initialize a new Strophe.Request object.
- *
- *  Parameters:
- *    (XMLElement) elem - The XML data to be sent in the request.
- *    (Function) func - The function that will be called when the
- *      XMLHttpRequest readyState changes.
- *    (Integer) rid - The BOSH rid attribute associated with this request.
- *    (Integer) sends - The number of times this same request has been sent.
- */
-bosh_Strophe.Request = function (elem, func, rid, sends) {
-    this.id = ++bosh_Strophe._requestId;
-    this.xmlData = elem;
-    this.data = bosh_Strophe.serialize(elem);
-    // save original function in case we need to make a new request
-    // from this one.
-    this.origFunc = func;
-    this.func = func;
-    this.rid = rid;
-    this.date = NaN;
-    this.sends = sends || 0;
-    this.abort = false;
-    this.dead = null;
-
-    this.age = function () {
-        if (!this.date) { return 0; }
-        const now = new Date();
-        return (now - this.date) / 1000;
-    };
-    this.timeDead = function () {
-        if (!this.dead) { return 0; }
-        const now = new Date();
-        return (now - this.dead) / 1000;
-    };
-    this.xhr = this._newXHR();
-};
-
-bosh_Strophe.Request.prototype = {
-    /** PrivateFunction: getResponse
-     *  Get a response from the underlying XMLHttpRequest.
-     *
-     *  This function attempts to get a response from the request and checks
-     *  for errors.
-     *
-     *  Throws:
-     *    "parsererror" - A parser error occured.
-     *    "bad-format" - The entity has sent XML that cannot be processed.
-     *
-     *  Returns:
-     *    The DOM element tree of the response.
-     */
-    getResponse: function () {
-        let node = null;
-        if (this.xhr.responseXML && this.xhr.responseXML.documentElement) {
-            node = this.xhr.responseXML.documentElement;
-            if (node.tagName === "parsererror") {
-                bosh_Strophe.error("invalid response received");
-                bosh_Strophe.error("responseText: " + this.xhr.responseText);
-                bosh_Strophe.error("responseXML: " +
-                              bosh_Strophe.serialize(this.xhr.responseXML));
-                throw new Error("parsererror");
-            }
-        } else if (this.xhr.responseText) {
-            // In React Native, we may get responseText but no responseXML.  We can try to parse it manually.
-            bosh_Strophe.debug("Got responseText but no responseXML; attempting to parse it with DOMParser...");
-            node = new DOMParser().parseFromString(this.xhr.responseText, 'application/xml').documentElement;
-            if (!node) {
-                throw new Error('Parsing produced null node');
-            } else if (node.querySelector('parsererror')) {
-                bosh_Strophe.error("invalid response received: " + node.querySelector('parsererror').textContent);
-                bosh_Strophe.error("responseText: " + this.xhr.responseText);
-                const error = new Error();
-                error.name = bosh_Strophe.ErrorCondition.BAD_FORMAT;
-                throw error;
-            }
-        }
-        return node;
-    },
-
-    /** PrivateFunction: _newXHR
-     *  _Private_ helper function to create XMLHttpRequests.
-     *
-     *  This function creates XMLHttpRequests across all implementations.
-     *
-     *  Returns:
-     *    A new XMLHttpRequest.
-     */
-    _newXHR: function () {
-        let xhr = null;
-        if (window.XMLHttpRequest) {
-            xhr = new XMLHttpRequest();
-            if (xhr.overrideMimeType) {
-                xhr.overrideMimeType("text/xml; charset=utf-8");
-            }
-        } else if (window.ActiveXObject) {
-            xhr = new ActiveXObject("Microsoft.XMLHTTP");
-        }
-        // use Function.bind() to prepend ourselves as an argument
-        xhr.onreadystatechange = this.func.bind(null, this);
-        return xhr;
-    }
-};
-
-/** Class: Strophe.Bosh
- *  _Private_ helper class that handles BOSH Connections
- *
- *  The Strophe.Bosh class is used internally by Strophe.Connection
- *  to encapsulate BOSH sessions. It is not meant to be used from user's code.
- */
-
-/** File: bosh.js
- *  A JavaScript library to enable BOSH in Strophejs.
- *
- *  this library uses Bidirectional-streams Over Synchronous HTTP (BOSH)
- *  to emulate a persistent, stateful, two-way connection to an XMPP server.
- *  More information on BOSH can be found in XEP 124.
- */
-
-/** PrivateConstructor: Strophe.Bosh
- *  Create and initialize a Strophe.Bosh object.
- *
- *  Parameters:
- *    (Strophe.Connection) connection - The Strophe.Connection that will use BOSH.
- *
- *  Returns:
- *    A new Strophe.Bosh object.
- */
-bosh_Strophe.Bosh = function(connection) {
-    this._conn = connection;
-    /* request id for body tags */
-    this.rid = Math.floor(Math.random() * 4294967295);
-    /* The current session ID. */
-    this.sid = null;
-
-    // default BOSH values
-    this.hold = 1;
-    this.wait = 60;
-    this.window = 5;
-    this.errors = 0;
-    this.inactivity = null;
-
-    this.lastResponseHeaders = null;
-    this._requests = [];
-};
-
-bosh_Strophe.Bosh.prototype = {
-    /** Variable: strip
-     *
-     *  BOSH-Connections will have all stanzas wrapped in a <body> tag when
-     *  passed to <Strophe.Connection.xmlInput> or <Strophe.Connection.xmlOutput>.
-     *  To strip this tag, User code can set <Strophe.Bosh.strip> to "body":
-     *
-     *  > Strophe.Bosh.prototype.strip = "body";
-     *
-     *  This will enable stripping of the body tag in both
-     *  <Strophe.Connection.xmlInput> and <Strophe.Connection.xmlOutput>.
-     */
-    strip: null,
-
-    /** PrivateFunction: _buildBody
-     *  _Private_ helper function to generate the <body/> wrapper for BOSH.
-     *
-     *  Returns:
-     *    A Strophe.Builder with a <body/> element.
-     */
-    _buildBody: function () {
-        const bodyWrap = bosh_$build('body', {
-            'rid': this.rid++,
-            'xmlns': bosh_Strophe.NS.HTTPBIND
-        });
-        if (this.sid !== null) {
-            bodyWrap.attrs({'sid': this.sid});
-        }
-        if (this._conn.options.keepalive && this._conn._sessionCachingSupported()) {
-            this._cacheSession();
-        }
-        return bodyWrap;
-    },
-
-    /** PrivateFunction: _reset
-     *  Reset the connection.
-     *
-     *  This function is called by the reset function of the Strophe Connection
-     */
-    _reset: function () {
-        this.rid = Math.floor(Math.random() * 4294967295);
-        this.sid = null;
-        this.errors = 0;
-        if (this._conn._sessionCachingSupported()) {
-            window.sessionStorage.removeItem('strophe-bosh-session');
-        }
-
-        this._conn.nextValidRid(this.rid);
-    },
-
-    /** PrivateFunction: _connect
-     *  _Private_ function that initializes the BOSH connection.
-     *
-     *  Creates and sends the Request that initializes the BOSH connection.
-     */
-    _connect: function (wait, hold, route) {
-        this.wait = wait || this.wait;
-        this.hold = hold || this.hold;
-        this.errors = 0;
-
-        const body = this._buildBody().attrs({
-            "to": this._conn.domain,
-            "xml:lang": "en",
-            "wait": this.wait,
-            "hold": this.hold,
-            "content": "text/xml; charset=utf-8",
-            "ver": "1.6",
-            "xmpp:version": "1.0",
-            "xmlns:xmpp": bosh_Strophe.NS.BOSH
-        });
-        if (route){
-            body.attrs({'route': route});
-        }
-
-        const _connect_cb = this._conn._connect_cb;
-        this._requests.push(
-            new bosh_Strophe.Request(
-                body.tree(),
-                this._onRequestStateChange.bind(this, _connect_cb.bind(this._conn)),
-                body.tree().getAttribute("rid")
-            )
-        );
-        this._throttledRequestHandler();
-    },
-
-    /** PrivateFunction: _attach
-     *  Attach to an already created and authenticated BOSH session.
-     *
-     *  This function is provided to allow Strophe to attach to BOSH
-     *  sessions which have been created externally, perhaps by a Web
-     *  application.  This is often used to support auto-login type features
-     *  without putting user credentials into the page.
-     *
-     *  Parameters:
-     *    (String) jid - The full JID that is bound by the session.
-     *    (String) sid - The SID of the BOSH session.
-     *    (String) rid - The current RID of the BOSH session.  This RID
-     *      will be used by the next request.
-     *    (Function) callback The connect callback function.
-     *    (Integer) wait - The optional HTTPBIND wait value.  This is the
-     *      time the server will wait before returning an empty result for
-     *      a request.  The default setting of 60 seconds is recommended.
-     *      Other settings will require tweaks to the Strophe.TIMEOUT value.
-     *    (Integer) hold - The optional HTTPBIND hold value.  This is the
-     *      number of connections the server will hold at one time.  This
-     *      should almost always be set to 1 (the default).
-     *    (Integer) wind - The optional HTTBIND window value.  This is the
-     *      allowed range of request ids that are valid.  The default is 5.
-     */
-    _attach: function (jid, sid, rid, callback, wait, hold, wind) {
-        this._conn.jid = jid;
-        this.sid = sid;
-        this.rid = rid;
-
-        this._conn.connect_callback = callback;
-        this._conn.domain = bosh_Strophe.getDomainFromJid(this._conn.jid);
-        this._conn.authenticated = true;
-        this._conn.connected = true;
-
-        this.wait = wait || this.wait;
-        this.hold = hold || this.hold;
-        this.window = wind || this.window;
-
-        this._conn._changeConnectStatus(bosh_Strophe.Status.ATTACHED, null);
-    },
-
-    /** PrivateFunction: _restore
-     *  Attempt to restore a cached BOSH session
-     *
-     *  Parameters:
-     *    (String) jid - The full JID that is bound by the session.
-     *      This parameter is optional but recommended, specifically in cases
-     *      where prebinded BOSH sessions are used where it's important to know
-     *      that the right session is being restored.
-     *    (Function) callback The connect callback function.
-     *    (Integer) wait - The optional HTTPBIND wait value.  This is the
-     *      time the server will wait before returning an empty result for
-     *      a request.  The default setting of 60 seconds is recommended.
-     *      Other settings will require tweaks to the Strophe.TIMEOUT value.
-     *    (Integer) hold - The optional HTTPBIND hold value.  This is the
-     *      number of connections the server will hold at one time.  This
-     *      should almost always be set to 1 (the default).
-     *    (Integer) wind - The optional HTTBIND window value.  This is the
-     *      allowed range of request ids that are valid.  The default is 5.
-     */
-    _restore: function (jid, callback, wait, hold, wind) {
-        const session = JSON.parse(window.sessionStorage.getItem('strophe-bosh-session'));
-        if (typeof session !== "undefined" &&
-                   session !== null &&
-                   session.rid &&
-                   session.sid &&
-                   session.jid &&
-                   (    typeof jid === "undefined" ||
-                        jid === null ||
-                        bosh_Strophe.getBareJidFromJid(session.jid) === bosh_Strophe.getBareJidFromJid(jid) ||
-                        // If authcid is null, then it's an anonymous login, so
-                        // we compare only the domains:
-                        ((bosh_Strophe.getNodeFromJid(jid) === null) && (bosh_Strophe.getDomainFromJid(session.jid) === jid))
-                    )
-        ) {
-            this._conn.restored = true;
-            this._attach(session.jid, session.sid, session.rid, callback, wait, hold, wind);
-        } else {
-            const error = new Error("_restore: no restoreable session.");
-            error.name = "StropheSessionError";
-            throw error;
-        }
-    },
-
-    /** PrivateFunction: _cacheSession
-     *  _Private_ handler for the beforeunload event.
-     *
-     *  This handler is used to process the Bosh-part of the initial request.
-     *  Parameters:
-     *    (Strophe.Request) bodyWrap - The received stanza.
-     */
-    _cacheSession: function () {
-        if (this._conn.authenticated) {
-            if (this._conn.jid && this.rid && this.sid) {
-                window.sessionStorage.setItem('strophe-bosh-session', JSON.stringify({
-                    'jid': this._conn.jid,
-                    'rid': this.rid,
-                    'sid': this.sid
-                }));
-            }
-        } else {
-            window.sessionStorage.removeItem('strophe-bosh-session');
-        }
-    },
-
-    /** PrivateFunction: _connect_cb
-     *  _Private_ handler for initial connection request.
-     *
-     *  This handler is used to process the Bosh-part of the initial request.
-     *  Parameters:
-     *    (Strophe.Request) bodyWrap - The received stanza.
-     */
-    _connect_cb: function (bodyWrap) {
-        const typ = bodyWrap.getAttribute("type");
-        if (typ !== null && typ === "terminate") {
-            // an error occurred
-            let cond = bodyWrap.getAttribute("condition");
-            bosh_Strophe.error("BOSH-Connection failed: " + cond);
-            const conflict = bodyWrap.getElementsByTagName("conflict");
-            if (cond !== null) {
-                if (cond === "remote-stream-error" && conflict.length > 0) {
-                    cond = "conflict";
-                }
-                this._conn._changeConnectStatus(bosh_Strophe.Status.CONNFAIL, cond);
-            } else {
-                this._conn._changeConnectStatus(bosh_Strophe.Status.CONNFAIL, "unknown");
-            }
-            this._conn._doDisconnect(cond);
-            return bosh_Strophe.Status.CONNFAIL;
-        }
-
-        // check to make sure we don't overwrite these if _connect_cb is
-        // called multiple times in the case of missing stream:features
-        if (!this.sid) {
-            this.sid = bodyWrap.getAttribute("sid");
-        }
-        const wind = bodyWrap.getAttribute('requests');
-        if (wind) { this.window = parseInt(wind, 10); }
-        const hold = bodyWrap.getAttribute('hold');
-        if (hold) { this.hold = parseInt(hold, 10); }
-        const wait = bodyWrap.getAttribute('wait');
-        if (wait) { this.wait = parseInt(wait, 10); }
-        const inactivity = bodyWrap.getAttribute('inactivity');
-        if (inactivity) { this.inactivity = parseInt(inactivity, 10); }
-    },
-
-    /** PrivateFunction: _disconnect
-     *  _Private_ part of Connection.disconnect for Bosh
-     *
-     *  Parameters:
-     *    (Request) pres - This stanza will be sent before disconnecting.
-     */
-    _disconnect: function (pres) {
-        this._sendTerminate(pres);
-    },
-
-    /** PrivateFunction: _doDisconnect
-     *  _Private_ function to disconnect.
-     *
-     *  Resets the SID and RID.
-     */
-    _doDisconnect: function () {
-        this.sid = null;
-        this.rid = Math.floor(Math.random() * 4294967295);
-        if (this._conn._sessionCachingSupported()) {
-            window.sessionStorage.removeItem('strophe-bosh-session');
-        }
-
-        this._conn.nextValidRid(this.rid);
-    },
-
-    /** PrivateFunction: _emptyQueue
-     * _Private_ function to check if the Request queue is empty.
-     *
-     *  Returns:
-     *    True, if there are no Requests queued, False otherwise.
-     */
-    _emptyQueue: function () {
-        return this._requests.length === 0;
-    },
-
-    /** PrivateFunction: _callProtocolErrorHandlers
-     *  _Private_ function to call error handlers registered for HTTP errors.
-     *
-     *  Parameters:
-     *    (Strophe.Request) req - The request that is changing readyState.
-     */
-    _callProtocolErrorHandlers: function (req) {
-        const reqStatus = this._getRequestStatus(req);
-        const err_callback = this._conn.protocolErrorHandlers.HTTP[reqStatus];
-        if (err_callback) {
-            err_callback.call(this, reqStatus);
-        }
-    },
-
-    /** PrivateFunction: _hitError
-     *  _Private_ function to handle the error count.
-     *
-     *  Requests are resent automatically until their error count reaches
-     *  5.  Each time an error is encountered, this function is called to
-     *  increment the count and disconnect if the count is too high.
-     *
-     *  Parameters:
-     *    (Integer) reqStatus - The request status.
-     */
-    _hitError: function (reqStatus) {
-        this.errors++;
-        bosh_Strophe.warn("request errored, status: " + reqStatus +
-                     ", number of errors: " + this.errors);
-        if (this.errors > 4) {
-            this._conn._onDisconnectTimeout();
-        }
-    },
-
-    /** PrivateFunction: _no_auth_received
-     *
-     * Called on stream start/restart when no stream:features
-     * has been received and sends a blank poll request.
-     */
-    _no_auth_received: function (callback) {
-        bosh_Strophe.warn("Server did not yet offer a supported authentication "+
-                     "mechanism. Sending a blank poll request.");
-        if (callback) {
-            callback = callback.bind(this._conn);
-        } else {
-            callback = this._conn._connect_cb.bind(this._conn);
-        }
-        const body = this._buildBody();
-        this._requests.push(
-            new bosh_Strophe.Request(
-                body.tree(),
-                this._onRequestStateChange.bind(this, callback),
-                body.tree().getAttribute("rid")
-            )
-        );
-        this._throttledRequestHandler();
-    },
-
-    /** PrivateFunction: _onDisconnectTimeout
-     *  _Private_ timeout handler for handling non-graceful disconnection.
-     *
-     *  Cancels all remaining Requests and clears the queue.
-     */
-    _onDisconnectTimeout: function () {
-        this._abortAllRequests();
-    },
-
-    /** PrivateFunction: _abortAllRequests
-     *  _Private_ helper function that makes sure all pending requests are aborted.
-     */
-    _abortAllRequests: function _abortAllRequests() {
-        while (this._requests.length > 0) {
-            const req = this._requests.pop();
-            req.abort = true;
-            req.xhr.abort();
-            req.xhr.onreadystatechange = function () {};
-        }
-    },
-
-    /** PrivateFunction: _onIdle
-     *  _Private_ handler called by Strophe.Connection._onIdle
-     *
-     *  Sends all queued Requests or polls with empty Request if there are none.
-     */
-    _onIdle: function () {
-        const data = this._conn._data;
-        // if no requests are in progress, poll
-        if (this._conn.authenticated && this._requests.length === 0 &&
-            data.length === 0 && !this._conn.disconnecting) {
-            bosh_Strophe.debug("no requests during idle cycle, sending blank request");
-            data.push(null);
-        }
-
-        if (this._conn.paused) {
-            return;
-        }
-
-        if (this._requests.length < 2 && data.length > 0) {
-            const body = this._buildBody();
-            for (let i=0; i<data.length; i++) {
-                if (data[i] !== null) {
-                    if (data[i] === "restart") {
-                        body.attrs({
-                            "to": this._conn.domain,
-                            "xml:lang": "en",
-                            "xmpp:restart": "true",
-                            "xmlns:xmpp": bosh_Strophe.NS.BOSH
-                        });
-                    } else {
-                        body.cnode(data[i]).up();
-                    }
-                }
-            }
-            delete this._conn._data;
-            this._conn._data = [];
-            this._requests.push(
-                new bosh_Strophe.Request(
-                    body.tree(),
-                    this._onRequestStateChange.bind(this, this._conn._dataRecv.bind(this._conn)),
-                    body.tree().getAttribute("rid")
-                )
-            );
-            this._throttledRequestHandler();
-        }
-
-        if (this._requests.length > 0) {
-            const time_elapsed = this._requests[0].age();
-            if (this._requests[0].dead !== null) {
-                if (this._requests[0].timeDead() >
-                    Math.floor(bosh_Strophe.SECONDARY_TIMEOUT * this.wait)) {
-                    this._throttledRequestHandler();
-                }
-            }
-            if (time_elapsed > Math.floor(bosh_Strophe.TIMEOUT * this.wait)) {
-                bosh_Strophe.warn("Request " +
-                             this._requests[0].id +
-                             " timed out, over " + Math.floor(bosh_Strophe.TIMEOUT * this.wait) +
-                             " seconds since last activity");
-                this._throttledRequestHandler();
-            }
-        }
-    },
-
-    /** PrivateFunction: _getRequestStatus
-     *
-     *  Returns the HTTP status code from a Strophe.Request
-     *
-     *  Parameters:
-     *    (Strophe.Request) req - The Strophe.Request instance.
-     *    (Integer) def - The default value that should be returned if no
-     *          status value was found.
-     */
-    _getRequestStatus: function (req, def) {
-        let reqStatus;
-        if (req.xhr.readyState === 4) {
-            try {
-                reqStatus = req.xhr.status;
-            } catch (e) {
-                // ignore errors from undefined status attribute. Works
-                // around a browser bug
-                bosh_Strophe.error(
-                    "Caught an error while retrieving a request's status, " +
-                    "reqStatus: " + reqStatus);
-            }
-        }
-        if (typeof(reqStatus) === "undefined") {
-            reqStatus = typeof def === 'number' ? def : 0;
-        }
-        return reqStatus;
-    },
-
-    /** PrivateFunction: _onRequestStateChange
-     *  _Private_ handler for Strophe.Request state changes.
-     *
-     *  This function is called when the XMLHttpRequest readyState changes.
-     *  It contains a lot of error handling logic for the many ways that
-     *  requests can fail, and calls the request callback when requests
-     *  succeed.
-     *
-     *  Parameters:
-     *    (Function) func - The handler for the request.
-     *    (Strophe.Request) req - The request that is changing readyState.
-     */
-    _onRequestStateChange: function (func, req) {
-        bosh_Strophe.debug("request id "+req.id+"."+req.sends+
-                      " state changed to "+req.xhr.readyState);
-        if (req.abort) {
-            req.abort = false;
-            return;
-        }
-        if (req.xhr.readyState !== 4) {
-            // The request is not yet complete
-            return;
-        }
-        const reqStatus = this._getRequestStatus(req);
-        this.lastResponseHeaders = req.xhr.getAllResponseHeaders();
-        if (this.disconnecting && reqStatus >= 400) {
-            this._hitError(reqStatus);
-            this._callProtocolErrorHandlers(req);
-            return;
-        }
-
-        const valid_request = reqStatus > 0 && reqStatus < 500;
-        const too_many_retries = req.sends > this._conn.maxRetries;
-        if (valid_request || too_many_retries) {
-            // remove from internal queue
-            this._removeRequest(req);
-            bosh_Strophe.debug("request id "+req.id+" should now be removed");
-        }
-
-        if (reqStatus === 200) {
-            // request succeeded
-            const reqIs0 = (this._requests[0] === req);
-            const reqIs1 = (this._requests[1] === req);
-            // if request 1 finished, or request 0 finished and request
-            // 1 is over Strophe.SECONDARY_TIMEOUT seconds old, we need to
-            // restart the other - both will be in the first spot, as the
-            // completed request has been removed from the queue already
-            if (reqIs1 ||
-                (reqIs0 && this._requests.length > 0 &&
-                    this._requests[0].age() > Math.floor(bosh_Strophe.SECONDARY_TIMEOUT * this.wait))) {
-                this._restartRequest(0);
-            }
-            this._conn.nextValidRid(Number(req.rid) + 1);
-            bosh_Strophe.debug("request id "+req.id+"."+req.sends+" got 200");
-            func(req); // call handler
-            this.errors = 0;
-        } else if (reqStatus === 0 ||
-                   (reqStatus >= 400 && reqStatus < 600) ||
-                   reqStatus >= 12000) {
-            // request failed
-            bosh_Strophe.error("request id "+req.id+"."+req.sends+" error "+reqStatus+" happened");
-            this._hitError(reqStatus);
-            this._callProtocolErrorHandlers(req);
-            if (reqStatus >= 400 && reqStatus < 500) {
-                this._conn._changeConnectStatus(bosh_Strophe.Status.DISCONNECTING, null);
-                this._conn._doDisconnect();
-            }
-        } else {
-            bosh_Strophe.error("request id "+req.id+"."+req.sends+" error "+reqStatus+" happened");
-        }
-
-        if (!valid_request && !too_many_retries) {
-            this._throttledRequestHandler();
-        } else if (too_many_retries && !this._conn.connected) {
-            this._conn._changeConnectStatus(bosh_Strophe.Status.CONNFAIL, "giving-up");
-        }
-    },
-
-    /** PrivateFunction: _processRequest
-     *  _Private_ function to process a request in the queue.
-     *
-     *  This function takes requests off the queue and sends them and
-     *  restarts dead requests.
-     *
-     *  Parameters:
-     *    (Integer) i - The index of the request in the queue.
-     */
-    _processRequest: function (i) {
-        let req = this._requests[i];
-        const reqStatus = this._getRequestStatus(req, -1);
-
-        // make sure we limit the number of retries
-        if (req.sends > this._conn.maxRetries) {
-            this._conn._onDisconnectTimeout();
-            return;
-        }
-        const time_elapsed = req.age();
-        const primary_timeout = (!isNaN(time_elapsed) && time_elapsed > Math.floor(bosh_Strophe.TIMEOUT * this.wait));
-        const secondary_timeout = (req.dead !== null && req.timeDead() > Math.floor(bosh_Strophe.SECONDARY_TIMEOUT * this.wait));
-        const server_error = (req.xhr.readyState === 4 && (reqStatus < 1 || reqStatus >= 500));
-
-        if (primary_timeout || secondary_timeout || server_error) {
-            if (secondary_timeout) {
-                bosh_Strophe.error(`Request ${this._requests[i].id} timed out (secondary), restarting`);
-            }
-            req.abort = true;
-            req.xhr.abort();
-            // setting to null fails on IE6, so set to empty function
-            req.xhr.onreadystatechange = function () {};
-            this._requests[i] = new bosh_Strophe.Request(req.xmlData, req.origFunc, req.rid, req.sends);
-            req = this._requests[i];
-        }
-
-        if (req.xhr.readyState === 0) {
-            bosh_Strophe.debug("request id "+req.id+"."+req.sends+" posting");
-
-            try {
-                const content_type = this._conn.options.contentType || "text/xml; charset=utf-8";
-                req.xhr.open("POST", this._conn.service, this._conn.options.sync ? false : true);
-                if (typeof req.xhr.setRequestHeader !== 'undefined') {
-                    // IE9 doesn't have setRequestHeader
-                    req.xhr.setRequestHeader("Content-Type", content_type);
-                }
-                if (this._conn.options.withCredentials) {
-                    req.xhr.withCredentials = true;
-                }
-            } catch (e2) {
-                bosh_Strophe.error("XHR open failed: " + e2.toString());
-                if (!this._conn.connected) {
-                    this._conn._changeConnectStatus(bosh_Strophe.Status.CONNFAIL, "bad-service");
-                }
-                this._conn.disconnect();
-                return;
-            }
-
-            // Fires the XHR request -- may be invoked immediately
-            // or on a gradually expanding retry window for reconnects
-            const sendFunc = () => {
-                req.date = new Date();
-                if (this._conn.options.customHeaders){
-                    const headers = this._conn.options.customHeaders;
-                    for (const header in headers) {
-                        if (Object.prototype.hasOwnProperty.call(headers, header)) {
-                            req.xhr.setRequestHeader(header, headers[header]);
-                        }
-                    }
-                }
-                req.xhr.send(req.data);
-            };
-
-            // Implement progressive backoff for reconnects --
-            // First retry (send === 1) should also be instantaneous
-            if (req.sends > 1) {
-                // Using a cube of the retry number creates a nicely
-                // expanding retry window
-                const backoff = Math.min(Math.floor(bosh_Strophe.TIMEOUT * this.wait),
-                                       Math.pow(req.sends, 3)) * 1000;
-                setTimeout(function() {
-                    // XXX: setTimeout should be called only with function expressions (23974bc1)
-                    sendFunc();
-                }, backoff);
-            } else {
-                sendFunc();
-            }
-
-            req.sends++;
-
-            if (this._conn.xmlOutput !== bosh_Strophe.Connection.prototype.xmlOutput) {
-                if (req.xmlData.nodeName === this.strip && req.xmlData.childNodes.length) {
-                    this._conn.xmlOutput(req.xmlData.childNodes[0]);
-                } else {
-                    this._conn.xmlOutput(req.xmlData);
-                }
-            }
-            if (this._conn.rawOutput !== bosh_Strophe.Connection.prototype.rawOutput) {
-                this._conn.rawOutput(req.data);
-            }
-        } else {
-            bosh_Strophe.debug("_processRequest: " +
-                          (i === 0 ? "first" : "second") +
-                          " request has readyState of " +
-                          req.xhr.readyState);
-        }
-    },
-
-    /** PrivateFunction: _removeRequest
-     *  _Private_ function to remove a request from the queue.
-     *
-     *  Parameters:
-     *    (Strophe.Request) req - The request to remove.
-     */
-    _removeRequest: function (req) {
-        bosh_Strophe.debug("removing request");
-        for (let i=this._requests.length - 1; i>=0; i--) {
-            if (req === this._requests[i]) {
-                this._requests.splice(i, 1);
-            }
-        }
-        // IE6 fails on setting to null, so set to empty function
-        req.xhr.onreadystatechange = function () {};
-        this._throttledRequestHandler();
-    },
-
-    /** PrivateFunction: _restartRequest
-     *  _Private_ function to restart a request that is presumed dead.
-     *
-     *  Parameters:
-     *    (Integer) i - The index of the request in the queue.
-     */
-    _restartRequest: function (i) {
-        const req = this._requests[i];
-        if (req.dead === null) {
-            req.dead = new Date();
-        }
-        this._processRequest(i);
-    },
-
-    /** PrivateFunction: _reqToData
-     * _Private_ function to get a stanza out of a request.
-     *
-     * Tries to extract a stanza out of a Request Object.
-     * When this fails the current connection will be disconnected.
-     *
-     *  Parameters:
-     *    (Object) req - The Request.
-     *
-     *  Returns:
-     *    The stanza that was passed.
-     */
-    _reqToData: function (req) {
-        try {
-            return req.getResponse();
-        } catch (e) {
-            if (e.message !== "parsererror") { throw e; }
-            this._conn.disconnect("strophe-parsererror");
-        }
-    },
-
-    /** PrivateFunction: _sendTerminate
-     *  _Private_ function to send initial disconnect sequence.
-     *
-     *  This is the first step in a graceful disconnect.  It sends
-     *  the BOSH server a terminate body and includes an unavailable
-     *  presence if authentication has completed.
-     */
-    _sendTerminate: function (pres) {
-        bosh_Strophe.debug("_sendTerminate was called");
-        const body = this._buildBody().attrs({type: "terminate"});
-        if (pres) {
-            body.cnode(pres.tree());
-        }
-        const req = new bosh_Strophe.Request(
-            body.tree(),
-            this._onRequestStateChange.bind(this, this._conn._dataRecv.bind(this._conn)),
-            body.tree().getAttribute("rid")
-        );
-        this._requests.push(req);
-        this._throttledRequestHandler();
-    },
-
-    /** PrivateFunction: _send
-     *  _Private_ part of the Connection.send function for BOSH
-     *
-     * Just triggers the RequestHandler to send the messages that are in the queue
-     */
-    _send: function () {
-        clearTimeout(this._conn._idleTimeout);
-        this._throttledRequestHandler();
-        this._conn._idleTimeout = setTimeout(() => this._conn._onIdle(), 100);
-    },
-
-    /** PrivateFunction: _sendRestart
-     *
-     *  Send an xmpp:restart stanza.
-     */
-    _sendRestart: function () {
-        this._throttledRequestHandler();
-        clearTimeout(this._conn._idleTimeout);
-    },
-
-    /** PrivateFunction: _throttledRequestHandler
-     *  _Private_ function to throttle requests to the connection window.
-     *
-     *  This function makes sure we don't send requests so fast that the
-     *  request ids overflow the connection window in the case that one
-     *  request died.
-     */
-    _throttledRequestHandler: function () {
-        if (!this._requests) {
-            bosh_Strophe.debug("_throttledRequestHandler called with " +
-                          "undefined requests");
-        } else {
-            bosh_Strophe.debug("_throttledRequestHandler called with " +
-                          this._requests.length + " requests");
-        }
-
-        if (!this._requests || this._requests.length === 0) {
-            return;
-        }
-
-        if (this._requests.length > 0) {
-            this._processRequest(0);
-        }
-
-        if (this._requests.length > 1 &&
-            Math.abs(this._requests[0].rid -
-                     this._requests[1].rid) < this.window) {
-            this._processRequest(1);
-        }
-    }
-};
-
 // CONCATENATED MODULE: ./node_modules/strophe.js/src/websocket.js
 /*
     This program is distributed under the terms of the MIT license.
@@ -49286,7 +48458,7 @@ websocket_Strophe.Websocket.prototype = {
 };
 
 // EXTERNAL MODULE: ./node_modules/backbone/backbone.js
-var backbone = __webpack_require__(11);
+var backbone = __webpack_require__(9);
 var backbone_default = /*#__PURE__*/__webpack_require__.n(backbone);
 
 // EXTERNAL MODULE: ./src/headless/lodash.noconflict.js
@@ -49422,8 +48594,8 @@ let jed_instance;
 
     const {
       default: data
-    } = await __webpack_require__(330)("./".concat(locale, "/LC_MESSAGES/converse.po"));
-    await __webpack_require__(331)("./".concat(locale.toLowerCase().replace('_', '-')));
+    } = await __webpack_require__(331)("./".concat(locale, "/LC_MESSAGES/converse.po"));
+    await __webpack_require__(332)("./".concat(locale.toLowerCase().replace('_', '-')));
     dayjs_min_default.a.locale(getLocale(_converse.locale, l => dayjs_min_default.a.locale(l)));
     jed_instance = new jed_default.a(data);
   }
@@ -49753,7 +48925,7 @@ function enable (object, name, attrname) {
 });
 
 // EXTERNAL MODULE: ./src/headless/polyfill.js
-var polyfill = __webpack_require__(447);
+var polyfill = __webpack_require__(448);
 
 // EXTERNAL MODULE: ./node_modules/sizzle/dist/sizzle.js
 var sizzle = __webpack_require__(4);
@@ -49897,6 +49069,19 @@ u.isOnlyChatStateNotification = function (msg) {
   }
 
   return msg['chat_state'] && u.isEmptyMessage(msg);
+};
+
+u.isOnlyMessageDeliveryReceipt = function (msg) {
+  if (msg instanceof Element) {
+    // See XEP-0184 Message Delivery Receipts
+    return msg.querySelector('body') === null && msg.querySelector('received') !== null;
+  }
+
+  if (msg instanceof backbone_default.a.Model) {
+    msg = msg.attributes;
+  }
+
+  return msg['received'] && u.isEmptyMessage(msg);
 };
 
 u.isHeadlineMessage = function (_converse, message) {
@@ -50431,7 +49616,6 @@ u.waitUntil = function (func) {
 
 
 
-
 const converse_core_Strophe = core.Strophe;
 const converse_core_$build = core.$build;
 const converse_core_$iq = core.$iq;
@@ -50496,11 +49680,11 @@ const converse_core_converse = {
   'templates': {},
   'promises': {}
 };
-converse_core_converse.VERSION_NAME = "v5.0.3";
+converse_core_converse.VERSION_NAME = "v5.0.4";
 Object.assign(converse_core_converse, Backbone.Events);
 converse_core_converse.Collection = Backbone.Collection.extend({
-  clearSession() {
-    Array.from(this.models).forEach(m => m.destroy());
+  clearSession(options) {
+    Array.from(this.models).forEach(m => m.destroy(options));
 
     this.browserStorage._clear();
 
@@ -50625,7 +49809,7 @@ converse_core_converse.default_settings = {
   // Seconds after which an idle presence is sent
   jid: undefined,
   keepalive: true,
-  locales: ['af', 'ar', 'bg', 'ca', 'cs', 'de', 'eo', 'es', 'eu', 'en', 'fr', 'gl', 'he', 'hi', 'hu', 'id', 'it', 'ja', 'nb', 'nl', 'oc', 'pl', 'pt', 'pt_BR', 'ro', 'ru', 'tr', 'uk', 'zh_CN', 'zh_TW'],
+  locales: ['af', 'ar', 'bg', 'ca', 'cs', 'de', 'eo', 'es', 'eu', 'en', 'fr', 'gl', 'he', 'hi', 'hu', 'id', 'it', 'ja', 'nb', 'nl', 'oc', 'pl', 'pt', 'pt_BR', 'ro', 'ru', 'tr', 'uk', 'vi', 'zh_CN', 'zh_TW'],
   message_carbons: true,
   nickname: undefined,
   password: undefined,
@@ -52432,7 +51616,7 @@ converse_core_converse.api = {
  * @namespace converse
  */
 
-const headless_converse_core_converse = {
+Object.assign(window.converse, {
   /**
    * Public API method which initializes Converse.
    * This method must always be called when using Converse.
@@ -52526,8 +51710,7 @@ const headless_converse_core_converse = {
     'sizzle': sizzle_default.a,
     'utils': utils_core
   }
-};
-window.converse = headless_converse_core_converse;
+});
 /**
  * Once Converse.js has loaded, it'll dispatch a custom event with the name `converse-loaded`.
  * You can listen for this event in order to be informed as soon as converse.js has been
@@ -52537,7 +51720,7 @@ window.converse = headless_converse_core_converse;
  */
 
 window.dispatchEvent(new CustomEvent('converse-loaded'));
-/* harmony default export */ var converse_core = (headless_converse_core_converse);
+/* harmony default export */ var converse_core = (converse);
 // CONCATENATED MODULE: ./src/headless/converse-disco.js
 // Converse.js
 // https://conversejs.org
@@ -52798,8 +51981,6 @@ converse_core.plugins.add('converse-disco', {
       // See https://xmpp.org/registrar/disco-categories.html
       _converse.api.disco.own.identities.add('client', 'web', 'Converse');
 
-      _converse.api.disco.own.features.add(converse_disco_Strophe.NS.BOSH);
-
       _converse.api.disco.own.features.add(converse_disco_Strophe.NS.CHATSTATES);
 
       _converse.api.disco.own.features.add(converse_disco_Strophe.NS.DISCO_INFO);
@@ -52902,7 +52083,7 @@ converse_core.plugins.add('converse-disco', {
         iqresult.c('identity', attrs).up();
       });
 
-      plugin._features(feature => iqresult.c('feature', {
+      plugin._features.forEach(feature => iqresult.c('feature', {
         'var': feature
       }).up());
 
@@ -53435,7 +52616,7 @@ converse_core.plugins.add('converse-disco', {
 });
 // CONCATENATED MODULE: ./node_modules/twemoji/dist/twemoji.esm.js
 /*! Copyright Twitter Inc. and other contributors. Licensed under MIT */
-var twemoji=function(){"use strict";var twemoji={base:"https://twemoji.maxcdn.com/v/12.1.2/",ext:".png",size:"72x72",className:"emoji",convert:{fromCodePoint:fromCodePoint,toCodePoint:toCodePoint},onerror:function onerror(){if(this.parentNode){this.parentNode.replaceChild(createText(this.alt,false),this)}},parse:parse,replace:replace,test:test},escaper={"&":"&amp;","<":"&lt;",">":"&gt;","'":"&#39;",'"':"&quot;"},re=/(?:\ud83d\udc68\ud83c\udffc\u200d\ud83e\udd1d\u200d\ud83d\udc68\ud83c\udffb|\ud83d\udc68\ud83c\udffd\u200d\ud83e\udd1d\u200d\ud83d\udc68\ud83c[\udffb\udffc]|\ud83d\udc68\ud83c\udffe\u200d\ud83e\udd1d\u200d\ud83d\udc68\ud83c[\udffb-\udffd]|\ud83d\udc68\ud83c\udfff\u200d\ud83e\udd1d\u200d\ud83d\udc68\ud83c[\udffb-\udffe]|\ud83d\udc69\ud83c\udffb\u200d\ud83e\udd1d\u200d\ud83d\udc68\ud83c[\udffc-\udfff]|\ud83d\udc69\ud83c\udffc\u200d\ud83e\udd1d\u200d\ud83d\udc68\ud83c[\udffb\udffd-\udfff]|\ud83d\udc69\ud83c\udffc\u200d\ud83e\udd1d\u200d\ud83d\udc69\ud83c\udffb|\ud83d\udc69\ud83c\udffd\u200d\ud83e\udd1d\u200d\ud83d\udc68\ud83c[\udffb\udffc\udffe\udfff]|\ud83d\udc69\ud83c\udffd\u200d\ud83e\udd1d\u200d\ud83d\udc69\ud83c[\udffb\udffc]|\ud83d\udc69\ud83c\udffe\u200d\ud83e\udd1d\u200d\ud83d\udc68\ud83c[\udffb-\udffd\udfff]|\ud83d\udc69\ud83c\udffe\u200d\ud83e\udd1d\u200d\ud83d\udc69\ud83c[\udffb-\udffd]|\ud83d\udc69\ud83c\udfff\u200d\ud83e\udd1d\u200d\ud83d\udc68\ud83c[\udffb-\udffe]|\ud83d\udc69\ud83c\udfff\u200d\ud83e\udd1d\u200d\ud83d\udc69\ud83c[\udffb-\udffe]|\ud83e\uddd1\ud83c\udffb\u200d\ud83e\udd1d\u200d\ud83e\uddd1\ud83c\udffb|\ud83e\uddd1\ud83c\udffc\u200d\ud83e\udd1d\u200d\ud83e\uddd1\ud83c[\udffb\udffc]|\ud83e\uddd1\ud83c\udffd\u200d\ud83e\udd1d\u200d\ud83e\uddd1\ud83c[\udffb-\udffd]|\ud83e\uddd1\ud83c\udffe\u200d\ud83e\udd1d\u200d\ud83e\uddd1\ud83c[\udffb-\udffe]|\ud83e\uddd1\ud83c\udfff\u200d\ud83e\udd1d\u200d\ud83e\uddd1\ud83c[\udffb-\udfff]|\ud83e\uddd1\u200d\ud83e\udd1d\u200d\ud83e\uddd1|\ud83d\udc6b\ud83c[\udffb-\udfff]|\ud83d\udc6c\ud83c[\udffb-\udfff]|\ud83d\udc6d\ud83c[\udffb-\udfff]|\ud83d[\udc6b-\udc6d])|(?:\ud83d[\udc68\udc69])(?:\ud83c[\udffb-\udfff])?\u200d(?:\u2695\ufe0f|\u2696\ufe0f|\u2708\ufe0f|\ud83c[\udf3e\udf73\udf93\udfa4\udfa8\udfeb\udfed]|\ud83d[\udcbb\udcbc\udd27\udd2c\ude80\ude92]|\ud83e[\uddaf-\uddb3\uddbc\uddbd])|(?:\ud83c[\udfcb\udfcc]|\ud83d[\udd74\udd75]|\u26f9)((?:\ud83c[\udffb-\udfff]|\ufe0f)\u200d[\u2640\u2642]\ufe0f)|(?:\ud83c[\udfc3\udfc4\udfca]|\ud83d[\udc6e\udc71\udc73\udc77\udc81\udc82\udc86\udc87\ude45-\ude47\ude4b\ude4d\ude4e\udea3\udeb4-\udeb6]|\ud83e[\udd26\udd35\udd37-\udd39\udd3d\udd3e\uddb8\uddb9\uddcd-\uddcf\uddd6-\udddd])(?:\ud83c[\udffb-\udfff])?\u200d[\u2640\u2642]\ufe0f|(?:\ud83d\udc68\u200d\u2764\ufe0f\u200d\ud83d\udc8b\u200d\ud83d\udc68|\ud83d\udc68\u200d\ud83d\udc68\u200d\ud83d\udc66\u200d\ud83d\udc66|\ud83d\udc68\u200d\ud83d\udc68\u200d\ud83d\udc67\u200d\ud83d[\udc66\udc67]|\ud83d\udc68\u200d\ud83d\udc69\u200d\ud83d\udc66\u200d\ud83d\udc66|\ud83d\udc68\u200d\ud83d\udc69\u200d\ud83d\udc67\u200d\ud83d[\udc66\udc67]|\ud83d\udc69\u200d\u2764\ufe0f\u200d\ud83d\udc8b\u200d\ud83d[\udc68\udc69]|\ud83d\udc69\u200d\ud83d\udc69\u200d\ud83d\udc66\u200d\ud83d\udc66|\ud83d\udc69\u200d\ud83d\udc69\u200d\ud83d\udc67\u200d\ud83d[\udc66\udc67]|\ud83d\udc68\u200d\u2764\ufe0f\u200d\ud83d\udc68|\ud83d\udc68\u200d\ud83d\udc66\u200d\ud83d\udc66|\ud83d\udc68\u200d\ud83d\udc67\u200d\ud83d[\udc66\udc67]|\ud83d\udc68\u200d\ud83d\udc68\u200d\ud83d[\udc66\udc67]|\ud83d\udc68\u200d\ud83d\udc69\u200d\ud83d[\udc66\udc67]|\ud83d\udc69\u200d\u2764\ufe0f\u200d\ud83d[\udc68\udc69]|\ud83d\udc69\u200d\ud83d\udc66\u200d\ud83d\udc66|\ud83d\udc69\u200d\ud83d\udc67\u200d\ud83d[\udc66\udc67]|\ud83d\udc69\u200d\ud83d\udc69\u200d\ud83d[\udc66\udc67]|\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f|\ud83c\udff3\ufe0f\u200d\ud83c\udf08|\ud83c\udff4\u200d\u2620\ufe0f|\ud83d\udc15\u200d\ud83e\uddba|\ud83d\udc41\u200d\ud83d\udde8|\ud83d\udc68\u200d\ud83d[\udc66\udc67]|\ud83d\udc69\u200d\ud83d[\udc66\udc67]|\ud83d\udc6f\u200d\u2640\ufe0f|\ud83d\udc6f\u200d\u2642\ufe0f|\ud83e\udd3c\u200d\u2640\ufe0f|\ud83e\udd3c\u200d\u2642\ufe0f|\ud83e\uddde\u200d\u2640\ufe0f|\ud83e\uddde\u200d\u2642\ufe0f|\ud83e\udddf\u200d\u2640\ufe0f|\ud83e\udddf\u200d\u2642\ufe0f)|[#*0-9]\ufe0f?\u20e3|(?:[©®\u2122\u265f]\ufe0f)|(?:\ud83c[\udc04\udd70\udd71\udd7e\udd7f\ude02\ude1a\ude2f\ude37\udf21\udf24-\udf2c\udf36\udf7d\udf96\udf97\udf99-\udf9b\udf9e\udf9f\udfcd\udfce\udfd4-\udfdf\udff3\udff5\udff7]|\ud83d[\udc3f\udc41\udcfd\udd49\udd4a\udd6f\udd70\udd73\udd76-\udd79\udd87\udd8a-\udd8d\udda5\udda8\uddb1\uddb2\uddbc\uddc2-\uddc4\uddd1-\uddd3\udddc-\uddde\udde1\udde3\udde8\uddef\uddf3\uddfa\udecb\udecd-\udecf\udee0-\udee5\udee9\udef0\udef3]|[\u203c\u2049\u2139\u2194-\u2199\u21a9\u21aa\u231a\u231b\u2328\u23cf\u23ed-\u23ef\u23f1\u23f2\u23f8-\u23fa\u24c2\u25aa\u25ab\u25b6\u25c0\u25fb-\u25fe\u2600-\u2604\u260e\u2611\u2614\u2615\u2618\u2620\u2622\u2623\u2626\u262a\u262e\u262f\u2638-\u263a\u2640\u2642\u2648-\u2653\u2660\u2663\u2665\u2666\u2668\u267b\u267f\u2692-\u2697\u2699\u269b\u269c\u26a0\u26a1\u26a7\u26aa\u26ab\u26b0\u26b1\u26bd\u26be\u26c4\u26c5\u26c8\u26cf\u26d1\u26d3\u26d4\u26e9\u26ea\u26f0-\u26f5\u26f8\u26fa\u26fd\u2702\u2708\u2709\u270f\u2712\u2714\u2716\u271d\u2721\u2733\u2734\u2744\u2747\u2757\u2763\u2764\u27a1\u2934\u2935\u2b05-\u2b07\u2b1b\u2b1c\u2b50\u2b55\u3030\u303d\u3297\u3299])(?:\ufe0f|(?!\ufe0e))|(?:(?:\ud83c[\udfcb\udfcc]|\ud83d[\udd74\udd75\udd90]|[\u261d\u26f7\u26f9\u270c\u270d])(?:\ufe0f|(?!\ufe0e))|(?:\ud83c[\udf85\udfc2-\udfc4\udfc7\udfca]|\ud83d[\udc42\udc43\udc46-\udc50\udc66-\udc69\udc6e\udc70-\udc78\udc7c\udc81-\udc83\udc85-\udc87\udcaa\udd7a\udd95\udd96\ude45-\ude47\ude4b-\ude4f\udea3\udeb4-\udeb6\udec0\udecc]|\ud83e[\udd0f\udd18-\udd1c\udd1e\udd1f\udd26\udd30-\udd39\udd3d\udd3e\uddb5\uddb6\uddb8\uddb9\uddbb\uddcd-\uddcf\uddd1-\udddd]|[\u270a\u270b]))(?:\ud83c[\udffb-\udfff])?|(?:\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f|\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc73\udb40\udc63\udb40\udc74\udb40\udc7f|\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc77\udb40\udc6c\udb40\udc73\udb40\udc7f|\ud83c\udde6\ud83c[\udde8-\uddec\uddee\uddf1\uddf2\uddf4\uddf6-\uddfa\uddfc\uddfd\uddff]|\ud83c\udde7\ud83c[\udde6\udde7\udde9-\uddef\uddf1-\uddf4\uddf6-\uddf9\uddfb\uddfc\uddfe\uddff]|\ud83c\udde8\ud83c[\udde6\udde8\udde9\uddeb-\uddee\uddf0-\uddf5\uddf7\uddfa-\uddff]|\ud83c\udde9\ud83c[\uddea\uddec\uddef\uddf0\uddf2\uddf4\uddff]|\ud83c\uddea\ud83c[\udde6\udde8\uddea\uddec\udded\uddf7-\uddfa]|\ud83c\uddeb\ud83c[\uddee-\uddf0\uddf2\uddf4\uddf7]|\ud83c\uddec\ud83c[\udde6\udde7\udde9-\uddee\uddf1-\uddf3\uddf5-\uddfa\uddfc\uddfe]|\ud83c\udded\ud83c[\uddf0\uddf2\uddf3\uddf7\uddf9\uddfa]|\ud83c\uddee\ud83c[\udde8-\uddea\uddf1-\uddf4\uddf6-\uddf9]|\ud83c\uddef\ud83c[\uddea\uddf2\uddf4\uddf5]|\ud83c\uddf0\ud83c[\uddea\uddec-\uddee\uddf2\uddf3\uddf5\uddf7\uddfc\uddfe\uddff]|\ud83c\uddf1\ud83c[\udde6-\udde8\uddee\uddf0\uddf7-\uddfb\uddfe]|\ud83c\uddf2\ud83c[\udde6\udde8-\udded\uddf0-\uddff]|\ud83c\uddf3\ud83c[\udde6\udde8\uddea-\uddec\uddee\uddf1\uddf4\uddf5\uddf7\uddfa\uddff]|\ud83c\uddf4\ud83c\uddf2|\ud83c\uddf5\ud83c[\udde6\uddea-\udded\uddf0-\uddf3\uddf7-\uddf9\uddfc\uddfe]|\ud83c\uddf6\ud83c\udde6|\ud83c\uddf7\ud83c[\uddea\uddf4\uddf8\uddfa\uddfc]|\ud83c\uddf8\ud83c[\udde6-\uddea\uddec-\uddf4\uddf7-\uddf9\uddfb\uddfd-\uddff]|\ud83c\uddf9\ud83c[\udde6\udde8\udde9\uddeb-\udded\uddef-\uddf4\uddf7\uddf9\uddfb\uddfc\uddff]|\ud83c\uddfa\ud83c[\udde6\uddec\uddf2\uddf3\uddf8\uddfe\uddff]|\ud83c\uddfb\ud83c[\udde6\udde8\uddea\uddec\uddee\uddf3\uddfa]|\ud83c\uddfc\ud83c[\uddeb\uddf8]|\ud83c\uddfd\ud83c\uddf0|\ud83c\uddfe\ud83c[\uddea\uddf9]|\ud83c\uddff\ud83c[\udde6\uddf2\uddfc]|\ud83c[\udccf\udd8e\udd91-\udd9a\udde6-\uddff\ude01\ude32-\ude36\ude38-\ude3a\ude50\ude51\udf00-\udf20\udf2d-\udf35\udf37-\udf7c\udf7e-\udf84\udf86-\udf93\udfa0-\udfc1\udfc5\udfc6\udfc8\udfc9\udfcf-\udfd3\udfe0-\udff0\udff4\udff8-\udfff]|\ud83d[\udc00-\udc3e\udc40\udc44\udc45\udc51-\udc65\udc6a-\udc6d\udc6f\udc79-\udc7b\udc7d-\udc80\udc84\udc88-\udca9\udcab-\udcfc\udcff-\udd3d\udd4b-\udd4e\udd50-\udd67\udda4\uddfb-\ude44\ude48-\ude4a\ude80-\udea2\udea4-\udeb3\udeb7-\udebf\udec1-\udec5\uded0-\uded2\uded5\udeeb\udeec\udef4-\udefa\udfe0-\udfeb]|\ud83e[\udd0d\udd0e\udd10-\udd17\udd1d\udd20-\udd25\udd27-\udd2f\udd3a\udd3c\udd3f-\udd45\udd47-\udd71\udd73-\udd76\udd7a-\udda2\udda5-\uddaa\uddae-\uddb4\uddb7\uddba\uddbc-\uddca\uddd0\uddde-\uddff\ude70-\ude73\ude78-\ude7a\ude80-\ude82\ude90-\ude95]|[\u23e9-\u23ec\u23f0\u23f3\u267e\u26ce\u2705\u2728\u274c\u274e\u2753-\u2755\u2795-\u2797\u27b0\u27bf\ue50a])|\ufe0f/g,UFE0Fg=/\uFE0F/g,U200D=String.fromCharCode(8205),rescaper=/[&<>'"]/g,shouldntBeParsed=/^(?:iframe|noframes|noscript|script|select|style|textarea)$/,fromCharCode=String.fromCharCode;return twemoji;function createText(text,clean){return document.createTextNode(clean?text.replace(UFE0Fg,""):text)}function escapeHTML(s){return s.replace(rescaper,replacer)}function defaultImageSrcGenerator(icon,options){return"".concat(options.base,options.size,"/",icon,options.ext)}function grabAllTextNodes(node,allText){var childNodes=node.childNodes,length=childNodes.length,subnode,nodeType;while(length--){subnode=childNodes[length];nodeType=subnode.nodeType;if(nodeType===3){allText.push(subnode)}else if(nodeType===1&&!("ownerSVGElement"in subnode)&&!shouldntBeParsed.test(subnode.nodeName.toLowerCase())){grabAllTextNodes(subnode,allText)}}return allText}function grabTheRightIcon(rawText){return toCodePoint(rawText.indexOf(U200D)<0?rawText.replace(UFE0Fg,""):rawText)}function parseNode(node,options){var allText=grabAllTextNodes(node,[]),length=allText.length,attrib,attrname,modified,fragment,subnode,text,match,i,index,img,rawText,iconId,src;while(length--){modified=false;fragment=document.createDocumentFragment();subnode=allText[length];text=subnode.nodeValue;i=0;while(match=re.exec(text)){index=match.index;if(index!==i){fragment.appendChild(createText(text.slice(i,index),true))}rawText=match[0];iconId=grabTheRightIcon(rawText);i=index+rawText.length;src=options.callback(iconId,options);if(iconId&&src){img=new Image;img.onerror=options.onerror;img.setAttribute("draggable","false");attrib=options.attributes(rawText,iconId);for(attrname in attrib){if(attrib.hasOwnProperty(attrname)&&attrname.indexOf("on")!==0&&!img.hasAttribute(attrname)){img.setAttribute(attrname,attrib[attrname])}}img.className=options.className;img.alt=rawText;img.src=src;modified=true;fragment.appendChild(img)}if(!img)fragment.appendChild(createText(rawText,false));img=null}if(modified){if(i<text.length){fragment.appendChild(createText(text.slice(i),true))}subnode.parentNode.replaceChild(fragment,subnode)}}return node}function parseString(str,options){return replace(str,function(rawText){var ret=rawText,iconId=grabTheRightIcon(rawText),src=options.callback(iconId,options),attrib,attrname;if(iconId&&src){ret="<img ".concat('class="',options.className,'" ','draggable="false" ','alt="',rawText,'"',' src="',src,'"');attrib=options.attributes(rawText,iconId);for(attrname in attrib){if(attrib.hasOwnProperty(attrname)&&attrname.indexOf("on")!==0&&ret.indexOf(" "+attrname+"=")===-1){ret=ret.concat(" ",attrname,'="',escapeHTML(attrib[attrname]),'"')}}ret=ret.concat("/>")}return ret})}function replacer(m){return escaper[m]}function returnNull(){return null}function toSizeSquaredAsset(value){return typeof value==="number"?value+"x"+value:value}function fromCodePoint(codepoint){var code=typeof codepoint==="string"?parseInt(codepoint,16):codepoint;if(code<65536){return fromCharCode(code)}code-=65536;return fromCharCode(55296+(code>>10),56320+(code&1023))}function parse(what,how){if(!how||typeof how==="function"){how={callback:how}}return(typeof what==="string"?parseString:parseNode)(what,{callback:how.callback||defaultImageSrcGenerator,attributes:typeof how.attributes==="function"?how.attributes:returnNull,base:typeof how.base==="string"?how.base:twemoji.base,ext:how.ext||twemoji.ext,size:how.folder||toSizeSquaredAsset(how.size||twemoji.size),className:how.className||twemoji.className,onerror:how.onerror||twemoji.onerror})}function replace(text,callback){return String(text).replace(re,callback)}function test(text){re.lastIndex=0;var result=re.test(text);re.lastIndex=0;return result}function toCodePoint(unicodeSurrogates,sep){var r=[],c=0,p=0,i=0;while(i<unicodeSurrogates.length){c=unicodeSurrogates.charCodeAt(i++);if(p){r.push((65536+(p-55296<<10)+(c-56320)).toString(16));p=0}else if(55296<=c&&c<=56319){p=c}else{r.push(c.toString(16))}}return r.join(sep||"-")}}();
+var twemoji=function(){"use strict";var twemoji={base:"https://twemoji.maxcdn.com/v/12.1.3/",ext:".png",size:"72x72",className:"emoji",convert:{fromCodePoint:fromCodePoint,toCodePoint:toCodePoint},onerror:function onerror(){if(this.parentNode){this.parentNode.replaceChild(createText(this.alt,false),this)}},parse:parse,replace:replace,test:test},escaper={"&":"&amp;","<":"&lt;",">":"&gt;","'":"&#39;",'"':"&quot;"},re=/(?:\ud83d\udc68\ud83c\udffc\u200d\ud83e\udd1d\u200d\ud83d\udc68\ud83c\udffb|\ud83d\udc68\ud83c\udffd\u200d\ud83e\udd1d\u200d\ud83d\udc68\ud83c[\udffb\udffc]|\ud83d\udc68\ud83c\udffe\u200d\ud83e\udd1d\u200d\ud83d\udc68\ud83c[\udffb-\udffd]|\ud83d\udc68\ud83c\udfff\u200d\ud83e\udd1d\u200d\ud83d\udc68\ud83c[\udffb-\udffe]|\ud83d\udc69\ud83c\udffb\u200d\ud83e\udd1d\u200d\ud83d\udc68\ud83c[\udffc-\udfff]|\ud83d\udc69\ud83c\udffc\u200d\ud83e\udd1d\u200d\ud83d\udc68\ud83c[\udffb\udffd-\udfff]|\ud83d\udc69\ud83c\udffc\u200d\ud83e\udd1d\u200d\ud83d\udc69\ud83c\udffb|\ud83d\udc69\ud83c\udffd\u200d\ud83e\udd1d\u200d\ud83d\udc68\ud83c[\udffb\udffc\udffe\udfff]|\ud83d\udc69\ud83c\udffd\u200d\ud83e\udd1d\u200d\ud83d\udc69\ud83c[\udffb\udffc]|\ud83d\udc69\ud83c\udffe\u200d\ud83e\udd1d\u200d\ud83d\udc68\ud83c[\udffb-\udffd\udfff]|\ud83d\udc69\ud83c\udffe\u200d\ud83e\udd1d\u200d\ud83d\udc69\ud83c[\udffb-\udffd]|\ud83d\udc69\ud83c\udfff\u200d\ud83e\udd1d\u200d\ud83d\udc68\ud83c[\udffb-\udffe]|\ud83d\udc69\ud83c\udfff\u200d\ud83e\udd1d\u200d\ud83d\udc69\ud83c[\udffb-\udffe]|\ud83e\uddd1\ud83c\udffb\u200d\ud83e\udd1d\u200d\ud83e\uddd1\ud83c\udffb|\ud83e\uddd1\ud83c\udffc\u200d\ud83e\udd1d\u200d\ud83e\uddd1\ud83c[\udffb\udffc]|\ud83e\uddd1\ud83c\udffd\u200d\ud83e\udd1d\u200d\ud83e\uddd1\ud83c[\udffb-\udffd]|\ud83e\uddd1\ud83c\udffe\u200d\ud83e\udd1d\u200d\ud83e\uddd1\ud83c[\udffb-\udffe]|\ud83e\uddd1\ud83c\udfff\u200d\ud83e\udd1d\u200d\ud83e\uddd1\ud83c[\udffb-\udfff]|\ud83e\uddd1\u200d\ud83e\udd1d\u200d\ud83e\uddd1|\ud83d\udc6b\ud83c[\udffb-\udfff]|\ud83d\udc6c\ud83c[\udffb-\udfff]|\ud83d\udc6d\ud83c[\udffb-\udfff]|\ud83d[\udc6b-\udc6d])|(?:\ud83d[\udc68\udc69])(?:\ud83c[\udffb-\udfff])?\u200d(?:\u2695\ufe0f|\u2696\ufe0f|\u2708\ufe0f|\ud83c[\udf3e\udf73\udf93\udfa4\udfa8\udfeb\udfed]|\ud83d[\udcbb\udcbc\udd27\udd2c\ude80\ude92]|\ud83e[\uddaf-\uddb3\uddbc\uddbd])|(?:\ud83c[\udfcb\udfcc]|\ud83d[\udd74\udd75]|\u26f9)((?:\ud83c[\udffb-\udfff]|\ufe0f)\u200d[\u2640\u2642]\ufe0f)|(?:\ud83c[\udfc3\udfc4\udfca]|\ud83d[\udc6e\udc71\udc73\udc77\udc81\udc82\udc86\udc87\ude45-\ude47\ude4b\ude4d\ude4e\udea3\udeb4-\udeb6]|\ud83e[\udd26\udd35\udd37-\udd39\udd3d\udd3e\uddb8\uddb9\uddcd-\uddcf\uddd6-\udddd])(?:\ud83c[\udffb-\udfff])?\u200d[\u2640\u2642]\ufe0f|(?:\ud83d\udc68\u200d\u2764\ufe0f\u200d\ud83d\udc8b\u200d\ud83d\udc68|\ud83d\udc68\u200d\ud83d\udc68\u200d\ud83d\udc66\u200d\ud83d\udc66|\ud83d\udc68\u200d\ud83d\udc68\u200d\ud83d\udc67\u200d\ud83d[\udc66\udc67]|\ud83d\udc68\u200d\ud83d\udc69\u200d\ud83d\udc66\u200d\ud83d\udc66|\ud83d\udc68\u200d\ud83d\udc69\u200d\ud83d\udc67\u200d\ud83d[\udc66\udc67]|\ud83d\udc69\u200d\u2764\ufe0f\u200d\ud83d\udc8b\u200d\ud83d[\udc68\udc69]|\ud83d\udc69\u200d\ud83d\udc69\u200d\ud83d\udc66\u200d\ud83d\udc66|\ud83d\udc69\u200d\ud83d\udc69\u200d\ud83d\udc67\u200d\ud83d[\udc66\udc67]|\ud83d\udc68\u200d\u2764\ufe0f\u200d\ud83d\udc68|\ud83d\udc68\u200d\ud83d\udc66\u200d\ud83d\udc66|\ud83d\udc68\u200d\ud83d\udc67\u200d\ud83d[\udc66\udc67]|\ud83d\udc68\u200d\ud83d\udc68\u200d\ud83d[\udc66\udc67]|\ud83d\udc68\u200d\ud83d\udc69\u200d\ud83d[\udc66\udc67]|\ud83d\udc69\u200d\u2764\ufe0f\u200d\ud83d[\udc68\udc69]|\ud83d\udc69\u200d\ud83d\udc66\u200d\ud83d\udc66|\ud83d\udc69\u200d\ud83d\udc67\u200d\ud83d[\udc66\udc67]|\ud83d\udc69\u200d\ud83d\udc69\u200d\ud83d[\udc66\udc67]|\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f|\ud83c\udff3\ufe0f\u200d\ud83c\udf08|\ud83c\udff4\u200d\u2620\ufe0f|\ud83d\udc15\u200d\ud83e\uddba|\ud83d\udc41\u200d\ud83d\udde8|\ud83d\udc68\u200d\ud83d[\udc66\udc67]|\ud83d\udc69\u200d\ud83d[\udc66\udc67]|\ud83d\udc6f\u200d\u2640\ufe0f|\ud83d\udc6f\u200d\u2642\ufe0f|\ud83e\udd3c\u200d\u2640\ufe0f|\ud83e\udd3c\u200d\u2642\ufe0f|\ud83e\uddde\u200d\u2640\ufe0f|\ud83e\uddde\u200d\u2642\ufe0f|\ud83e\udddf\u200d\u2640\ufe0f|\ud83e\udddf\u200d\u2642\ufe0f)|[#*0-9]\ufe0f?\u20e3|(?:[©®\u2122\u265f]\ufe0f)|(?:\ud83c[\udc04\udd70\udd71\udd7e\udd7f\ude02\ude1a\ude2f\ude37\udf21\udf24-\udf2c\udf36\udf7d\udf96\udf97\udf99-\udf9b\udf9e\udf9f\udfcd\udfce\udfd4-\udfdf\udff3\udff5\udff7]|\ud83d[\udc3f\udc41\udcfd\udd49\udd4a\udd6f\udd70\udd73\udd76-\udd79\udd87\udd8a-\udd8d\udda5\udda8\uddb1\uddb2\uddbc\uddc2-\uddc4\uddd1-\uddd3\udddc-\uddde\udde1\udde3\udde8\uddef\uddf3\uddfa\udecb\udecd-\udecf\udee0-\udee5\udee9\udef0\udef3]|[\u203c\u2049\u2139\u2194-\u2199\u21a9\u21aa\u231a\u231b\u2328\u23cf\u23ed-\u23ef\u23f1\u23f2\u23f8-\u23fa\u24c2\u25aa\u25ab\u25b6\u25c0\u25fb-\u25fe\u2600-\u2604\u260e\u2611\u2614\u2615\u2618\u2620\u2622\u2623\u2626\u262a\u262e\u262f\u2638-\u263a\u2640\u2642\u2648-\u2653\u2660\u2663\u2665\u2666\u2668\u267b\u267f\u2692-\u2697\u2699\u269b\u269c\u26a0\u26a1\u26a7\u26aa\u26ab\u26b0\u26b1\u26bd\u26be\u26c4\u26c5\u26c8\u26cf\u26d1\u26d3\u26d4\u26e9\u26ea\u26f0-\u26f5\u26f8\u26fa\u26fd\u2702\u2708\u2709\u270f\u2712\u2714\u2716\u271d\u2721\u2733\u2734\u2744\u2747\u2757\u2763\u2764\u27a1\u2934\u2935\u2b05-\u2b07\u2b1b\u2b1c\u2b50\u2b55\u3030\u303d\u3297\u3299])(?:\ufe0f|(?!\ufe0e))|(?:(?:\ud83c[\udfcb\udfcc]|\ud83d[\udd74\udd75\udd90]|[\u261d\u26f7\u26f9\u270c\u270d])(?:\ufe0f|(?!\ufe0e))|(?:\ud83c[\udf85\udfc2-\udfc4\udfc7\udfca]|\ud83d[\udc42\udc43\udc46-\udc50\udc66-\udc69\udc6e\udc70-\udc78\udc7c\udc81-\udc83\udc85-\udc87\udcaa\udd7a\udd95\udd96\ude45-\ude47\ude4b-\ude4f\udea3\udeb4-\udeb6\udec0\udecc]|\ud83e[\udd0f\udd18-\udd1c\udd1e\udd1f\udd26\udd30-\udd39\udd3d\udd3e\uddb5\uddb6\uddb8\uddb9\uddbb\uddcd-\uddcf\uddd1-\udddd]|[\u270a\u270b]))(?:\ud83c[\udffb-\udfff])?|(?:\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f|\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc73\udb40\udc63\udb40\udc74\udb40\udc7f|\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc77\udb40\udc6c\udb40\udc73\udb40\udc7f|\ud83c\udde6\ud83c[\udde8-\uddec\uddee\uddf1\uddf2\uddf4\uddf6-\uddfa\uddfc\uddfd\uddff]|\ud83c\udde7\ud83c[\udde6\udde7\udde9-\uddef\uddf1-\uddf4\uddf6-\uddf9\uddfb\uddfc\uddfe\uddff]|\ud83c\udde8\ud83c[\udde6\udde8\udde9\uddeb-\uddee\uddf0-\uddf5\uddf7\uddfa-\uddff]|\ud83c\udde9\ud83c[\uddea\uddec\uddef\uddf0\uddf2\uddf4\uddff]|\ud83c\uddea\ud83c[\udde6\udde8\uddea\uddec\udded\uddf7-\uddfa]|\ud83c\uddeb\ud83c[\uddee-\uddf0\uddf2\uddf4\uddf7]|\ud83c\uddec\ud83c[\udde6\udde7\udde9-\uddee\uddf1-\uddf3\uddf5-\uddfa\uddfc\uddfe]|\ud83c\udded\ud83c[\uddf0\uddf2\uddf3\uddf7\uddf9\uddfa]|\ud83c\uddee\ud83c[\udde8-\uddea\uddf1-\uddf4\uddf6-\uddf9]|\ud83c\uddef\ud83c[\uddea\uddf2\uddf4\uddf5]|\ud83c\uddf0\ud83c[\uddea\uddec-\uddee\uddf2\uddf3\uddf5\uddf7\uddfc\uddfe\uddff]|\ud83c\uddf1\ud83c[\udde6-\udde8\uddee\uddf0\uddf7-\uddfb\uddfe]|\ud83c\uddf2\ud83c[\udde6\udde8-\udded\uddf0-\uddff]|\ud83c\uddf3\ud83c[\udde6\udde8\uddea-\uddec\uddee\uddf1\uddf4\uddf5\uddf7\uddfa\uddff]|\ud83c\uddf4\ud83c\uddf2|\ud83c\uddf5\ud83c[\udde6\uddea-\udded\uddf0-\uddf3\uddf7-\uddf9\uddfc\uddfe]|\ud83c\uddf6\ud83c\udde6|\ud83c\uddf7\ud83c[\uddea\uddf4\uddf8\uddfa\uddfc]|\ud83c\uddf8\ud83c[\udde6-\uddea\uddec-\uddf4\uddf7-\uddf9\uddfb\uddfd-\uddff]|\ud83c\uddf9\ud83c[\udde6\udde8\udde9\uddeb-\udded\uddef-\uddf4\uddf7\uddf9\uddfb\uddfc\uddff]|\ud83c\uddfa\ud83c[\udde6\uddec\uddf2\uddf3\uddf8\uddfe\uddff]|\ud83c\uddfb\ud83c[\udde6\udde8\uddea\uddec\uddee\uddf3\uddfa]|\ud83c\uddfc\ud83c[\uddeb\uddf8]|\ud83c\uddfd\ud83c\uddf0|\ud83c\uddfe\ud83c[\uddea\uddf9]|\ud83c\uddff\ud83c[\udde6\uddf2\uddfc]|\ud83c[\udccf\udd8e\udd91-\udd9a\udde6-\uddff\ude01\ude32-\ude36\ude38-\ude3a\ude50\ude51\udf00-\udf20\udf2d-\udf35\udf37-\udf7c\udf7e-\udf84\udf86-\udf93\udfa0-\udfc1\udfc5\udfc6\udfc8\udfc9\udfcf-\udfd3\udfe0-\udff0\udff4\udff8-\udfff]|\ud83d[\udc00-\udc3e\udc40\udc44\udc45\udc51-\udc65\udc6a-\udc6d\udc6f\udc79-\udc7b\udc7d-\udc80\udc84\udc88-\udca9\udcab-\udcfc\udcff-\udd3d\udd4b-\udd4e\udd50-\udd67\udda4\uddfb-\ude44\ude48-\ude4a\ude80-\udea2\udea4-\udeb3\udeb7-\udebf\udec1-\udec5\uded0-\uded2\uded5\udeeb\udeec\udef4-\udefa\udfe0-\udfeb]|\ud83e[\udd0d\udd0e\udd10-\udd17\udd1d\udd20-\udd25\udd27-\udd2f\udd3a\udd3c\udd3f-\udd45\udd47-\udd71\udd73-\udd76\udd7a-\udda2\udda5-\uddaa\uddae-\uddb4\uddb7\uddba\uddbc-\uddca\uddd0\uddde-\uddff\ude70-\ude73\ude78-\ude7a\ude80-\ude82\ude90-\ude95]|[\u23e9-\u23ec\u23f0\u23f3\u267e\u26ce\u2705\u2728\u274c\u274e\u2753-\u2755\u2795-\u2797\u27b0\u27bf\ue50a])|\ufe0f/g,UFE0Fg=/\uFE0F/g,U200D=String.fromCharCode(8205),rescaper=/[&<>'"]/g,shouldntBeParsed=/^(?:iframe|noframes|noscript|script|select|style|textarea)$/,fromCharCode=String.fromCharCode;return twemoji;function createText(text,clean){return document.createTextNode(clean?text.replace(UFE0Fg,""):text)}function escapeHTML(s){return s.replace(rescaper,replacer)}function defaultImageSrcGenerator(icon,options){return"".concat(options.base,options.size,"/",icon,options.ext)}function grabAllTextNodes(node,allText){var childNodes=node.childNodes,length=childNodes.length,subnode,nodeType;while(length--){subnode=childNodes[length];nodeType=subnode.nodeType;if(nodeType===3){allText.push(subnode)}else if(nodeType===1&&!("ownerSVGElement"in subnode)&&!shouldntBeParsed.test(subnode.nodeName.toLowerCase())){grabAllTextNodes(subnode,allText)}}return allText}function grabTheRightIcon(rawText){return toCodePoint(rawText.indexOf(U200D)<0?rawText.replace(UFE0Fg,""):rawText)}function parseNode(node,options){var allText=grabAllTextNodes(node,[]),length=allText.length,attrib,attrname,modified,fragment,subnode,text,match,i,index,img,rawText,iconId,src;while(length--){modified=false;fragment=document.createDocumentFragment();subnode=allText[length];text=subnode.nodeValue;i=0;while(match=re.exec(text)){index=match.index;if(index!==i){fragment.appendChild(createText(text.slice(i,index),true))}rawText=match[0];iconId=grabTheRightIcon(rawText);i=index+rawText.length;src=options.callback(iconId,options);if(iconId&&src){img=new Image;img.onerror=options.onerror;img.setAttribute("draggable","false");attrib=options.attributes(rawText,iconId);for(attrname in attrib){if(attrib.hasOwnProperty(attrname)&&attrname.indexOf("on")!==0&&!img.hasAttribute(attrname)){img.setAttribute(attrname,attrib[attrname])}}img.className=options.className;img.alt=rawText;img.src=src;modified=true;fragment.appendChild(img)}if(!img)fragment.appendChild(createText(rawText,false));img=null}if(modified){if(i<text.length){fragment.appendChild(createText(text.slice(i),true))}subnode.parentNode.replaceChild(fragment,subnode)}}return node}function parseString(str,options){return replace(str,function(rawText){var ret=rawText,iconId=grabTheRightIcon(rawText),src=options.callback(iconId,options),attrib,attrname;if(iconId&&src){ret="<img ".concat('class="',options.className,'" ','draggable="false" ','alt="',rawText,'"',' src="',src,'"');attrib=options.attributes(rawText,iconId);for(attrname in attrib){if(attrib.hasOwnProperty(attrname)&&attrname.indexOf("on")!==0&&ret.indexOf(" "+attrname+"=")===-1){ret=ret.concat(" ",attrname,'="',escapeHTML(attrib[attrname]),'"')}}ret=ret.concat("/>")}return ret})}function replacer(m){return escaper[m]}function returnNull(){return null}function toSizeSquaredAsset(value){return typeof value==="number"?value+"x"+value:value}function fromCodePoint(codepoint){var code=typeof codepoint==="string"?parseInt(codepoint,16):codepoint;if(code<65536){return fromCharCode(code)}code-=65536;return fromCharCode(55296+(code>>10),56320+(code&1023))}function parse(what,how){if(!how||typeof how==="function"){how={callback:how}}return(typeof what==="string"?parseString:parseNode)(what,{callback:how.callback||defaultImageSrcGenerator,attributes:typeof how.attributes==="function"?how.attributes:returnNull,base:typeof how.base==="string"?how.base:twemoji.base,ext:how.ext||twemoji.ext,size:how.folder||toSizeSquaredAsset(how.size||twemoji.size),className:how.className||twemoji.className,onerror:how.onerror||twemoji.onerror})}function replace(text,callback){return String(text).replace(re,callback)}function test(text){re.lastIndex=0;var result=re.test(text);re.lastIndex=0;return result}function toCodePoint(unicodeSurrogates,sep){var r=[],c=0,p=0,i=0;while(i<unicodeSurrogates.length){c=unicodeSurrogates.charCodeAt(i++);if(p){r.push((65536+(p-55296<<10)+(c-56320)).toString(16));p=0}else if(55296<=c&&c<=56319){p=c}else{r.push(c.toString(16))}}return r.join(sep||"-")}}();
 /* harmony default export */ var twemoji_esm = (twemoji);
 // CONCATENATED MODULE: ./src/headless/converse-emoji.js
 // Converse.js
@@ -53781,7 +52962,7 @@ converse_core.plugins.add('converse-emoji', {
 
     const {
       default: json
-    } = await __webpack_require__.e(/* import() | emojis */ 129).then(__webpack_require__.t.bind(null, 496, 3));
+    } = await __webpack_require__.e(/* import() | emojis */ 129).then(__webpack_require__.t.bind(null, 498, 3));
     _converse.emojis.json = json;
     _converse.emojis.categories = Object.keys(_converse.emojis.json);
     _converse.emojis_map = _converse.emojis.categories.reduce((result, cat) => Object.assign(result, _converse.emojis.json[cat]), {});
@@ -54404,6 +53585,7 @@ converse_core.plugins.add('converse-muc', {
           'name': '',
           'num_unread': 0,
           'roomconfig': {},
+          'time_sent': new Date(0).toISOString(),
           'time_opened': this.get('time_opened') || new Date().getTime(),
           'type': _converse.CHATROOMS_TYPE
         };
@@ -55757,6 +54939,7 @@ converse_core.plugins.add('converse-muc', {
         }
 
         const attrs = await this.getMessageAttributesFromStanza(stanza, original_stanza);
+        this.setEditable(attrs, attrs.time);
 
         if (attrs.nick && !this.subjectChangeHandled(attrs) && !this.ignorableCSN(attrs) && (attrs['chat_state'] || !utils_form.isEmptyMessage(attrs))) {
           const msg = this.correctMessage(attrs) || this.messages.create(attrs);
@@ -56916,7 +56099,9 @@ converse_core.plugins.add('converse-bookmarks', {
 
     _converse.api.listen.on('clearSession', () => {
       if (_converse.bookmarks !== undefined) {
-        _converse.bookmarks.clearSession();
+        _converse.bookmarks.clearSession({
+          'silent': true
+        });
 
         window.sessionStorage.removeItem(_converse.bookmarks.fetched_flag);
       }
@@ -56938,6 +56123,923 @@ converse_core.plugins.add('converse-bookmarks', {
   }
 
 });
+// CONCATENATED MODULE: ./node_modules/strophe.js/src/bosh.js
+/*
+    This program is distributed under the terms of the MIT license.
+    Please see the LICENSE file for details.
+
+    Copyright 2006-2008, OGG, LLC
+*/
+
+/* global window, setTimeout, clearTimeout, XMLHttpRequest, ActiveXObject */
+
+
+
+const bosh_Strophe = core.Strophe;
+const bosh_$build = core.$build;
+
+
+/** PrivateClass: Strophe.Request
+ *  _Private_ helper class that provides a cross implementation abstraction
+ *  for a BOSH related XMLHttpRequest.
+ *
+ *  The Strophe.Request class is used internally to encapsulate BOSH request
+ *  information.  It is not meant to be used from user's code.
+ */
+
+/** PrivateConstructor: Strophe.Request
+ *  Create and initialize a new Strophe.Request object.
+ *
+ *  Parameters:
+ *    (XMLElement) elem - The XML data to be sent in the request.
+ *    (Function) func - The function that will be called when the
+ *      XMLHttpRequest readyState changes.
+ *    (Integer) rid - The BOSH rid attribute associated with this request.
+ *    (Integer) sends - The number of times this same request has been sent.
+ */
+bosh_Strophe.Request = function (elem, func, rid, sends) {
+    this.id = ++bosh_Strophe._requestId;
+    this.xmlData = elem;
+    this.data = bosh_Strophe.serialize(elem);
+    // save original function in case we need to make a new request
+    // from this one.
+    this.origFunc = func;
+    this.func = func;
+    this.rid = rid;
+    this.date = NaN;
+    this.sends = sends || 0;
+    this.abort = false;
+    this.dead = null;
+
+    this.age = function () {
+        if (!this.date) { return 0; }
+        const now = new Date();
+        return (now - this.date) / 1000;
+    };
+    this.timeDead = function () {
+        if (!this.dead) { return 0; }
+        const now = new Date();
+        return (now - this.dead) / 1000;
+    };
+    this.xhr = this._newXHR();
+};
+
+bosh_Strophe.Request.prototype = {
+    /** PrivateFunction: getResponse
+     *  Get a response from the underlying XMLHttpRequest.
+     *
+     *  This function attempts to get a response from the request and checks
+     *  for errors.
+     *
+     *  Throws:
+     *    "parsererror" - A parser error occured.
+     *    "bad-format" - The entity has sent XML that cannot be processed.
+     *
+     *  Returns:
+     *    The DOM element tree of the response.
+     */
+    getResponse: function () {
+        let node = null;
+        if (this.xhr.responseXML && this.xhr.responseXML.documentElement) {
+            node = this.xhr.responseXML.documentElement;
+            if (node.tagName === "parsererror") {
+                bosh_Strophe.error("invalid response received");
+                bosh_Strophe.error("responseText: " + this.xhr.responseText);
+                bosh_Strophe.error("responseXML: " +
+                              bosh_Strophe.serialize(this.xhr.responseXML));
+                throw new Error("parsererror");
+            }
+        } else if (this.xhr.responseText) {
+            // In React Native, we may get responseText but no responseXML.  We can try to parse it manually.
+            bosh_Strophe.debug("Got responseText but no responseXML; attempting to parse it with DOMParser...");
+            node = new DOMParser().parseFromString(this.xhr.responseText, 'application/xml').documentElement;
+            if (!node) {
+                throw new Error('Parsing produced null node');
+            } else if (node.querySelector('parsererror')) {
+                bosh_Strophe.error("invalid response received: " + node.querySelector('parsererror').textContent);
+                bosh_Strophe.error("responseText: " + this.xhr.responseText);
+                const error = new Error();
+                error.name = bosh_Strophe.ErrorCondition.BAD_FORMAT;
+                throw error;
+            }
+        }
+        return node;
+    },
+
+    /** PrivateFunction: _newXHR
+     *  _Private_ helper function to create XMLHttpRequests.
+     *
+     *  This function creates XMLHttpRequests across all implementations.
+     *
+     *  Returns:
+     *    A new XMLHttpRequest.
+     */
+    _newXHR: function () {
+        let xhr = null;
+        if (window.XMLHttpRequest) {
+            xhr = new XMLHttpRequest();
+            if (xhr.overrideMimeType) {
+                xhr.overrideMimeType("text/xml; charset=utf-8");
+            }
+        } else if (window.ActiveXObject) {
+            xhr = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        // use Function.bind() to prepend ourselves as an argument
+        xhr.onreadystatechange = this.func.bind(null, this);
+        return xhr;
+    }
+};
+
+/** Class: Strophe.Bosh
+ *  _Private_ helper class that handles BOSH Connections
+ *
+ *  The Strophe.Bosh class is used internally by Strophe.Connection
+ *  to encapsulate BOSH sessions. It is not meant to be used from user's code.
+ */
+
+/** File: bosh.js
+ *  A JavaScript library to enable BOSH in Strophejs.
+ *
+ *  this library uses Bidirectional-streams Over Synchronous HTTP (BOSH)
+ *  to emulate a persistent, stateful, two-way connection to an XMPP server.
+ *  More information on BOSH can be found in XEP 124.
+ */
+
+/** PrivateConstructor: Strophe.Bosh
+ *  Create and initialize a Strophe.Bosh object.
+ *
+ *  Parameters:
+ *    (Strophe.Connection) connection - The Strophe.Connection that will use BOSH.
+ *
+ *  Returns:
+ *    A new Strophe.Bosh object.
+ */
+bosh_Strophe.Bosh = function(connection) {
+    this._conn = connection;
+    /* request id for body tags */
+    this.rid = Math.floor(Math.random() * 4294967295);
+    /* The current session ID. */
+    this.sid = null;
+
+    // default BOSH values
+    this.hold = 1;
+    this.wait = 60;
+    this.window = 5;
+    this.errors = 0;
+    this.inactivity = null;
+
+    this.lastResponseHeaders = null;
+    this._requests = [];
+};
+
+bosh_Strophe.Bosh.prototype = {
+    /** Variable: strip
+     *
+     *  BOSH-Connections will have all stanzas wrapped in a <body> tag when
+     *  passed to <Strophe.Connection.xmlInput> or <Strophe.Connection.xmlOutput>.
+     *  To strip this tag, User code can set <Strophe.Bosh.strip> to "body":
+     *
+     *  > Strophe.Bosh.prototype.strip = "body";
+     *
+     *  This will enable stripping of the body tag in both
+     *  <Strophe.Connection.xmlInput> and <Strophe.Connection.xmlOutput>.
+     */
+    strip: null,
+
+    /** PrivateFunction: _buildBody
+     *  _Private_ helper function to generate the <body/> wrapper for BOSH.
+     *
+     *  Returns:
+     *    A Strophe.Builder with a <body/> element.
+     */
+    _buildBody: function () {
+        const bodyWrap = bosh_$build('body', {
+            'rid': this.rid++,
+            'xmlns': bosh_Strophe.NS.HTTPBIND
+        });
+        if (this.sid !== null) {
+            bodyWrap.attrs({'sid': this.sid});
+        }
+        if (this._conn.options.keepalive && this._conn._sessionCachingSupported()) {
+            this._cacheSession();
+        }
+        return bodyWrap;
+    },
+
+    /** PrivateFunction: _reset
+     *  Reset the connection.
+     *
+     *  This function is called by the reset function of the Strophe Connection
+     */
+    _reset: function () {
+        this.rid = Math.floor(Math.random() * 4294967295);
+        this.sid = null;
+        this.errors = 0;
+        if (this._conn._sessionCachingSupported()) {
+            window.sessionStorage.removeItem('strophe-bosh-session');
+        }
+
+        this._conn.nextValidRid(this.rid);
+    },
+
+    /** PrivateFunction: _connect
+     *  _Private_ function that initializes the BOSH connection.
+     *
+     *  Creates and sends the Request that initializes the BOSH connection.
+     */
+    _connect: function (wait, hold, route) {
+        this.wait = wait || this.wait;
+        this.hold = hold || this.hold;
+        this.errors = 0;
+
+        const body = this._buildBody().attrs({
+            "to": this._conn.domain,
+            "xml:lang": "en",
+            "wait": this.wait,
+            "hold": this.hold,
+            "content": "text/xml; charset=utf-8",
+            "ver": "1.6",
+            "xmpp:version": "1.0",
+            "xmlns:xmpp": bosh_Strophe.NS.BOSH
+        });
+        if (route){
+            body.attrs({'route': route});
+        }
+
+        const _connect_cb = this._conn._connect_cb;
+        this._requests.push(
+            new bosh_Strophe.Request(
+                body.tree(),
+                this._onRequestStateChange.bind(this, _connect_cb.bind(this._conn)),
+                body.tree().getAttribute("rid")
+            )
+        );
+        this._throttledRequestHandler();
+    },
+
+    /** PrivateFunction: _attach
+     *  Attach to an already created and authenticated BOSH session.
+     *
+     *  This function is provided to allow Strophe to attach to BOSH
+     *  sessions which have been created externally, perhaps by a Web
+     *  application.  This is often used to support auto-login type features
+     *  without putting user credentials into the page.
+     *
+     *  Parameters:
+     *    (String) jid - The full JID that is bound by the session.
+     *    (String) sid - The SID of the BOSH session.
+     *    (String) rid - The current RID of the BOSH session.  This RID
+     *      will be used by the next request.
+     *    (Function) callback The connect callback function.
+     *    (Integer) wait - The optional HTTPBIND wait value.  This is the
+     *      time the server will wait before returning an empty result for
+     *      a request.  The default setting of 60 seconds is recommended.
+     *      Other settings will require tweaks to the Strophe.TIMEOUT value.
+     *    (Integer) hold - The optional HTTPBIND hold value.  This is the
+     *      number of connections the server will hold at one time.  This
+     *      should almost always be set to 1 (the default).
+     *    (Integer) wind - The optional HTTBIND window value.  This is the
+     *      allowed range of request ids that are valid.  The default is 5.
+     */
+    _attach: function (jid, sid, rid, callback, wait, hold, wind) {
+        this._conn.jid = jid;
+        this.sid = sid;
+        this.rid = rid;
+
+        this._conn.connect_callback = callback;
+        this._conn.domain = bosh_Strophe.getDomainFromJid(this._conn.jid);
+        this._conn.authenticated = true;
+        this._conn.connected = true;
+
+        this.wait = wait || this.wait;
+        this.hold = hold || this.hold;
+        this.window = wind || this.window;
+
+        this._conn._changeConnectStatus(bosh_Strophe.Status.ATTACHED, null);
+    },
+
+    /** PrivateFunction: _restore
+     *  Attempt to restore a cached BOSH session
+     *
+     *  Parameters:
+     *    (String) jid - The full JID that is bound by the session.
+     *      This parameter is optional but recommended, specifically in cases
+     *      where prebinded BOSH sessions are used where it's important to know
+     *      that the right session is being restored.
+     *    (Function) callback The connect callback function.
+     *    (Integer) wait - The optional HTTPBIND wait value.  This is the
+     *      time the server will wait before returning an empty result for
+     *      a request.  The default setting of 60 seconds is recommended.
+     *      Other settings will require tweaks to the Strophe.TIMEOUT value.
+     *    (Integer) hold - The optional HTTPBIND hold value.  This is the
+     *      number of connections the server will hold at one time.  This
+     *      should almost always be set to 1 (the default).
+     *    (Integer) wind - The optional HTTBIND window value.  This is the
+     *      allowed range of request ids that are valid.  The default is 5.
+     */
+    _restore: function (jid, callback, wait, hold, wind) {
+        const session = JSON.parse(window.sessionStorage.getItem('strophe-bosh-session'));
+        if (typeof session !== "undefined" &&
+                   session !== null &&
+                   session.rid &&
+                   session.sid &&
+                   session.jid &&
+                   (    typeof jid === "undefined" ||
+                        jid === null ||
+                        bosh_Strophe.getBareJidFromJid(session.jid) === bosh_Strophe.getBareJidFromJid(jid) ||
+                        // If authcid is null, then it's an anonymous login, so
+                        // we compare only the domains:
+                        ((bosh_Strophe.getNodeFromJid(jid) === null) && (bosh_Strophe.getDomainFromJid(session.jid) === jid))
+                    )
+        ) {
+            this._conn.restored = true;
+            this._attach(session.jid, session.sid, session.rid, callback, wait, hold, wind);
+        } else {
+            const error = new Error("_restore: no restoreable session.");
+            error.name = "StropheSessionError";
+            throw error;
+        }
+    },
+
+    /** PrivateFunction: _cacheSession
+     *  _Private_ handler for the beforeunload event.
+     *
+     *  This handler is used to process the Bosh-part of the initial request.
+     *  Parameters:
+     *    (Strophe.Request) bodyWrap - The received stanza.
+     */
+    _cacheSession: function () {
+        if (this._conn.authenticated) {
+            if (this._conn.jid && this.rid && this.sid) {
+                window.sessionStorage.setItem('strophe-bosh-session', JSON.stringify({
+                    'jid': this._conn.jid,
+                    'rid': this.rid,
+                    'sid': this.sid
+                }));
+            }
+        } else {
+            window.sessionStorage.removeItem('strophe-bosh-session');
+        }
+    },
+
+    /** PrivateFunction: _connect_cb
+     *  _Private_ handler for initial connection request.
+     *
+     *  This handler is used to process the Bosh-part of the initial request.
+     *  Parameters:
+     *    (Strophe.Request) bodyWrap - The received stanza.
+     */
+    _connect_cb: function (bodyWrap) {
+        const typ = bodyWrap.getAttribute("type");
+        if (typ !== null && typ === "terminate") {
+            // an error occurred
+            let cond = bodyWrap.getAttribute("condition");
+            bosh_Strophe.error("BOSH-Connection failed: " + cond);
+            const conflict = bodyWrap.getElementsByTagName("conflict");
+            if (cond !== null) {
+                if (cond === "remote-stream-error" && conflict.length > 0) {
+                    cond = "conflict";
+                }
+                this._conn._changeConnectStatus(bosh_Strophe.Status.CONNFAIL, cond);
+            } else {
+                this._conn._changeConnectStatus(bosh_Strophe.Status.CONNFAIL, "unknown");
+            }
+            this._conn._doDisconnect(cond);
+            return bosh_Strophe.Status.CONNFAIL;
+        }
+
+        // check to make sure we don't overwrite these if _connect_cb is
+        // called multiple times in the case of missing stream:features
+        if (!this.sid) {
+            this.sid = bodyWrap.getAttribute("sid");
+        }
+        const wind = bodyWrap.getAttribute('requests');
+        if (wind) { this.window = parseInt(wind, 10); }
+        const hold = bodyWrap.getAttribute('hold');
+        if (hold) { this.hold = parseInt(hold, 10); }
+        const wait = bodyWrap.getAttribute('wait');
+        if (wait) { this.wait = parseInt(wait, 10); }
+        const inactivity = bodyWrap.getAttribute('inactivity');
+        if (inactivity) { this.inactivity = parseInt(inactivity, 10); }
+    },
+
+    /** PrivateFunction: _disconnect
+     *  _Private_ part of Connection.disconnect for Bosh
+     *
+     *  Parameters:
+     *    (Request) pres - This stanza will be sent before disconnecting.
+     */
+    _disconnect: function (pres) {
+        this._sendTerminate(pres);
+    },
+
+    /** PrivateFunction: _doDisconnect
+     *  _Private_ function to disconnect.
+     *
+     *  Resets the SID and RID.
+     */
+    _doDisconnect: function () {
+        this.sid = null;
+        this.rid = Math.floor(Math.random() * 4294967295);
+        if (this._conn._sessionCachingSupported()) {
+            window.sessionStorage.removeItem('strophe-bosh-session');
+        }
+
+        this._conn.nextValidRid(this.rid);
+    },
+
+    /** PrivateFunction: _emptyQueue
+     * _Private_ function to check if the Request queue is empty.
+     *
+     *  Returns:
+     *    True, if there are no Requests queued, False otherwise.
+     */
+    _emptyQueue: function () {
+        return this._requests.length === 0;
+    },
+
+    /** PrivateFunction: _callProtocolErrorHandlers
+     *  _Private_ function to call error handlers registered for HTTP errors.
+     *
+     *  Parameters:
+     *    (Strophe.Request) req - The request that is changing readyState.
+     */
+    _callProtocolErrorHandlers: function (req) {
+        const reqStatus = this._getRequestStatus(req);
+        const err_callback = this._conn.protocolErrorHandlers.HTTP[reqStatus];
+        if (err_callback) {
+            err_callback.call(this, reqStatus);
+        }
+    },
+
+    /** PrivateFunction: _hitError
+     *  _Private_ function to handle the error count.
+     *
+     *  Requests are resent automatically until their error count reaches
+     *  5.  Each time an error is encountered, this function is called to
+     *  increment the count and disconnect if the count is too high.
+     *
+     *  Parameters:
+     *    (Integer) reqStatus - The request status.
+     */
+    _hitError: function (reqStatus) {
+        this.errors++;
+        bosh_Strophe.warn("request errored, status: " + reqStatus +
+                     ", number of errors: " + this.errors);
+        if (this.errors > 4) {
+            this._conn._onDisconnectTimeout();
+        }
+    },
+
+    /** PrivateFunction: _no_auth_received
+     *
+     * Called on stream start/restart when no stream:features
+     * has been received and sends a blank poll request.
+     */
+    _no_auth_received: function (callback) {
+        bosh_Strophe.warn("Server did not yet offer a supported authentication "+
+                     "mechanism. Sending a blank poll request.");
+        if (callback) {
+            callback = callback.bind(this._conn);
+        } else {
+            callback = this._conn._connect_cb.bind(this._conn);
+        }
+        const body = this._buildBody();
+        this._requests.push(
+            new bosh_Strophe.Request(
+                body.tree(),
+                this._onRequestStateChange.bind(this, callback),
+                body.tree().getAttribute("rid")
+            )
+        );
+        this._throttledRequestHandler();
+    },
+
+    /** PrivateFunction: _onDisconnectTimeout
+     *  _Private_ timeout handler for handling non-graceful disconnection.
+     *
+     *  Cancels all remaining Requests and clears the queue.
+     */
+    _onDisconnectTimeout: function () {
+        this._abortAllRequests();
+    },
+
+    /** PrivateFunction: _abortAllRequests
+     *  _Private_ helper function that makes sure all pending requests are aborted.
+     */
+    _abortAllRequests: function _abortAllRequests() {
+        while (this._requests.length > 0) {
+            const req = this._requests.pop();
+            req.abort = true;
+            req.xhr.abort();
+            req.xhr.onreadystatechange = function () {};
+        }
+    },
+
+    /** PrivateFunction: _onIdle
+     *  _Private_ handler called by Strophe.Connection._onIdle
+     *
+     *  Sends all queued Requests or polls with empty Request if there are none.
+     */
+    _onIdle: function () {
+        const data = this._conn._data;
+        // if no requests are in progress, poll
+        if (this._conn.authenticated && this._requests.length === 0 &&
+            data.length === 0 && !this._conn.disconnecting) {
+            bosh_Strophe.debug("no requests during idle cycle, sending blank request");
+            data.push(null);
+        }
+
+        if (this._conn.paused) {
+            return;
+        }
+
+        if (this._requests.length < 2 && data.length > 0) {
+            const body = this._buildBody();
+            for (let i=0; i<data.length; i++) {
+                if (data[i] !== null) {
+                    if (data[i] === "restart") {
+                        body.attrs({
+                            "to": this._conn.domain,
+                            "xml:lang": "en",
+                            "xmpp:restart": "true",
+                            "xmlns:xmpp": bosh_Strophe.NS.BOSH
+                        });
+                    } else {
+                        body.cnode(data[i]).up();
+                    }
+                }
+            }
+            delete this._conn._data;
+            this._conn._data = [];
+            this._requests.push(
+                new bosh_Strophe.Request(
+                    body.tree(),
+                    this._onRequestStateChange.bind(this, this._conn._dataRecv.bind(this._conn)),
+                    body.tree().getAttribute("rid")
+                )
+            );
+            this._throttledRequestHandler();
+        }
+
+        if (this._requests.length > 0) {
+            const time_elapsed = this._requests[0].age();
+            if (this._requests[0].dead !== null) {
+                if (this._requests[0].timeDead() >
+                    Math.floor(bosh_Strophe.SECONDARY_TIMEOUT * this.wait)) {
+                    this._throttledRequestHandler();
+                }
+            }
+            if (time_elapsed > Math.floor(bosh_Strophe.TIMEOUT * this.wait)) {
+                bosh_Strophe.warn("Request " +
+                             this._requests[0].id +
+                             " timed out, over " + Math.floor(bosh_Strophe.TIMEOUT * this.wait) +
+                             " seconds since last activity");
+                this._throttledRequestHandler();
+            }
+        }
+    },
+
+    /** PrivateFunction: _getRequestStatus
+     *
+     *  Returns the HTTP status code from a Strophe.Request
+     *
+     *  Parameters:
+     *    (Strophe.Request) req - The Strophe.Request instance.
+     *    (Integer) def - The default value that should be returned if no
+     *          status value was found.
+     */
+    _getRequestStatus: function (req, def) {
+        let reqStatus;
+        if (req.xhr.readyState === 4) {
+            try {
+                reqStatus = req.xhr.status;
+            } catch (e) {
+                // ignore errors from undefined status attribute. Works
+                // around a browser bug
+                bosh_Strophe.error(
+                    "Caught an error while retrieving a request's status, " +
+                    "reqStatus: " + reqStatus);
+            }
+        }
+        if (typeof(reqStatus) === "undefined") {
+            reqStatus = typeof def === 'number' ? def : 0;
+        }
+        return reqStatus;
+    },
+
+    /** PrivateFunction: _onRequestStateChange
+     *  _Private_ handler for Strophe.Request state changes.
+     *
+     *  This function is called when the XMLHttpRequest readyState changes.
+     *  It contains a lot of error handling logic for the many ways that
+     *  requests can fail, and calls the request callback when requests
+     *  succeed.
+     *
+     *  Parameters:
+     *    (Function) func - The handler for the request.
+     *    (Strophe.Request) req - The request that is changing readyState.
+     */
+    _onRequestStateChange: function (func, req) {
+        bosh_Strophe.debug("request id "+req.id+"."+req.sends+
+                      " state changed to "+req.xhr.readyState);
+        if (req.abort) {
+            req.abort = false;
+            return;
+        }
+        if (req.xhr.readyState !== 4) {
+            // The request is not yet complete
+            return;
+        }
+        const reqStatus = this._getRequestStatus(req);
+        this.lastResponseHeaders = req.xhr.getAllResponseHeaders();
+        if (this.disconnecting && reqStatus >= 400) {
+            this._hitError(reqStatus);
+            this._callProtocolErrorHandlers(req);
+            return;
+        }
+
+        const valid_request = reqStatus > 0 && reqStatus < 500;
+        const too_many_retries = req.sends > this._conn.maxRetries;
+        if (valid_request || too_many_retries) {
+            // remove from internal queue
+            this._removeRequest(req);
+            bosh_Strophe.debug("request id "+req.id+" should now be removed");
+        }
+
+        if (reqStatus === 200) {
+            // request succeeded
+            const reqIs0 = (this._requests[0] === req);
+            const reqIs1 = (this._requests[1] === req);
+            // if request 1 finished, or request 0 finished and request
+            // 1 is over Strophe.SECONDARY_TIMEOUT seconds old, we need to
+            // restart the other - both will be in the first spot, as the
+            // completed request has been removed from the queue already
+            if (reqIs1 ||
+                (reqIs0 && this._requests.length > 0 &&
+                    this._requests[0].age() > Math.floor(bosh_Strophe.SECONDARY_TIMEOUT * this.wait))) {
+                this._restartRequest(0);
+            }
+            this._conn.nextValidRid(Number(req.rid) + 1);
+            bosh_Strophe.debug("request id "+req.id+"."+req.sends+" got 200");
+            func(req); // call handler
+            this.errors = 0;
+        } else if (reqStatus === 0 ||
+                   (reqStatus >= 400 && reqStatus < 600) ||
+                   reqStatus >= 12000) {
+            // request failed
+            bosh_Strophe.error("request id "+req.id+"."+req.sends+" error "+reqStatus+" happened");
+            this._hitError(reqStatus);
+            this._callProtocolErrorHandlers(req);
+            if (reqStatus >= 400 && reqStatus < 500) {
+                this._conn._changeConnectStatus(bosh_Strophe.Status.DISCONNECTING, null);
+                this._conn._doDisconnect();
+            }
+        } else {
+            bosh_Strophe.error("request id "+req.id+"."+req.sends+" error "+reqStatus+" happened");
+        }
+
+        if (!valid_request && !too_many_retries) {
+            this._throttledRequestHandler();
+        } else if (too_many_retries && !this._conn.connected) {
+            this._conn._changeConnectStatus(bosh_Strophe.Status.CONNFAIL, "giving-up");
+        }
+    },
+
+    /** PrivateFunction: _processRequest
+     *  _Private_ function to process a request in the queue.
+     *
+     *  This function takes requests off the queue and sends them and
+     *  restarts dead requests.
+     *
+     *  Parameters:
+     *    (Integer) i - The index of the request in the queue.
+     */
+    _processRequest: function (i) {
+        let req = this._requests[i];
+        const reqStatus = this._getRequestStatus(req, -1);
+
+        // make sure we limit the number of retries
+        if (req.sends > this._conn.maxRetries) {
+            this._conn._onDisconnectTimeout();
+            return;
+        }
+        const time_elapsed = req.age();
+        const primary_timeout = (!isNaN(time_elapsed) && time_elapsed > Math.floor(bosh_Strophe.TIMEOUT * this.wait));
+        const secondary_timeout = (req.dead !== null && req.timeDead() > Math.floor(bosh_Strophe.SECONDARY_TIMEOUT * this.wait));
+        const server_error = (req.xhr.readyState === 4 && (reqStatus < 1 || reqStatus >= 500));
+
+        if (primary_timeout || secondary_timeout || server_error) {
+            if (secondary_timeout) {
+                bosh_Strophe.error(`Request ${this._requests[i].id} timed out (secondary), restarting`);
+            }
+            req.abort = true;
+            req.xhr.abort();
+            // setting to null fails on IE6, so set to empty function
+            req.xhr.onreadystatechange = function () {};
+            this._requests[i] = new bosh_Strophe.Request(req.xmlData, req.origFunc, req.rid, req.sends);
+            req = this._requests[i];
+        }
+
+        if (req.xhr.readyState === 0) {
+            bosh_Strophe.debug("request id "+req.id+"."+req.sends+" posting");
+
+            try {
+                const content_type = this._conn.options.contentType || "text/xml; charset=utf-8";
+                req.xhr.open("POST", this._conn.service, this._conn.options.sync ? false : true);
+                if (typeof req.xhr.setRequestHeader !== 'undefined') {
+                    // IE9 doesn't have setRequestHeader
+                    req.xhr.setRequestHeader("Content-Type", content_type);
+                }
+                if (this._conn.options.withCredentials) {
+                    req.xhr.withCredentials = true;
+                }
+            } catch (e2) {
+                bosh_Strophe.error("XHR open failed: " + e2.toString());
+                if (!this._conn.connected) {
+                    this._conn._changeConnectStatus(bosh_Strophe.Status.CONNFAIL, "bad-service");
+                }
+                this._conn.disconnect();
+                return;
+            }
+
+            // Fires the XHR request -- may be invoked immediately
+            // or on a gradually expanding retry window for reconnects
+            const sendFunc = () => {
+                req.date = new Date();
+                if (this._conn.options.customHeaders){
+                    const headers = this._conn.options.customHeaders;
+                    for (const header in headers) {
+                        if (Object.prototype.hasOwnProperty.call(headers, header)) {
+                            req.xhr.setRequestHeader(header, headers[header]);
+                        }
+                    }
+                }
+                req.xhr.send(req.data);
+            };
+
+            // Implement progressive backoff for reconnects --
+            // First retry (send === 1) should also be instantaneous
+            if (req.sends > 1) {
+                // Using a cube of the retry number creates a nicely
+                // expanding retry window
+                const backoff = Math.min(Math.floor(bosh_Strophe.TIMEOUT * this.wait),
+                                       Math.pow(req.sends, 3)) * 1000;
+                setTimeout(function() {
+                    // XXX: setTimeout should be called only with function expressions (23974bc1)
+                    sendFunc();
+                }, backoff);
+            } else {
+                sendFunc();
+            }
+
+            req.sends++;
+
+            if (this._conn.xmlOutput !== bosh_Strophe.Connection.prototype.xmlOutput) {
+                if (req.xmlData.nodeName === this.strip && req.xmlData.childNodes.length) {
+                    this._conn.xmlOutput(req.xmlData.childNodes[0]);
+                } else {
+                    this._conn.xmlOutput(req.xmlData);
+                }
+            }
+            if (this._conn.rawOutput !== bosh_Strophe.Connection.prototype.rawOutput) {
+                this._conn.rawOutput(req.data);
+            }
+        } else {
+            bosh_Strophe.debug("_processRequest: " +
+                          (i === 0 ? "first" : "second") +
+                          " request has readyState of " +
+                          req.xhr.readyState);
+        }
+    },
+
+    /** PrivateFunction: _removeRequest
+     *  _Private_ function to remove a request from the queue.
+     *
+     *  Parameters:
+     *    (Strophe.Request) req - The request to remove.
+     */
+    _removeRequest: function (req) {
+        bosh_Strophe.debug("removing request");
+        for (let i=this._requests.length - 1; i>=0; i--) {
+            if (req === this._requests[i]) {
+                this._requests.splice(i, 1);
+            }
+        }
+        // IE6 fails on setting to null, so set to empty function
+        req.xhr.onreadystatechange = function () {};
+        this._throttledRequestHandler();
+    },
+
+    /** PrivateFunction: _restartRequest
+     *  _Private_ function to restart a request that is presumed dead.
+     *
+     *  Parameters:
+     *    (Integer) i - The index of the request in the queue.
+     */
+    _restartRequest: function (i) {
+        const req = this._requests[i];
+        if (req.dead === null) {
+            req.dead = new Date();
+        }
+        this._processRequest(i);
+    },
+
+    /** PrivateFunction: _reqToData
+     * _Private_ function to get a stanza out of a request.
+     *
+     * Tries to extract a stanza out of a Request Object.
+     * When this fails the current connection will be disconnected.
+     *
+     *  Parameters:
+     *    (Object) req - The Request.
+     *
+     *  Returns:
+     *    The stanza that was passed.
+     */
+    _reqToData: function (req) {
+        try {
+            return req.getResponse();
+        } catch (e) {
+            if (e.message !== "parsererror") { throw e; }
+            this._conn.disconnect("strophe-parsererror");
+        }
+    },
+
+    /** PrivateFunction: _sendTerminate
+     *  _Private_ function to send initial disconnect sequence.
+     *
+     *  This is the first step in a graceful disconnect.  It sends
+     *  the BOSH server a terminate body and includes an unavailable
+     *  presence if authentication has completed.
+     */
+    _sendTerminate: function (pres) {
+        bosh_Strophe.debug("_sendTerminate was called");
+        const body = this._buildBody().attrs({type: "terminate"});
+        if (pres) {
+            body.cnode(pres.tree());
+        }
+        const req = new bosh_Strophe.Request(
+            body.tree(),
+            this._onRequestStateChange.bind(this, this._conn._dataRecv.bind(this._conn)),
+            body.tree().getAttribute("rid")
+        );
+        this._requests.push(req);
+        this._throttledRequestHandler();
+    },
+
+    /** PrivateFunction: _send
+     *  _Private_ part of the Connection.send function for BOSH
+     *
+     * Just triggers the RequestHandler to send the messages that are in the queue
+     */
+    _send: function () {
+        clearTimeout(this._conn._idleTimeout);
+        this._throttledRequestHandler();
+        this._conn._idleTimeout = setTimeout(() => this._conn._onIdle(), 100);
+    },
+
+    /** PrivateFunction: _sendRestart
+     *
+     *  Send an xmpp:restart stanza.
+     */
+    _sendRestart: function () {
+        this._throttledRequestHandler();
+        clearTimeout(this._conn._idleTimeout);
+    },
+
+    /** PrivateFunction: _throttledRequestHandler
+     *  _Private_ function to throttle requests to the connection window.
+     *
+     *  This function makes sure we don't send requests so fast that the
+     *  request ids overflow the connection window in the case that one
+     *  request died.
+     */
+    _throttledRequestHandler: function () {
+        if (!this._requests) {
+            bosh_Strophe.debug("_throttledRequestHandler called with " +
+                          "undefined requests");
+        } else {
+            bosh_Strophe.debug("_throttledRequestHandler called with " +
+                          this._requests.length + " requests");
+        }
+
+        if (!this._requests || this._requests.length === 0) {
+            return;
+        }
+
+        if (this._requests.length > 0) {
+            this._processRequest(0);
+        }
+
+        if (this._requests.length > 1 &&
+            Math.abs(this._requests[0].rid -
+                     this._requests[1].rid) < this.window) {
+            this._processRequest(1);
+        }
+    }
+};
+
 // CONCATENATED MODULE: ./src/headless/converse-bosh.js
 // Converse.js
 // http://conversejs.org
@@ -56950,6 +57052,7 @@ converse_core.plugins.add('converse-bookmarks', {
  * @description
  * Converse.js plugin which add support for XEP-0206: XMPP Over BOSH
  */
+
 
 
 const {
@@ -57078,6 +57181,8 @@ converse_core.plugins.add('converse-bosh', {
         });
       }
     });
+
+    _converse.api.listen.on('addClientFeatures', () => _converse.api.disco.own.features.add(converse_bosh_Strophe.NS.BOSH));
     /************************ END Event Handlers ************************/
 
     /************************ BEGIN API ************************/
@@ -57182,6 +57287,9 @@ converse_core.plugins.add('converse-caps', {
     }
   }
 });
+// EXTERNAL MODULE: ./node_modules/lodash/lodash.js
+var lodash = __webpack_require__(2);
+
 // EXTERNAL MODULE: ./node_modules/filesize/lib/filesize.js
 var filesize = __webpack_require__(42);
 var filesize_default = /*#__PURE__*/__webpack_require__.n(filesize);
@@ -57196,6 +57304,7 @@ var filesize_default = /*#__PURE__*/__webpack_require__.n(filesize);
 /**
  * @module converse-chatboxes
  */
+
 
 
 
@@ -57236,6 +57345,7 @@ converse_core.plugins.add('converse-chatboxes', {
       'auto_join_private_chats': [],
       'clear_messages_on_reconnection': false,
       'filter_by_resource': false,
+      'allow_message_corrections': 'all',
       'send_chat_state_notifications': true
     });
 
@@ -57486,10 +57596,11 @@ converse_core.plugins.add('converse-chatboxes', {
         return {
           'bookmarked': false,
           'chat_state': undefined,
-          'hidden': converse_chatboxes_.includes(['mobile', 'fullscreen'], _converse.view_mode),
+          'hidden': ['mobile', 'fullscreen'].includes(_converse.view_mode),
           'message_type': 'chat',
           'nickname': undefined,
           'num_unread': 0,
+          'time_sent': new Date(0).toISOString(),
           'time_opened': this.get('time_opened') || new Date().getTime(),
           'type': _converse.PRIVATE_CHAT_TYPE,
           'url': ''
@@ -57576,8 +57687,14 @@ converse_core.plugins.add('converse-chatboxes', {
         const resolve = this.messages.fetched.resolve;
         this.messages.fetch({
           'add': true,
-          'success': converse_chatboxes_.flow(this.afterMessagesFetched.bind(this), resolve),
-          'error': converse_chatboxes_.flow(this.afterMessagesFetched.bind(this), resolve)
+          'success': () => {
+            this.afterMessagesFetched();
+            resolve();
+          },
+          'error': () => {
+            this.afterMessagesFetched();
+            resolve();
+          }
         });
         return this.messages.fetched;
       },
@@ -57632,11 +57749,11 @@ converse_core.plugins.add('converse-chatboxes', {
           return 'Ignored ChatBox without JID';
         }
 
-        const room_jids = _converse.auto_join_rooms.map(s => converse_chatboxes_.isObject(s) ? s.jid : s);
+        const room_jids = _converse.auto_join_rooms.map(s => Object(lodash["isObject"])(s) ? s.jid : s);
 
         const auto_join = _converse.auto_join_private_chats.concat(room_jids);
 
-        if (_converse.singleton && !converse_chatboxes_.includes(auto_join, attrs.jid) && !_converse.auto_join_on_invite) {
+        if (_converse.singleton && !auto_join.includes(attrs.jid) && !_converse.auto_join_on_invite) {
           const msg = "".concat(attrs.jid, " is not allowed because singleton is true and it's not being auto_joined");
 
           _converse.log(msg, converse_chatboxes_Strophe.LogLevel.WARN);
@@ -57788,12 +57905,12 @@ converse_core.plugins.add('converse-chatboxes', {
        *     {@link _converse.ChatBox.getMessageAttributesFromStanza}
        */
       correctMessage(attrs) {
-        if (!attrs.msgid || !attrs.from) {
+        if (!attrs.replaced_id || !attrs.from) {
           return;
         }
 
         const message = this.messages.findWhere({
-          'msgid': attrs.msgid,
+          'msgid': attrs.replaced_id,
           'from': attrs.from
         });
 
@@ -58079,6 +58196,45 @@ converse_core.plugins.add('converse-chatboxes', {
       },
 
       /**
+       * Responsible for setting the editable attribute of messages.
+       * If _converse.allow_message_corrections is "last", then only the last
+       * message sent from me will be editable. If set to "all" all messages
+       * will be editable. Otherwise no messages will be editable.
+       * @method _converse.ChatBox#setEditable
+       * @memberOf _converse.ChatBox
+       * @param { Object } attrs An object containing message attributes.
+       * @param { String } send_time - time when the message was sent
+       */
+      setEditable(attrs, send_time, stanza) {
+        if (stanza && converse_chatboxes_u.isHeadlineMessage(_converse, stanza)) {
+          return;
+        }
+
+        if (converse_chatboxes_u.isEmptyMessage(attrs) || attrs.sender !== 'me') {
+          return;
+        }
+
+        if (_converse.allow_message_corrections === 'all') {
+          attrs.editable = true;
+        } else if (_converse.allow_message_corrections === 'last' && send_time > this.get('time_sent')) {
+          this.set({
+            'time_sent': send_time
+          });
+          const msg = this.messages.findWhere({
+            'editable': true
+          });
+
+          if (msg) {
+            msg.save({
+              'editable': false
+            });
+          }
+
+          attrs.editable = true;
+        }
+      },
+
+      /**
        * Responsible for sending off a text message inside an ongoing chat conversation.
        * @method _converse.ChatBox#sendMessage
        * @memberOf _converse.ChatBox
@@ -58107,6 +58263,7 @@ converse_core.plugins.add('converse-chatboxes', {
             'received': undefined
           });
         } else {
+          this.setEditable(attrs, new Date().toISOString());
           message = this.messages.create(attrs);
         }
 
@@ -58162,8 +58319,8 @@ converse_core.plugins.add('converse-chatboxes', {
             'type': "hidden"
           }
         }).pop(),
-              max_file_size = window.parseInt(converse_chatboxes_.get(data, 'attributes.max-file-size.value')),
-              slot_request_url = converse_chatboxes_.get(item, 'id');
+              max_file_size = window.parseInt(Object(lodash["get"])(data, 'attributes.max-file-size.value')),
+              slot_request_url = Object(lodash["get"])(item, 'id');
 
         if (!slot_request_url) {
           this.messages.create({
@@ -58197,8 +58354,7 @@ converse_core.plugins.add('converse-chatboxes', {
       },
 
       getReferencesFromStanza(stanza) {
-        const text = converse_chatboxes_.propertyOf(stanza.querySelector('body'))('textContent');
-
+        const text = Object(lodash["propertyOf"])(stanza.querySelector('body'))('textContent');
         return converse_chatboxes_sizzle("reference[xmlns=\"".concat(converse_chatboxes_Strophe.NS.REFERENCE, "\"]"), stanza).map(ref => {
           const begin = ref.getAttribute('begin'),
                 end = ref.getAttribute('end');
@@ -58249,7 +58405,7 @@ converse_core.plugins.add('converse-chatboxes', {
 
       getErrorMessage(stanza) {
         const error = stanza.querySelector('error');
-        return converse_chatboxes_.propertyOf(error.querySelector('text'))('textContent') || __('Sorry, an error occurred:') + ' ' + error.innerHTML;
+        return Object(lodash["propertyOf"])(error.querySelector('text'))('textContent') || __('Sorry, an error occurred:') + ' ' + error.innerHTML;
       },
 
       /**
@@ -58298,9 +58454,10 @@ converse_core.plugins.add('converse-chatboxes', {
           'is_spoiler': !!spoiler,
           'message': text,
           'msgid': msgid,
+          'replaced_id': replaced_id,
           'references': this.getReferencesFromStanza(stanza),
-          'subject': converse_chatboxes_.propertyOf(stanza.querySelector('subject'))('textContent'),
-          'thread': converse_chatboxes_.propertyOf(stanza.querySelector('thread'))('textContent'),
+          'subject': Object(lodash["propertyOf"])(stanza.querySelector('subject'))('textContent'),
+          'thread': Object(lodash["propertyOf"])(stanza.querySelector('thread'))('textContent'),
           'time': delay ? dayjs(delay.getAttribute('stamp')).toISOString() : new Date().toISOString(),
           'type': stanza.getAttribute('type')
         }, this.getStanzaIDs(original_stanza));
@@ -58585,9 +58742,7 @@ converse_core.plugins.add('converse-chatboxes', {
 
 
         const has_body = converse_chatboxes_sizzle("body, encrypted[xmlns=\"".concat(converse_chatboxes_Strophe.NS.OMEMO, "\"]"), stanza).length > 0;
-
-        const roster_nick = converse_chatboxes_.get(contact, 'attributes.nickname');
-
+        const roster_nick = Object(lodash["get"])(contact, 'attributes.nickname');
         const chatbox = this.getChatBox(contact_jid, {
           'nickname': roster_nick
         }, has_body);
@@ -58601,6 +58756,7 @@ converse_core.plugins.add('converse-chatboxes', {
 
           if (!message && !chatbox.handleReceipt(stanza, from_jid, is_carbon, is_me, is_mam) && !chatbox.handleChatMarker(stanza, from_jid, is_carbon, is_roster_contact, is_mam)) {
             const attrs = await chatbox.getMessageAttributesFromStanza(stanza, original_stanza);
+            chatbox.setEditable(attrs, attrs.time, stanza);
 
             if (attrs['chat_state'] || !converse_chatboxes_u.isEmptyMessage(attrs)) {
               const msg = chatbox.correctMessage(attrs) || chatbox.messages.create(attrs);
@@ -58638,7 +58794,7 @@ converse_core.plugins.add('converse-chatboxes', {
         let attrs = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
         let create = arguments.length > 2 ? arguments[2] : undefined;
 
-        if (converse_chatboxes_.isObject(jid)) {
+        if (Object(lodash["isObject"])(jid)) {
           create = attrs;
           attrs = jid;
           jid = attrs.jid;
@@ -58683,7 +58839,7 @@ converse_core.plugins.add('converse-chatboxes', {
           return;
         }
 
-        if (converse_chatboxes_.isString(jid)) {
+        if (Object(lodash["isString"])(jid)) {
           _converse.api.chats.open(jid);
         } else {
           _converse.log('Invalid jid criteria specified for "auto_join_private_chats"', converse_chatboxes_Strophe.LogLevel.ERROR);
@@ -58726,6 +58882,14 @@ converse_core.plugins.add('converse-chatboxes', {
       _converse.api.trigger('chatBoxesInitialized');
     });
 
+    _converse.api.listen.on('clearSession', () => {
+      if (_converse.shouldClearCache()) {
+        _converse.chatboxes.filter(c => c.messages && c.messages.clearSession({
+          'silent': true
+        }));
+      }
+    });
+
     _converse.api.listen.on('presencesInitialized', reconnecting => _converse.chatboxes.onConnected(reconnecting));
 
     _converse.api.listen.on('reconnected', () => _converse.chatboxes.forEach(m => m.onReconnection()));
@@ -58748,10 +58912,10 @@ converse_core.plugins.add('converse-chatboxes', {
          * @param {object} [attrs] An object containing configuration attributes.
          */
         async create(jids, attrs) {
-          if (converse_chatboxes_.isString(jids)) {
-            if (attrs && !converse_chatboxes_.get(attrs, 'fullname')) {
+          if (Object(lodash["isString"])(jids)) {
+            if (attrs && !Object(lodash["get"])(attrs, 'fullname')) {
               const contact = await _converse.api.contacts.get(jids);
-              attrs.fullname = converse_chatboxes_.get(contact, 'attributes.fullname');
+              attrs.fullname = Object(lodash["get"])(contact, 'attributes.fullname');
             }
 
             const chatbox = _converse.chatboxes.getChatBox(jids, attrs, true);
@@ -58768,7 +58932,7 @@ converse_core.plugins.add('converse-chatboxes', {
           if (Array.isArray(jids)) {
             return Promise.all(jids.forEach(async jid => {
               const contact = await _converse.api.contacts.get(jids);
-              attrs.fullname = converse_chatboxes_.get(contact, 'attributes.fullname');
+              attrs.fullname = Object(lodash["get"])(contact, 'attributes.fullname');
               return _converse.chatboxes.getChatBox(jid, attrs, true).maybeShow();
             }));
           }
@@ -58822,7 +58986,7 @@ converse_core.plugins.add('converse-chatboxes', {
         async open(jids, attrs, force) {
           await Promise.all([_converse.api.waitUntil('rosterContactsFetched'), _converse.api.waitUntil('chatBoxesFetched')]);
 
-          if (converse_chatboxes_.isString(jids)) {
+          if (Object(lodash["isString"])(jids)) {
             const chat = await _converse.api.chats.create(jids, attrs);
 
             if (chat) {
@@ -58874,7 +59038,7 @@ converse_core.plugins.add('converse-chatboxes', {
             });
 
             return result;
-          } else if (converse_chatboxes_.isString(jids)) {
+          } else if (Object(lodash["isString"])(jids)) {
             return _converse.chatboxes.getChatBox(jids);
           }
 
@@ -58982,9 +59146,6 @@ converse_core.plugins.add('converse-rsm', {
   }
 
 });
-// EXTERNAL MODULE: ./node_modules/lodash/lodash.js
-var lodash = __webpack_require__(2);
-
 // CONCATENATED MODULE: ./src/headless/converse-mam.js
 // Converse.js (A browser based XMPP chat client)
 // https://conversejs.org
@@ -59134,7 +59295,15 @@ converse_core.plugins.add('converse-mam', {
           'with': this.get('jid')
         }, options);
         const result = await _converse.api.archive.query(query);
-        result.messages.forEach(message_handler);
+        /* eslint-disable no-await-in-loop */
+
+        for (const message of result.messages) {
+          try {
+            await message_handler(message);
+          } catch (e) {
+            _converse.log(e, converse_mam_Strophe.LogLevel.ERROR);
+          }
+        }
 
         if (result.error) {
           result.error.retry = () => this.fetchArchivedMessages(options, page);
@@ -61148,6 +61317,10 @@ converse_core.plugins.add('converse-smacks', {
     });
 
     function isStreamManagementSupported() {
+      if (_converse.api.connection.isType('bosh') && !_converse.isTestEnv()) {
+        return false;
+      }
+
       return _converse.api.disco.stream.getFeature('sm', converse_smacks_Strophe.NS.SM);
     }
 
@@ -61220,7 +61393,7 @@ converse_core.plugins.add('converse-smacks', {
     }
 
     function resetSessionData() {
-      _converse.session.save({
+      _converse.session && _converse.session.save({
         'smacks_enabled': false,
         'num_stanzas_handled': 0,
         'num_stanzas_handled_by_server': 0,
@@ -61359,7 +61532,7 @@ converse_core.plugins.add('converse-smacks', {
 
       _converse.connection.addHandler(handleAck, converse_smacks_Strophe.NS.SM, 'a');
 
-      if ((_converse.api.connection.isType('websocket') || _converse.isTestEnv()) && _converse.session.get('smacks_stream_id')) {
+      if (_converse.session.get('smacks_stream_id')) {
         await sendResumeStanza();
       } else {
         resetSessionData();
@@ -63777,7 +63950,7 @@ var message_versions_modal = __webpack_require__(139);
 var message_versions_modal_default = /*#__PURE__*/__webpack_require__.n(message_versions_modal);
 
 // EXTERNAL MODULE: ./src/templates/spinner.html
-var templates_spinner = __webpack_require__(9);
+var templates_spinner = __webpack_require__(10);
 var spinner_default = /*#__PURE__*/__webpack_require__.n(templates_spinner);
 
 // EXTERNAL MODULE: ./node_modules/xss/dist/xss.js
@@ -63953,7 +64126,7 @@ converse_core.plugins.add('converse-message-view', {
 
         const isValidChange = prop => Object.prototype.hasOwnProperty.call(this.model.changed, prop);
 
-        if (['correcting', 'message', 'type', 'upload', 'received'].filter(isValidChange).length) {
+        if (['correcting', 'message', 'type', 'upload', 'received', 'editable'].filter(isValidChange).length) {
           await this.debouncedRender();
         }
 
@@ -64795,13 +64968,9 @@ converse_core.plugins.add('converse-chatview', {
        * @method _converse.ChatBoxView#addSpoilerButton
        */
       async addSpoilerButton(options) {
-        __('1111');
-
         if (!options.show_spoiler_button || this.model.get('type') === _converse.CHATROOMS_TYPE) {
           return;
         }
-
-        __('2222');
 
         const contact_jid = this.model.get('jid');
 
@@ -64809,20 +64978,13 @@ converse_core.plugins.add('converse-chatview', {
           return;
         }
 
-        __('3333');
-
         const results = await Promise.all(this.model.presence.resources.map(r => _converse.api.disco.supports(converse_chatview_Strophe.NS.SPOILER, "".concat(contact_jid, "/").concat(r.get('name')))));
-
-        __('4444');
-
         const all_resources_support_spolers = results.reduce((acc, val) => acc && val, true);
 
         if (all_resources_support_spolers) {
           const html = spoiler_button_default()(this.model.toJSON());
           this.el.querySelector('.chat-toolbar').insertAdjacentHTML('afterBegin', html);
         }
-
-        __('hello world');
       },
 
       insertHeading() {
@@ -65435,7 +65597,7 @@ converse_core.plugins.add('converse-chatview', {
             idx -= 1;
             const candidate = this.model.messages.at(idx);
 
-            if (candidate.get('sender') === 'me' && candidate.get('message')) {
+            if (candidate.get('editable')) {
               message = candidate;
               break;
             }
@@ -65890,11 +66052,11 @@ var login_panel_default = /*#__PURE__*/__webpack_require__.n(login_panel);
 
 
 
+
 const CHATBOX_TYPE = 'chatbox';
 const {
   Strophe: converse_controlbox_Strophe,
   Backbone: converse_controlbox_Backbone,
-  _: converse_controlbox_,
   dayjs: converse_controlbox_dayjs
 } = converse_core.env;
 const converse_controlbox_u = converse_core.env.utils;
@@ -66284,7 +66446,7 @@ converse_core.plugins.add('converse-controlbox', {
 
         let feedback_class, pretty_status;
 
-        if (converse_controlbox_.includes(REPORTABLE_STATUSES, connection_status)) {
+        if (REPORTABLE_STATUSES.includes(connection_status)) {
           pretty_status = PRETTY_CONNECTION_STATUS[connection_status];
           feedback_class = CONNECTION_STATUS_CSS_CLASS[pretty_status];
         }
@@ -66308,7 +66470,7 @@ converse_core.plugins.add('converse-controlbox', {
       },
 
       initPopovers() {
-        converse_controlbox_.forEach(this.el.querySelectorAll('[data-title]'), el => {
+        Array.from(this.el.querySelectorAll('[data-title]')).forEach(el => {
           const popover = new bootstrap_native_default.a.Popover(el, {
             'trigger': _converse.view_mode === 'mobile' && 'click' || 'hover',
             'dismissible': _converse.view_mode === 'mobile' && true || false,
@@ -66369,7 +66531,7 @@ converse_core.plugins.add('converse-controlbox', {
           }
 
           jid = converse_controlbox_Strophe.escapeNode(jid) + last_part;
-        } else if (_converse.default_domain && !converse_controlbox_.includes(jid, '@')) {
+        } else if (_converse.default_domain && !jid.includes('@')) {
           jid = jid + '@' + _converse.default_domain;
         }
 
@@ -66377,7 +66539,7 @@ converse_core.plugins.add('converse-controlbox', {
       },
 
       connect(jid, password) {
-        if (converse_controlbox_.includes(["converse/login", "converse/register"], converse_controlbox_Backbone.history.getFragment())) {
+        if (["converse/login", "converse/register"].includes(converse_controlbox_Backbone.history.getFragment())) {
           _converse.router.navigate('', {
             'replace': true
           });
@@ -66418,7 +66580,7 @@ converse_core.plugins.add('converse-controlbox', {
       initialize() {
         _converse.chatboxviews.insertRowColumn(this.render().el);
 
-        _converse.api.waitUntil('initialized').then(this.render.bind(this)).catch(converse_controlbox_.partial(_converse.log, converse_controlbox_, converse_controlbox_Strophe.LogLevel.FATAL));
+        _converse.api.waitUntil('initialized').then(this.render.bind(this)).catch(e => _converse.log(e, converse_controlbox_Strophe.LogLevel.FATAL));
       },
 
       render() {
@@ -66497,8 +66659,7 @@ converse_core.plugins.add('converse-controlbox', {
     });
 
     _converse.api.listen.on('clearSession', () => {
-      const chatboxviews = converse_controlbox_.get(_converse, 'chatboxviews', null);
-
+      const chatboxviews = Object(lodash["get"])(_converse, 'chatboxviews', null);
       const view = chatboxviews && chatboxviews.get('controlbox');
 
       if (view) {
@@ -66506,14 +66667,14 @@ converse_core.plugins.add('converse-controlbox', {
           'connected': false
         });
 
-        if (converse_controlbox_.get(view, 'controlbox_pane')) {
+        if (Object(lodash["get"])(view, 'controlbox_pane')) {
           view.controlbox_pane.remove();
           delete view.controlbox_pane;
         }
       }
     });
 
-    Promise.all([_converse.api.waitUntil('connectionInitialized'), _converse.api.waitUntil('chatBoxViewsInitialized')]).then(addControlBox).catch(converse_controlbox_.partial(_converse.log, converse_controlbox_, converse_controlbox_Strophe.LogLevel.FATAL));
+    Promise.all([_converse.api.waitUntil('connectionInitialized'), _converse.api.waitUntil('chatBoxViewsInitialized')]).then(addControlBox).catch(e => _converse.log(e, converse_controlbox_Strophe.LogLevel.FATAL));
 
     _converse.api.listen.on('chatBoxesFetched', () => {
       const controlbox = _converse.chatboxes.get('controlbox') || addControlBox();
@@ -71112,7 +71273,7 @@ converse_core.plugins.add('converse-notification', {
 
       const is_me = converse_notification_Strophe.getBareJidFromJid(message.getAttribute('from')) === _converse.bare_jid;
 
-      return !converse_notification_u.isOnlyChatStateNotification(message) && !is_me && (_converse.show_desktop_notifications === 'all' || _converse.isMessageToHiddenChat(message));
+      return !converse_notification_u.isOnlyChatStateNotification(message) && !converse_notification_u.isOnlyMessageDeliveryReceipt(message) && !is_me && (_converse.show_desktop_notifications === 'all' || _converse.isMessageToHiddenChat(message));
     };
 
     _converse.playSoundNotification = function () {
@@ -71351,7 +71512,7 @@ var profile_view = __webpack_require__(185);
 var profile_view_default = /*#__PURE__*/__webpack_require__.n(profile_view);
 
 // EXTERNAL MODULE: ./src/templates/status_option.html
-var status_option = __webpack_require__(457);
+var status_option = __webpack_require__(458);
 
 // CONCATENATED MODULE: ./src/converse-profile.js
 // Converse.js (A browser based XMPP chat client)
@@ -74504,7 +74665,7 @@ var roster_item = __webpack_require__(199);
 var roster_item_default = /*#__PURE__*/__webpack_require__.n(roster_item);
 
 // EXTERNAL MODULE: ./src/templates/search_contact.html
-var search_contact = __webpack_require__(458);
+var search_contact = __webpack_require__(459);
 
 // CONCATENATED MODULE: ./src/converse-rosterview.js
 // Converse.js
@@ -75390,7 +75551,10 @@ converse_core.plugins.add('converse-rosterview', {
         // Create a model on which we can store filter properties
         const model = new _converse.RosterFilter();
         model.id = "_converse.rosterfilter".concat(_converse.bare_jid);
-        model.browserStorage = new backbone_browserStorage_default.a.local(this.filter.id);
+
+        const storage = _converse.config.get('storage');
+
+        model.browserStorage = new backbone_browserStorage_default.a[storage](this.filter.id);
         this.filter_view = new _converse.RosterFilterView({
           'model': model
         });
@@ -75748,9 +75912,16 @@ converse_core.plugins.add('converse-uniview', {
 
 });
 // EXTERNAL MODULE: ./sass/converse.scss
-var sass_converse = __webpack_require__(459);
+var sass_converse = __webpack_require__(460);
 
 // CONCATENATED MODULE: ./src/converse.js
+// Converse.js (A browser based XMPP chat client)
+// https://conversejs.org
+//
+// Copyright (c) 2019, The Converse developers
+// Licensed under the Mozilla Public License (MPLv2)
+//
+
 /* START: Removable components
  * --------------------
  * Any of the following components may be removed if they're not needed.
