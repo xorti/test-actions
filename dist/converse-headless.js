@@ -38952,10 +38952,12 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_2__["default"].plugins
             'jid': this.get('jid')
           });
 
-          return bookmark.get('name');
-        } else {
-          return this.__super__.getDisplayName.apply(this, arguments);
+          if (bookmark) {
+            return bookmark.get('name');
+          }
         }
+
+        return this.__super__.getDisplayName.apply(this, arguments);
       },
 
       getAndPersistNickname(nick) {
@@ -39623,7 +39625,8 @@ _converse_core__WEBPACK_IMPORTED_MODULE_3__["default"].plugins.add('converse-cha
       defaults() {
         return {
           'msgid': _converse.connection.getUniqueId(),
-          'time': new Date().toISOString()
+          'time': new Date().toISOString(),
+          'ephemeral': false
         };
       },
 
@@ -39673,7 +39676,7 @@ _converse_core__WEBPACK_IMPORTED_MODULE_3__["default"].plugins.add('converse-cha
       },
 
       isEphemeral() {
-        return this.isOnlyChatStateNotification() || this.get('type') === 'error';
+        return this.isOnlyChatStateNotification() || this.get('ephemeral');
       },
 
       getDisplayName() {
@@ -39686,6 +39689,24 @@ _converse_core__WEBPACK_IMPORTED_MODULE_3__["default"].plugins.add('converse-cha
         } else {
           return this.get('from');
         }
+      },
+
+      getMessageText() {
+        if (this.get('is_encrypted')) {
+          return this.get('plaintext') || (_converse.debug ? __('Unencryptable OMEMO message') : null);
+        }
+
+        return this.get('message');
+      },
+
+      isMeCommand() {
+        const text = this.getMessageText();
+
+        if (!text) {
+          return false;
+        }
+
+        return text.startsWith('/me ');
       },
 
       sendSlotRequestStanza() {
@@ -39720,7 +39741,8 @@ _converse_core__WEBPACK_IMPORTED_MODULE_3__["default"].plugins.add('converse-cha
 
           return this.save({
             'type': 'error',
-            'message': __("Sorry, could not determine upload URL.")
+            'message': __("Sorry, could not determine upload URL."),
+            'ephemeral': true
           });
         }
 
@@ -39734,7 +39756,8 @@ _converse_core__WEBPACK_IMPORTED_MODULE_3__["default"].plugins.add('converse-cha
         } else {
           return this.save({
             'type': 'error',
-            'message': __("Sorry, could not determine file upload URL.")
+            'message': __("Sorry, could not determine file upload URL."),
+            'ephemeral': true
           });
         }
       },
@@ -39776,7 +39799,8 @@ _converse_core__WEBPACK_IMPORTED_MODULE_3__["default"].plugins.add('converse-cha
           this.save({
             'type': 'error',
             'upload': _converse.FAILURE,
-            'message': message
+            'message': message,
+            'ephemeral': true
           });
         };
 
@@ -39885,6 +39909,12 @@ _converse_core__WEBPACK_IMPORTED_MODULE_3__["default"].plugins.add('converse-cha
       },
 
       fetchMessages() {
+        if (this.messages.fetched) {
+          _converse.log("Not re-fetching messages for ".concat(this.get('jid')), Strophe.LogLevel.INFO);
+
+          return;
+        }
+
         this.messages.fetched = u.getResolveablePromise();
         const resolve = this.messages.fetched.resolve;
         this.messages.fetch({
@@ -39892,16 +39922,20 @@ _converse_core__WEBPACK_IMPORTED_MODULE_3__["default"].plugins.add('converse-cha
           'success': _.flow(this.afterMessagesFetched.bind(this), resolve),
           'error': _.flow(this.afterMessagesFetched.bind(this), resolve)
         });
+        return this.messages.fetched;
       },
 
       clearMessages() {
         try {
+          this.messages.models.forEach(m => m.destroy());
           this.messages.reset();
         } catch (e) {
           this.messages.trigger('reset');
 
           _converse.log(e, Strophe.LogLevel.ERROR);
         } finally {
+          delete this.messages.fetched;
+
           this.messages.browserStorage._clear();
         }
       },
@@ -39961,6 +39995,17 @@ _converse_core__WEBPACK_IMPORTED_MODULE_3__["default"].plugins.add('converse-cha
           return this.vcard.getDisplayName();
         } else {
           return this.get('jid');
+        }
+      },
+
+      createMessageFromError(error) {
+        if (error instanceof _converse.TimeoutError) {
+          const msg = this.messages.create({
+            'type': 'error',
+            'message': error.message,
+            'retry': true
+          });
+          msg.error = error;
         }
       },
 
@@ -40447,7 +40492,8 @@ _converse_core__WEBPACK_IMPORTED_MODULE_3__["default"].plugins.add('converse-cha
         if (!item) {
           this.messages.create({
             'message': __("Sorry, looks like file upload is not supported by your server."),
-            'type': 'error'
+            'type': 'error',
+            'ephemeral': true
           });
           return;
         }
@@ -40464,7 +40510,8 @@ _converse_core__WEBPACK_IMPORTED_MODULE_3__["default"].plugins.add('converse-cha
         if (!slot_request_url) {
           this.messages.create({
             'message': __("Sorry, looks like file upload is not supported by your server."),
-            'type': 'error'
+            'type': 'error',
+            'ephemeral': true
           });
           return;
         }
@@ -40473,7 +40520,8 @@ _converse_core__WEBPACK_IMPORTED_MODULE_3__["default"].plugins.add('converse-cha
           if (!window.isNaN(max_file_size) && window.parseInt(file.size) > max_file_size) {
             return this.messages.create({
               'message': __('The size of your file, %1$s, exceeds the maximum allowed by your server, which is %2$s.', file.name, filesize__WEBPACK_IMPORTED_MODULE_4___default()(max_file_size)),
-              'type': 'error'
+              'type': 'error',
+              'ephemeral': true
             });
           } else {
             const message = this.messages.create(Object.assign(this.getOutgoingMessageAttributes(), {
@@ -40546,9 +40594,12 @@ _converse_core__WEBPACK_IMPORTED_MODULE_3__["default"].plugins.add('converse-cha
         return _.propertyOf(error.querySelector('text'))('textContent') || __('Sorry, an error occurred:') + ' ' + error.innerHTML;
       },
 
+      /**
+       * Given a message stanza, return the text contained in its body.
+       * @private
+       * @param { XMLElement } stanza
+       */
       getMessageBody(stanza) {
-        /* Given a message stanza, return the text contained in its body.
-         */
         const type = stanza.getAttribute('type');
 
         if (type === 'error') {
@@ -40636,17 +40687,23 @@ _converse_core__WEBPACK_IMPORTED_MODULE_3__["default"].plugins.add('converse-cha
         return this.trigger("show");
       },
 
+      /**
+       * Indicates whether the chat is hidden and therefore
+       * whether a newly received message will be visible
+       * to the user or not.
+       * @returns {boolean}
+       */
       isHidden() {
-        /* Returns a boolean to indicate whether a newly received
-         * message will be visible to the user or not.
-         */
         return this.get('hidden') || this.get('minimized') || this.isScrolledUp() || _converse.windowState === 'hidden';
       },
 
+      /**
+       * Given a newly received {@link _converse.Message} instance,
+       * update the unread counter if necessary.
+       * @private
+       * @param {_converse.Message} message
+       */
       incrementUnreadMsgCounter(message) {
-        /* Given a newly received message, update the unread counter if
-         * necessary.
-         */
         if (!message || !message.get('message')) {
           return;
         }
@@ -41248,7 +41305,7 @@ const _converse = {
   'templates': {},
   'promises': {}
 };
-_converse.VERSION_NAME = "v5.0.0";
+_converse.VERSION_NAME = "v5.0.1";
 Object.assign(_converse, Backbone.Events);
 _converse.Collection = Backbone.Collection.extend({
   clearSession() {
@@ -41259,7 +41316,15 @@ _converse.Collection = Backbone.Collection.extend({
     this.reset();
   }
 
-}); // Make converse pluggable
+});
+/**
+ * Custom error for indicating timeouts
+ * @namespace _converse
+ */
+
+class TimeoutError extends Error {}
+
+_converse.TimeoutError = TimeoutError; // Make converse pluggable
 
 pluggable_js_src_pluggable__WEBPACK_IMPORTED_MODULE_10__["default"].enable(_converse, '_converse', 'pluggable');
 _converse.keycodes = {
@@ -42707,16 +42772,18 @@ _converse.api = {
    * {@link _converse.api.listen.on} or {@link _converse.api.listen.once}
    * (see [_converse.api.listen](http://localhost:8000/docs/html/api/-_converse.api.listen.html)).
    *
+   * Some events also double as promises and can be waited on via {@link _converse.api.waitUntil}.
+   *
    * @method _converse.api.trigger
    * @param {string} name - The event name
    * @param {...any} [argument] - Argument to be passed to the event handler
    * @param {object} [options]
    * @param {boolean} [options.synchronous] - Whether the event is synchronous or not.
-   *    When a synchronous event is fired, Converse will wait for all
-   *    promises returned by the event's handlers to finish before continuing.
+   *  When a synchronous event is fired, a promise will be returned
+   *  by {@link _converse.api.trigger} which resolves once all the
+   *  event handlers' promises have been resolved.
    */
   async trigger(name) {
-    /* Event emitter and promise resolver */
     const args = Array.from(arguments);
     const options = args.pop();
 
@@ -44363,6 +44430,12 @@ _converse_core__WEBPACK_IMPORTED_MODULE_3__["default"].plugins.add('converse-mam
         const result = await _converse.api.archive.query(query);
         result.messages.forEach(message_handler);
 
+        if (result.error) {
+          result.error.retry = () => this.fetchArchivedMessages(options, page);
+
+          this.createMessageFromError(result.error);
+        }
+
         if (page && result.rsm) {
           if (page === 'forwards') {
             options = result.rsm.next(_converse.archived_messages_page_size, options.before);
@@ -44483,9 +44556,14 @@ _converse_core__WEBPACK_IMPORTED_MODULE_3__["default"].plugins.add('converse-mam
 
     _converse.api.listen.on('serviceDiscovered', getMAMPrefsFromFeature);
 
-    _converse.api.listen.on('chatReconnected', chat => chat.fetchNewestMessages());
-
     _converse.api.listen.on('enteredNewRoom', chat => chat.fetchNewestMessages());
+
+    _converse.api.listen.on('chatReconnected', chat => {
+      // XXX: For MUCs, we listen to enteredNewRoom instead
+      if (chat.get('type') === _converse.PRIVATE_CHAT_TYPE) {
+        chat.fetchNewestMessages();
+      }
+    });
 
     _converse.api.listen.on('afterMessagesFetched', chat => {
       // XXX: We don't want to query MAM every time this is triggered
@@ -44545,9 +44623,9 @@ _converse_core__WEBPACK_IMPORTED_MODULE_3__["default"].plugins.add('converse-mam
          * * `index`
          * * `count`
          * @throws {Error} An error is thrown if the XMPP server responds with an error.
-         * @returns {Promise<Object>} A promise which resolves to an object which
-         * will have keys `messages` and `rsm` which contains a _converse.RSM object
-         * on which "next" or "previous" can be called before passing it in again
+         * @returns { (Promise<Object> | _converse.TimeoutError) } A promise which resolves
+         * to an object which will have keys `messages` and `rsm` which contains a _converse.RSM
+         * object on which "next" or "previous" can be called before passing it in again
          * to this method, to get the next or previous page in the result set.
          *
          * @example
@@ -44779,18 +44857,32 @@ _converse_core__WEBPACK_IMPORTED_MODULE_3__["default"].plugins.add('converse-mam
             return true;
           }, Strophe.NS.MAM);
 
-          let iq_result, rsm;
+          let error;
+          const iq_result = await _converse.api.sendIQ(stanza, _converse.message_archiving_timeout, false);
 
-          try {
-            iq_result = await _converse.api.sendIQ(stanza, _converse.message_archiving_timeout);
-          } catch (e) {
-            _converse.log("Error or timeout while trying to fetch " + "archived messages", Strophe.LogLevel.ERROR);
+          if (iq_result === null) {
+            const err_msg = "Timeout while trying to fetch archived messages.";
 
-            _converse.log(e, Strophe.LogLevel.ERROR);
+            _converse.log(err_msg, Strophe.LogLevel.ERROR);
+
+            error = new _converse.TimeoutError(err_msg);
+            return {
+              messages,
+              error
+            };
+          } else if (u.isErrorStanza(iq_result)) {
+            _converse.log("Error stanza received while trying to fetch archived messages", Strophe.LogLevel.ERROR);
+
+            _converse.log(iq_result, Strophe.LogLevel.ERROR);
+
+            return {
+              messages
+            };
           }
 
           _converse.connection.deleteHandler(message_handler);
 
+          let rsm;
           const fin = iq_result && sizzle__WEBPACK_IMPORTED_MODULE_4___default()("fin[xmlns=\"".concat(Strophe.NS.MAM, "\"]"), iq_result).pop();
 
           if (fin && [null, 'false'].includes(fin.getAttribute('complete'))) {
@@ -44806,7 +44898,8 @@ _converse_core__WEBPACK_IMPORTED_MODULE_3__["default"].plugins.add('converse-mam
 
           return {
             messages,
-            rsm
+            rsm,
+            error
           };
         }
 
@@ -45103,13 +45196,35 @@ _converse_core__WEBPACK_IMPORTED_MODULE_4__["default"].plugins.add('converse-muc
             }
           }, 10000);
         } else {
-          this.occupantAdded = _utils_form__WEBPACK_IMPORTED_MODULE_5__["default"].getResolveablePromise();
           this.setOccupant();
           this.setVCard();
         }
       },
 
+      onOccupantRemoved(occupant) {
+        delete this.occupant;
+
+        const chatbox = _.get(this, 'collection.chatbox');
+
+        chatbox.occupants.on('add', this.onOccupantAdded, this);
+      },
+
+      onOccupantAdded(occupant) {
+        if (occupant.get('nick') === Strophe.getResourceFromJid(this.get('from'))) {
+          this.occupant = occupant;
+          this.occupant.on('destroy', this.onOccupantRemoved, this);
+
+          const chatbox = _.get(this, 'collection.chatbox');
+
+          chatbox.occupants.off('add', this.onOccupantAdded, this);
+        }
+      },
+
       setOccupant() {
+        if (this.get('type') !== 'groupchat') {
+          return;
+        }
+
         const chatbox = _.get(this, 'collection.chatbox');
 
         if (!chatbox) {
@@ -45120,7 +45235,12 @@ _converse_core__WEBPACK_IMPORTED_MODULE_4__["default"].plugins.add('converse-muc
         this.occupant = chatbox.occupants.findWhere({
           'nick': nick
         });
-        this.occupantAdded.resolve();
+
+        if (this.occupant) {
+          this.occupant.on('destroy', this.onOccupantRemoved, this);
+        } else {
+          chatbox.occupants.on('add', this.onOccupantAdded, this);
+        }
       },
 
       getVCardForChatroomOccupant() {
@@ -45231,7 +45351,7 @@ _converse_core__WEBPACK_IMPORTED_MODULE_4__["default"].plugins.add('converse-muc
         };
       },
 
-      initialize() {
+      async initialize() {
         if (_converse.vcards) {
           this.vcard = _converse.vcards.findWhere({
             'jid': this.get('jid')
@@ -45245,9 +45365,10 @@ _converse_core__WEBPACK_IMPORTED_MODULE_4__["default"].plugins.add('converse-muc
 
         this.on('change:chat_state', this.sendChatState, this);
         this.on('change:connection_status', this.onConnectionStatusChanged, this);
-        this.initOccupants();
-        this.registerHandlers();
         this.initMessages();
+        this.registerHandlers();
+        await this.initOccupants();
+        await this.fetchMessages();
         this.enterRoom();
       },
 
@@ -45257,8 +45378,7 @@ _converse_core__WEBPACK_IMPORTED_MODULE_4__["default"].plugins.add('converse-muc
         _converse.log("".concat(this.get('jid'), " initialized with connection_status ").concat(conn_status), Strophe.LogLevel.DEBUG);
 
         if (conn_status !== _converse_core__WEBPACK_IMPORTED_MODULE_4__["default"].ROOMSTATUS.ENTERED) {
-          // We're not restoring a room from cache, so let's clear
-          // the cache (which might be stale).
+          // We're not restoring a room from cache, so let's clear the potentially stale cache.
           this.removeNonMembers();
           await this.refreshRoomFeatures();
 
@@ -45274,8 +45394,8 @@ _converse_core__WEBPACK_IMPORTED_MODULE_4__["default"].plugins.add('converse-muc
 
           this.join();
         } else if (!(await this.rejoinIfNecessary())) {
+          // We've restored the room from cache and we're still joined.
           this.features.fetch();
-          this.fetchMessages();
         }
       },
 
@@ -45283,20 +45403,14 @@ _converse_core__WEBPACK_IMPORTED_MODULE_4__["default"].plugins.add('converse-muc
         if (this.get('connection_status') === _converse_core__WEBPACK_IMPORTED_MODULE_4__["default"].ROOMSTATUS.ENTERED) {
           if (_converse.muc_fetch_members) {
             await this.occupants.fetchMembers();
-          } // It's possible to fetch messages before entering a MUC,
-          // but we don't support this use-case currently. By
-          // fetching messages after members we can immediately
-          // assign an occupant to the message before rendering it,
-          // thereby avoiding re-renders (and therefore DOM reflows).
-
-
-          this.fetchMessages();
+          }
           /**
-           * Triggered when the user has entered a new MUC and *after* cached messages have been fetched.
+           * Triggered when the user has entered a new MUC
            * @event _converse#enteredNewRoom
            * @type { _converse.ChatRoom}
            * @example _converse.api.listen.on('enteredNewRoom', model => { ... });
            */
+
 
           _converse.api.trigger('enteredNewRoom', this);
 
@@ -45343,12 +45457,11 @@ _converse_core__WEBPACK_IMPORTED_MODULE_4__["default"].plugins.add('converse-muc
             'error': resolve
           });
         });
+        return this.occupants.fetched;
       },
 
       registerHandlers() {
-        /* Register presence and message handlers for this chat
-         * groupchat
-         */
+        // Register presence and message handlers for this groupchat
         const room_jid = this.get('jid');
         this.removeHandlers();
         this.presence_handler = _converse.connection.addHandler(stanza => {
@@ -46092,14 +46205,26 @@ _converse_core__WEBPACK_IMPORTED_MODULE_4__["default"].plugins.add('converse-muc
         });
         const result = await _converse.api.sendIQ(iq, null, false);
 
-        if (result.getAttribute('type') === 'error') {
-          const err_msg = "Not allowed to fetch ".concat(affiliation, " list for MUC ").concat(this.get('jid'));
+        if (result === null) {
+          const err_msg = "Error: timeout while fetching ".concat(affiliation, " list for MUC ").concat(this.get('jid'));
+          const err = new Error(err_msg);
 
           _converse.log(err_msg, Strophe.LogLevel.WARN);
 
           _converse.log(result, Strophe.LogLevel.WARN);
 
-          return null;
+          return err;
+        }
+
+        if (_utils_form__WEBPACK_IMPORTED_MODULE_5__["default"].isErrorStanza(result)) {
+          const err_msg = "Error: not allowed to fetch ".concat(affiliation, " list for MUC ").concat(this.get('jid'));
+          const err = new Error(err_msg);
+
+          _converse.log(err_msg, Strophe.LogLevel.WARN);
+
+          _converse.log(result, Strophe.LogLevel.WARN);
+
+          return err;
         }
 
         return _utils_form__WEBPACK_IMPORTED_MODULE_5__["default"].parseMemberListIQ(result).filter(p => p);
@@ -46121,8 +46246,8 @@ _converse_core__WEBPACK_IMPORTED_MODULE_4__["default"].plugins.add('converse-muc
       async updateMemberLists(members) {
         const all_affiliations = ['member', 'admin', 'owner'];
         const aff_lists = await Promise.all(all_affiliations.map(a => this.getAffiliationList(a)));
-        const known_affiliations = all_affiliations.filter(a => aff_lists[all_affiliations.indexOf(a)] !== null);
-        const old_members = aff_lists.reduce((acc, val) => val !== null ? [...val, ...acc] : acc, []);
+        const known_affiliations = all_affiliations.filter(a => !_utils_form__WEBPACK_IMPORTED_MODULE_5__["default"].isErrorObject(aff_lists[all_affiliations.indexOf(a)]));
+        const old_members = aff_lists.reduce((acc, val) => _utils_form__WEBPACK_IMPORTED_MODULE_5__["default"].isErrorObject(val) ? acc : [...val, ...acc], []);
         await this.setAffiliations(_utils_form__WEBPACK_IMPORTED_MODULE_5__["default"].computeAffiliationsDelta(true, false, members, old_members));
 
         if (_converse.muc_fetch_members) {
@@ -46575,7 +46700,8 @@ _converse_core__WEBPACK_IMPORTED_MODULE_4__["default"].plugins.add('converse-muc
           } else {
             const attrs = {
               'type': 'error',
-              'message': text
+              'message': text,
+              'ephemeral': true
             };
             this.messages.create(attrs);
           }
@@ -46618,7 +46744,7 @@ _converse_core__WEBPACK_IMPORTED_MODULE_4__["default"].plugins.add('converse-muc
        * @param { XMLElement } stanza: The presence stanza received
        */
       createInfoMessages(stanza) {
-        const is_self = !_.isNull(stanza.querySelector("status[code='110']"));
+        const is_self = stanza.querySelector("status[code='110']") !== null;
         const x = sizzle("x[xmlns=\"".concat(Strophe.NS.MUC_USER, "\"]"), stanza).pop();
 
         if (!x) {
@@ -46984,8 +47110,8 @@ _converse_core__WEBPACK_IMPORTED_MODULE_4__["default"].plugins.add('converse-muc
       async fetchMembers() {
         const all_affiliations = ['member', 'admin', 'owner'];
         const aff_lists = await Promise.all(all_affiliations.map(a => this.chatroom.getAffiliationList(a)));
-        const new_members = aff_lists.reduce((acc, val) => val !== null ? [...val, ...acc] : acc, []);
-        const known_affiliations = all_affiliations.filter(a => aff_lists[all_affiliations.indexOf(a)] !== null);
+        const new_members = aff_lists.reduce((acc, val) => _utils_form__WEBPACK_IMPORTED_MODULE_5__["default"].isErrorObject(val) ? acc : [...val, ...acc], []);
+        const known_affiliations = all_affiliations.filter(a => !_utils_form__WEBPACK_IMPORTED_MODULE_5__["default"].isErrorObject(aff_lists[all_affiliations.indexOf(a)]));
         const new_jids = new_members.map(m => m.jid).filter(m => m !== undefined);
         const new_nicks = new_members.map(m => !m.jid && m.nick || undefined).filter(m => m !== undefined);
         const removed_members = this.filter(m => {
@@ -47418,13 +47544,13 @@ __webpack_require__.r(__webpack_exports__);
  * Converse.js plugin which add support for application-level pings
  * as specified in XEP-0199 XMPP Ping.
  */
- // Strophe methods for building stanzas
 
 const {
   Strophe,
   $iq,
   _
 } = _converse_core__WEBPACK_IMPORTED_MODULE_0__["default"].env;
+const u = _converse_core__WEBPACK_IMPORTED_MODULE_0__["default"].env.utils;
 Strophe.addNamespace('PING', "urn:xmpp:ping");
 _converse_core__WEBPACK_IMPORTED_MODULE_0__["default"].plugins.add('converse-ping', {
   initialize() {
@@ -47434,55 +47560,15 @@ _converse_core__WEBPACK_IMPORTED_MODULE_0__["default"].plugins.add('converse-pin
     const {
       _converse
     } = this;
+    let lastStanzaDate;
 
     _converse.api.settings.update({
-      ping_interval: 180 //in seconds
+      ping_interval: 60 //in seconds
 
     });
 
-    _converse.ping = function (jid, success, error, timeout) {
-      // XXX: We could first check here if the server advertised that
-      // it supports PING.
-      // However, some servers don't advertise while still keeping the
-      // connection option due to pings.
-      //
-      // var feature = _converse.disco_entities[_converse.domain].features.findWhere({'var': Strophe.NS.PING});
-      _converse.lastStanzaDate = new Date();
-      jid = jid || Strophe.getDomainFromJid(_converse.bare_jid);
-
-      if (timeout === undefined) {
-        timeout = null;
-      }
-
-      if (success === undefined) {
-        success = null;
-      }
-
-      if (error === undefined) {
-        error = null;
-      }
-
-      if (_converse.connection) {
-        const id = _converse.connection.getUniqueId('ping');
-
-        const iq = $iq({
-          'type': 'get',
-          'to': jid,
-          'id': id
-        }).c('ping', {
-          'xmlns': Strophe.NS.PING
-        });
-
-        _converse.connection.sendIQ(iq, success, error, timeout);
-
-        return true;
-      }
-
-      return false;
-    };
-
-    _converse.pong = function (ping) {
-      _converse.lastStanzaDate = new Date();
+    function pong(ping) {
+      lastStanzaDate = new Date();
       const from = ping.getAttribute('from');
       const id = ping.getAttribute('id');
       const iq = $iq({
@@ -47494,52 +47580,100 @@ _converse_core__WEBPACK_IMPORTED_MODULE_0__["default"].plugins.add('converse-pin
       _converse.connection.sendIQ(iq);
 
       return true;
-    };
+    }
 
-    _converse.registerPongHandler = function () {
+    function registerPongHandler() {
       if (_converse.connection.disco !== undefined) {
         _converse.api.disco.own.features.add(Strophe.NS.PING);
       }
 
-      return _converse.connection.addHandler(_converse.pong, Strophe.NS.PING, "iq", "get");
-    };
+      return _converse.connection.addHandler(pong, Strophe.NS.PING, "iq", "get");
+    }
 
-    _converse.registerPingHandler = function () {
-      _converse.registerPongHandler();
+    function registerPingHandler() {
+      _converse.connection.addHandler(() => {
+        if (_converse.ping_interval > 0) {
+          // Handler on each stanza, saves the received date
+          // in order to ping only when needed.
+          lastStanzaDate = new Date();
+          return true;
+        }
+      });
+    }
 
+    setTimeout(() => {
       if (_converse.ping_interval > 0) {
-        _converse.connection.addHandler(function () {
-          /* Handler on each stanza, saves the received date
-           * in order to ping only when needed.
-           */
-          _converse.lastStanzaDate = new Date();
-          return true;
-        });
+        const now = new Date();
 
-        _converse.connection.addTimedHandler(1000, function () {
-          const now = new Date();
+        if (!lastStanzaDate) {
+          lastStanzaDate = now;
+        }
 
-          if (!_converse.lastStanzaDate) {
-            _converse.lastStanzaDate = now;
-          }
+        if ((now - lastStanzaDate) / 1000 > _converse.ping_interval) {
+          return _converse.api.ping();
+        }
 
-          if ((now - _converse.lastStanzaDate) / 1000 > _converse.ping_interval) {
-            return _converse.ping();
-          }
-
-          return true;
-        });
+        return true;
       }
-    };
+    }, 1000);
 
     const onConnected = function onConnected() {
       // Wrapper so that we can spy on registerPingHandler in tests
-      _converse.registerPingHandler();
+      registerPongHandler();
+      registerPingHandler();
     };
 
     _converse.api.listen.on('connected', onConnected);
 
     _converse.api.listen.on('reconnected', onConnected);
+    /************************ BEGIN API ************************/
+
+
+    Object.assign(_converse.api, {
+      /**
+       * Pings the service represented by the passed in JID by sending an
+       * IQ stanza.
+       * @private
+       * @method _converse.api.ping
+       * @param { string } [jid] - The JID of the service to ping
+       */
+      async ping(jid) {
+        // XXX: We could first check here if the server advertised that it supports PING.
+        // However, some servers don't advertise while still responding to pings
+        //
+        // const feature = _converse.disco_entities[_converse.domain].features.findWhere({'var': Strophe.NS.PING});
+        lastStanzaDate = new Date();
+        jid = jid || Strophe.getDomainFromJid(_converse.bare_jid);
+
+        if (_converse.connection) {
+          const iq = $iq({
+            'type': 'get',
+            'to': jid,
+            'id': _converse.connection.getUniqueId('ping')
+          }).c('ping', {
+            'xmlns': Strophe.NS.PING
+          });
+          const result = await _converse.api.sendIQ(iq, 10000, false);
+
+          if (result === null) {
+            _converse.log("Timeout while pinging ".concat(jid), Strophe.LogLevel.WARN);
+
+            if (jid === Strophe.getDomainFromJid(_converse.bare_jid)) {
+              _converse.api.connection.reconnect();
+            }
+          } else if (u.isErrorStanza(result)) {
+            _converse.log("Error while pinging ".concat(jid), Strophe.LogLevel.ERROR);
+
+            _converse.log(result, Strophe.LogLevel.ERROR);
+          }
+
+          return true;
+        }
+
+        return false;
+      }
+
+    });
   }
 
 });
@@ -50273,6 +50407,18 @@ u.isHeadlineMessage = function (_converse, message) {
   }
 
   return false;
+};
+
+u.isErrorObject = function (o) {
+  return o instanceof Error;
+};
+
+u.isErrorStanza = function (stanza) {
+  if (!_lodash_noconflict__WEBPACK_IMPORTED_MODULE_3___default.a.isElement(stanza)) {
+    return false;
+  }
+
+  return stanza.getAttribute('type') === 'error';
 };
 
 u.isForbiddenError = function (stanza) {

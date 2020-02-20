@@ -27323,8 +27323,8 @@ const AvatarMixin = {
         'width': avatar_el.getAttribute('width'),
         'height': avatar_el.getAttribute('height')
       };
-      const image_type = this.model.vcard.get('image_type'),
-            image = this.model.vcard.get('image');
+      const image_type = this.model.vcard.get('image_type');
+      const image = this.model.vcard.get('image');
       data['image'] = "data:" + image_type + ";base64," + image;
       avatar_el.outerHTML = templates_avatar_svg__WEBPACK_IMPORTED_MODULE_4___default()(data);
     }
@@ -27509,39 +27509,37 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var bootstrap_native__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! bootstrap.native */ "./node_modules/bootstrap.native/dist/bootstrap-native.js");
 /* harmony import */ var bootstrap_native__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(bootstrap_native__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @converse/headless/converse-core */ "./src/headless/converse-core.js");
-/* harmony import */ var templates_alert_html__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! templates/alert.html */ "./src/templates/alert.html");
-/* harmony import */ var templates_alert_html__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(templates_alert_html__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var templates_chatbox_html__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! templates/chatbox.html */ "./src/templates/chatbox.html");
-/* harmony import */ var templates_chatbox_html__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(templates_chatbox_html__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var templates_chatbox_head_html__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! templates/chatbox_head.html */ "./src/templates/chatbox_head.html");
-/* harmony import */ var templates_chatbox_head_html__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(templates_chatbox_head_html__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var templates_chatbox_message_form_html__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! templates/chatbox_message_form.html */ "./src/templates/chatbox_message_form.html");
-/* harmony import */ var templates_chatbox_message_form_html__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(templates_chatbox_message_form_html__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var templates_emojis_html__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! templates/emojis.html */ "./src/templates/emojis.html");
-/* harmony import */ var templates_emojis_html__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(templates_emojis_html__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var templates_error_message_html__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! templates/error_message.html */ "./src/templates/error_message.html");
-/* harmony import */ var templates_error_message_html__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(templates_error_message_html__WEBPACK_IMPORTED_MODULE_14__);
-/* harmony import */ var templates_help_message_html__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! templates/help_message.html */ "./src/templates/help_message.html");
-/* harmony import */ var templates_help_message_html__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(templates_help_message_html__WEBPACK_IMPORTED_MODULE_15__);
-/* harmony import */ var templates_info_html__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! templates/info.html */ "./src/templates/info.html");
-/* harmony import */ var templates_info_html__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(templates_info_html__WEBPACK_IMPORTED_MODULE_16__);
-/* harmony import */ var templates_new_day_html__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! templates/new_day.html */ "./src/templates/new_day.html");
-/* harmony import */ var templates_new_day_html__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(templates_new_day_html__WEBPACK_IMPORTED_MODULE_17__);
-/* harmony import */ var templates_spinner_html__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! templates/spinner.html */ "./src/templates/spinner.html");
-/* harmony import */ var templates_spinner_html__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(templates_spinner_html__WEBPACK_IMPORTED_MODULE_18__);
-/* harmony import */ var templates_spoiler_button_html__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! templates/spoiler_button.html */ "./src/templates/spoiler_button.html");
-/* harmony import */ var templates_spoiler_button_html__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(templates_spoiler_button_html__WEBPACK_IMPORTED_MODULE_19__);
-/* harmony import */ var templates_status_message_html__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! templates/status_message.html */ "./src/templates/status_message.html");
-/* harmony import */ var templates_status_message_html__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(templates_status_message_html__WEBPACK_IMPORTED_MODULE_20__);
-/* harmony import */ var templates_toolbar_html__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! templates/toolbar.html */ "./src/templates/toolbar.html");
-/* harmony import */ var templates_toolbar_html__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(templates_toolbar_html__WEBPACK_IMPORTED_MODULE_21__);
-/* harmony import */ var templates_toolbar_fileupload_html__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! templates/toolbar_fileupload.html */ "./src/templates/toolbar_fileupload.html");
-/* harmony import */ var templates_toolbar_fileupload_html__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(templates_toolbar_fileupload_html__WEBPACK_IMPORTED_MODULE_22__);
-/* harmony import */ var templates_user_details_modal_html__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! templates/user_details_modal.html */ "./src/templates/user_details_modal.html");
-/* harmony import */ var templates_user_details_modal_html__WEBPACK_IMPORTED_MODULE_23___default = /*#__PURE__*/__webpack_require__.n(templates_user_details_modal_html__WEBPACK_IMPORTED_MODULE_23__);
-/* harmony import */ var _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! @converse/headless/utils/emoji */ "./src/headless/utils/emoji.js");
-/* harmony import */ var xss_dist_xss__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! xss/dist/xss */ "./node_modules/xss/dist/xss.js");
-/* harmony import */ var xss_dist_xss__WEBPACK_IMPORTED_MODULE_25___default = /*#__PURE__*/__webpack_require__.n(xss_dist_xss__WEBPACK_IMPORTED_MODULE_25__);
+/* harmony import */ var templates_chatbox_html__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! templates/chatbox.html */ "./src/templates/chatbox.html");
+/* harmony import */ var templates_chatbox_html__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(templates_chatbox_html__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var templates_chatbox_head_html__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! templates/chatbox_head.html */ "./src/templates/chatbox_head.html");
+/* harmony import */ var templates_chatbox_head_html__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(templates_chatbox_head_html__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var templates_chatbox_message_form_html__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! templates/chatbox_message_form.html */ "./src/templates/chatbox_message_form.html");
+/* harmony import */ var templates_chatbox_message_form_html__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(templates_chatbox_message_form_html__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var templates_emojis_html__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! templates/emojis.html */ "./src/templates/emojis.html");
+/* harmony import */ var templates_emojis_html__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(templates_emojis_html__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var templates_error_message_html__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! templates/error_message.html */ "./src/templates/error_message.html");
+/* harmony import */ var templates_error_message_html__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(templates_error_message_html__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var templates_help_message_html__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! templates/help_message.html */ "./src/templates/help_message.html");
+/* harmony import */ var templates_help_message_html__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(templates_help_message_html__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var templates_info_html__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! templates/info.html */ "./src/templates/info.html");
+/* harmony import */ var templates_info_html__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(templates_info_html__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var templates_new_day_html__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! templates/new_day.html */ "./src/templates/new_day.html");
+/* harmony import */ var templates_new_day_html__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(templates_new_day_html__WEBPACK_IMPORTED_MODULE_16__);
+/* harmony import */ var templates_spinner_html__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! templates/spinner.html */ "./src/templates/spinner.html");
+/* harmony import */ var templates_spinner_html__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(templates_spinner_html__WEBPACK_IMPORTED_MODULE_17__);
+/* harmony import */ var templates_spoiler_button_html__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! templates/spoiler_button.html */ "./src/templates/spoiler_button.html");
+/* harmony import */ var templates_spoiler_button_html__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(templates_spoiler_button_html__WEBPACK_IMPORTED_MODULE_18__);
+/* harmony import */ var templates_status_message_html__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! templates/status_message.html */ "./src/templates/status_message.html");
+/* harmony import */ var templates_status_message_html__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(templates_status_message_html__WEBPACK_IMPORTED_MODULE_19__);
+/* harmony import */ var templates_toolbar_html__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! templates/toolbar.html */ "./src/templates/toolbar.html");
+/* harmony import */ var templates_toolbar_html__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(templates_toolbar_html__WEBPACK_IMPORTED_MODULE_20__);
+/* harmony import */ var templates_toolbar_fileupload_html__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! templates/toolbar_fileupload.html */ "./src/templates/toolbar_fileupload.html");
+/* harmony import */ var templates_toolbar_fileupload_html__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(templates_toolbar_fileupload_html__WEBPACK_IMPORTED_MODULE_21__);
+/* harmony import */ var templates_user_details_modal_html__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! templates/user_details_modal.html */ "./src/templates/user_details_modal.html");
+/* harmony import */ var templates_user_details_modal_html__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(templates_user_details_modal_html__WEBPACK_IMPORTED_MODULE_22__);
+/* harmony import */ var _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! @converse/headless/utils/emoji */ "./src/headless/utils/emoji.js");
+/* harmony import */ var xss_dist_xss__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! xss/dist/xss */ "./node_modules/xss/dist/xss.js");
+/* harmony import */ var xss_dist_xss__WEBPACK_IMPORTED_MODULE_24___default = /*#__PURE__*/__webpack_require__.n(xss_dist_xss__WEBPACK_IMPORTED_MODULE_24__);
 // Converse.js
 // https://conversejs.org
 //
@@ -27551,7 +27549,6 @@ __webpack_require__.r(__webpack_exports__);
 /**
  * @module converse-chatview
  */
-
 
 
 
@@ -27660,11 +27657,11 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_8__["default"].plugins
       },
 
       toHTML() {
-        return templates_emojis_html__WEBPACK_IMPORTED_MODULE_13___default()(Object.assign(this.model.toJSON(), {
+        return templates_emojis_html__WEBPACK_IMPORTED_MODULE_12___default()(Object.assign(this.model.toJSON(), {
           '_': _,
-          'transform': _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_24__["default"].getEmojiRenderer(_converse),
-          'emojis_by_category': _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_24__["default"].getEmojisByCategory(_converse),
-          'toned_emojis': _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_24__["default"].getTonedEmojis(_converse),
+          'transform': _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_23__["default"].getEmojiRenderer(_converse),
+          'emojis_by_category': _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_23__["default"].getEmojisByCategory(_converse),
+          'toned_emojis': _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_23__["default"].getTonedEmojis(_converse),
           'skintones': ['tone1', 'tone2', 'tone3', 'tone4', 'tone5'],
           'shouldBeHidden': this.shouldBeHidden
         }));
@@ -27738,7 +27735,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_8__["default"].plugins
         const vcard = _.get(this.model, 'vcard'),
               vcard_json = vcard ? vcard.toJSON() : {};
 
-        this.el.innerHTML = templates_chatbox_head_html__WEBPACK_IMPORTED_MODULE_11___default()(Object.assign(vcard_json, this.model.toJSON(), {
+        this.el.innerHTML = templates_chatbox_head_html__WEBPACK_IMPORTED_MODULE_10___default()(Object.assign(vcard_json, this.model.toJSON(), {
           '_converse': _converse,
           'info_close': __('Close this chat box'),
           'display_name': this.model.getDisplayName()
@@ -27792,7 +27789,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_8__["default"].plugins
         const vcard = _.get(this.model, 'vcard'),
               vcard_json = vcard ? vcard.toJSON() : {};
 
-        return templates_user_details_modal_html__WEBPACK_IMPORTED_MODULE_23___default()(Object.assign(this.model.toJSON(), vcard_json, {
+        return templates_user_details_modal_html__WEBPACK_IMPORTED_MODULE_22___default()(Object.assign(this.model.toJSON(), vcard_json, {
           '_': _,
           '__': __,
           'view': this,
@@ -27800,7 +27797,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_8__["default"].plugins
           'allow_contact_removal': _converse.allow_contact_removal,
           'display_name': this.model.getDisplayName(),
           'is_roster_contact': this.model.contact !== undefined,
-          'utils': _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_24__["default"]
+          'utils': _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_23__["default"]
         }));
       },
 
@@ -27821,20 +27818,17 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_8__["default"].plugins
         }
 
         const refresh_icon = this.el.querySelector('.fa-refresh');
-        _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_24__["default"].addClass('fa-spin', refresh_icon);
+        _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_23__["default"].addClass('fa-spin', refresh_icon);
 
         try {
           await _converse.api.vcard.update(this.model.contact.vcard, true);
         } catch (e) {
           _converse.log(e, Strophe.LogLevel.FATAL);
 
-          this.el.querySelector('.modal-body').insertAdjacentHTML('afterBegin', templates_alert_html__WEBPACK_IMPORTED_MODULE_9___default()({
-            'type': 'alert-danger',
-            'message': __('Sorry, something went wrong while trying to refresh')
-          }));
+          this.alert(__('Sorry, something went wrong while trying to refresh'), 'danger');
         }
 
-        _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_24__["default"].removeClass('fa-spin', refresh_icon);
+        _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_23__["default"].removeClass('fa-spin', refresh_icon);
       },
 
       removeContact(ev) {
@@ -27863,7 +27857,6 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_8__["default"].plugins
     });
     /**
      * The View of an open/ongoing chat conversation.
-     *
      * @class
      * @namespace _converse.ChatBoxView
      * @memberOf _converse
@@ -27926,7 +27919,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_8__["default"].plugins
       },
 
       render() {
-        this.el.innerHTML = templates_chatbox_html__WEBPACK_IMPORTED_MODULE_10___default()(Object.assign(this.model.toJSON(), {
+        this.el.innerHTML = templates_chatbox_html__WEBPACK_IMPORTED_MODULE_9___default()(Object.assign(this.model.toJSON(), {
           'unread_msgs': __('You have unread messages')
         }));
         this.content = this.el.querySelector('.chat-content');
@@ -27942,7 +27935,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_8__["default"].plugins
 
         const options = _.assign(this.model.toJSON(), this.getToolbarOptions());
 
-        this.el.querySelector('.chat-toolbar').innerHTML = templates_toolbar_html__WEBPACK_IMPORTED_MODULE_21___default()(options);
+        this.el.querySelector('.chat-toolbar').innerHTML = templates_toolbar_html__WEBPACK_IMPORTED_MODULE_20___default()(options);
         this.addSpoilerButton(options);
         this.addFileUploadButton();
         /**
@@ -27959,7 +27952,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_8__["default"].plugins
 
       renderMessageForm() {
         const form_container = this.el.querySelector('.bottom-panel');
-        form_container.innerHTML = templates_chatbox_message_form_html__WEBPACK_IMPORTED_MODULE_12___default()(Object.assign(this.model.toJSON(), {
+        form_container.innerHTML = templates_chatbox_message_form_html__WEBPACK_IMPORTED_MODULE_11___default()(Object.assign(this.model.toJSON(), {
           'message_limit': _converse.message_limit,
           'hint_value': _.get(this.el.querySelector('.spoiler-hint'), 'value'),
           'label_message': this.model.get('composing_spoiler') ? __('Hidden message') : __('Message'),
@@ -28029,7 +28022,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_8__["default"].plugins
 
       async addFileUploadButton() {
         if (await _converse.api.disco.supports(Strophe.NS.HTTPUPLOAD, _converse.domain)) {
-          this.el.querySelector('.chat-toolbar').insertAdjacentHTML('beforeend', templates_toolbar_fileupload_html__WEBPACK_IMPORTED_MODULE_22___default()({
+          this.el.querySelector('.chat-toolbar').insertAdjacentHTML('beforeend', templates_toolbar_fileupload_html__WEBPACK_IMPORTED_MODULE_21___default()({
             'tooltip_upload_file': __('Choose a file to send')
           }));
         }
@@ -28056,7 +28049,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_8__["default"].plugins
         const all_resources_support_spolers = results.reduce((acc, val) => acc && val, true);
 
         if (all_resources_support_spolers) {
-          const html = templates_spoiler_button_html__WEBPACK_IMPORTED_MODULE_19___default()(this.model.toJSON());
+          const html = templates_spoiler_button_html__WEBPACK_IMPORTED_MODULE_18___default()(this.model.toJSON());
 
           if (_converse.visible_toolbar_buttons.emoji) {
             this.el.querySelector('.toggle-smiley').insertAdjacentHTML('afterEnd', html);
@@ -28129,7 +28122,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_8__["default"].plugins
 
       showChatEvent(message) {
         const isodate = new Date().toISOString();
-        this.content.insertAdjacentHTML('beforeend', templates_info_html__WEBPACK_IMPORTED_MODULE_16___default()({
+        this.content.insertAdjacentHTML('beforeend', templates_info_html__WEBPACK_IMPORTED_MODULE_15___default()({
           'extra_classes': 'chat-event',
           'message': message,
           'isodate': isodate
@@ -28140,7 +28133,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_8__["default"].plugins
       },
 
       showErrorMessage(message) {
-        this.content.insertAdjacentHTML('beforeend', templates_error_message_html__WEBPACK_IMPORTED_MODULE_14___default()({
+        this.content.insertAdjacentHTML('beforeend', templates_error_message_html__WEBPACK_IMPORTED_MODULE_13___default()({
           'message': message,
           'isodate': new Date().toISOString()
         }));
@@ -28152,16 +28145,16 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_8__["default"].plugins
 
         if (this.el.querySelector('.spinner') === null) {
           if (append) {
-            this.content.insertAdjacentHTML('beforeend', templates_spinner_html__WEBPACK_IMPORTED_MODULE_18___default()());
+            this.content.insertAdjacentHTML('beforeend', templates_spinner_html__WEBPACK_IMPORTED_MODULE_17___default()());
             this.scrollDown();
           } else {
-            this.content.insertAdjacentHTML('afterbegin', templates_spinner_html__WEBPACK_IMPORTED_MODULE_18___default()());
+            this.content.insertAdjacentHTML('afterbegin', templates_spinner_html__WEBPACK_IMPORTED_MODULE_17___default()());
           }
         }
       },
 
       clearSpinner() {
-        this.content.querySelectorAll('.spinner').forEach(_converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_24__["default"].removeElement);
+        this.content.querySelectorAll('.spinner').forEach(_converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_23__["default"].removeElement);
       },
 
       /**
@@ -28176,7 +28169,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_8__["default"].plugins
        *      which specifies its creation date.
        */
       insertDayIndicator(next_msg_el) {
-        const prev_msg_el = _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_24__["default"].getPreviousElement(next_msg_el, ".message:not(.chat-state-notification)");
+        const prev_msg_el = _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_23__["default"].getPreviousElement(next_msg_el, ".message:not(.chat-state-notification)");
         const prev_msg_date = prev_msg_el === null ? null : prev_msg_el.getAttribute('data-isodate');
         const next_msg_date = next_msg_el.getAttribute('data-isodate');
 
@@ -28186,7 +28179,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_8__["default"].plugins
 
         if (prev_msg_date === null || dayjs(next_msg_date).isAfter(prev_msg_date, 'day')) {
           const day_date = dayjs(next_msg_date).startOf('day');
-          next_msg_el.insertAdjacentHTML('beforeBegin', templates_new_day_html__WEBPACK_IMPORTED_MODULE_17___default()({
+          next_msg_el.insertAdjacentHTML('beforeBegin', templates_new_day_html__WEBPACK_IMPORTED_MODULE_16___default()({
             'isodate': day_date.toISOString(),
             'datestring': day_date.format("dddd MMM Do YYYY")
           }));
@@ -28202,14 +28195,14 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_8__["default"].plugins
        * @returns { Date }
        */
       getLastMessageDate(cutoff) {
-        const first_msg = _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_24__["default"].getFirstChildElement(this.content, '.message:not(.chat-state-notification)');
+        const first_msg = _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_23__["default"].getFirstChildElement(this.content, '.message:not(.chat-state-notification)');
         const oldest_date = first_msg ? first_msg.getAttribute('data-isodate') : null;
 
         if (oldest_date !== null && dayjs(oldest_date).isAfter(cutoff)) {
           return null;
         }
 
-        const last_msg = _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_24__["default"].getLastChildElement(this.content, '.message:not(.chat-state-notification)');
+        const last_msg = _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_23__["default"].getLastChildElement(this.content, '.message:not(.chat-state-notification)');
         const most_recent_date = last_msg ? last_msg.getAttribute('data-isodate') : null;
 
         if (most_recent_date === null) {
@@ -28247,7 +28240,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_8__["default"].plugins
          * up when using infinite scroll).
          */
         if (this.model.get('scrolled')) {
-          const next_msg_el = _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_24__["default"].getNextElement(message_el, ".chat-msg");
+          const next_msg_el = _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_23__["default"].getNextElement(message_el, ".chat-msg");
 
           if (next_msg_el) {
             // The currently received message is not new, there
@@ -28266,10 +28259,10 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_8__["default"].plugins
 
       showHelpMessages(msgs, type, spinner) {
         msgs.forEach(msg => {
-          this.content.insertAdjacentHTML('beforeend', templates_help_message_html__WEBPACK_IMPORTED_MODULE_15___default()({
+          this.content.insertAdjacentHTML('beforeend', templates_help_message_html__WEBPACK_IMPORTED_MODULE_14___default()({
             'isodate': new Date().toISOString(),
             'type': type,
-            'message': xss_dist_xss__WEBPACK_IMPORTED_MODULE_25___default.a.filterXSS(msg, {
+            'message': xss_dist_xss__WEBPACK_IMPORTED_MODULE_24___default.a.filterXSS(msg, {
               'whiteList': {
                 'strong': []
               }
@@ -28287,7 +28280,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_8__["default"].plugins
       },
 
       shouldShowOnTextMessage() {
-        return !_converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_24__["default"].isVisible(this.el);
+        return !_converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_23__["default"].isVisible(this.el);
       },
 
       /**
@@ -28315,7 +28308,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_8__["default"].plugins
         } else {
           const previous_msg_el = sizzle("[data-isodate=\"".concat(previous_msg_date.toISOString(), "\"]:last"), this.content).pop();
 
-          if (view.model.get('type') === 'error' && _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_24__["default"].hasClass('chat-error', previous_msg_el) && previous_msg_el.textContent === view.model.get('message')) {
+          if (view.model.get('type') === 'error' && _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_23__["default"].hasClass('chat-error', previous_msg_el) && previous_msg_el.textContent === view.model.get('message')) {
             // We don't show a duplicate error message
             return;
           }
@@ -28348,18 +28341,18 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_8__["default"].plugins
               date = dayjs(el.getAttribute('data-isodate')),
               next_el = el.nextElementSibling;
 
-        if (!_converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_24__["default"].hasClass('chat-msg--action', el) && !_converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_24__["default"].hasClass('chat-msg--action', previous_el) && previous_el.getAttribute('data-from') === from && date.isBefore(dayjs(previous_el.getAttribute('data-isodate')).add(10, 'minutes')) && el.getAttribute('data-encrypted') === previous_el.getAttribute('data-encrypted')) {
-          _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_24__["default"].addClass('chat-msg--followup', el);
+        if (!_converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_23__["default"].hasClass('chat-msg--action', el) && !_converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_23__["default"].hasClass('chat-msg--action', previous_el) && previous_el.getAttribute('data-from') === from && date.isBefore(dayjs(previous_el.getAttribute('data-isodate')).add(10, 'minutes')) && el.getAttribute('data-encrypted') === previous_el.getAttribute('data-encrypted')) {
+          _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_23__["default"].addClass('chat-msg--followup', el);
         }
 
         if (!next_el) {
           return;
         }
 
-        if (!_converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_24__["default"].hasClass('chat-msg--action', el) && next_el.getAttribute('data-from') === from && dayjs(next_el.getAttribute('data-isodate')).isBefore(date.add(10, 'minutes')) && el.getAttribute('data-encrypted') === next_el.getAttribute('data-encrypted')) {
-          _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_24__["default"].addClass('chat-msg--followup', next_el);
+        if (!_converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_23__["default"].hasClass('chat-msg--action', el) && next_el.getAttribute('data-from') === from && dayjs(next_el.getAttribute('data-isodate')).isBefore(date.add(10, 'minutes')) && el.getAttribute('data-encrypted') === next_el.getAttribute('data-encrypted')) {
+          _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_23__["default"].addClass('chat-msg--followup', next_el);
         } else {
-          _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_24__["default"].removeClass('chat-msg--followup', next_el);
+          _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_23__["default"].removeClass('chat-msg--followup', next_el);
         }
       },
 
@@ -28376,19 +28369,19 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_8__["default"].plugins
         }));
         await view.render(); // Clear chat state notifications
 
-        sizzle(".chat-state-notification[data-csn=\"".concat(message.get('from'), "\"]"), this.content).forEach(_converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_24__["default"].removeElement);
+        sizzle(".chat-state-notification[data-csn=\"".concat(message.get('from'), "\"]"), this.content).forEach(_converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_23__["default"].removeElement);
         this.insertMessage(view);
         this.insertDayIndicator(view.el);
         this.setScrollPosition(view.el);
 
-        if (_converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_24__["default"].isNewMessage(message)) {
+        if (_converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_23__["default"].isNewMessage(message)) {
           if (message.get('sender') === 'me') {
             // We remove the "scrolled" flag so that the chat area
             // gets scrolled down. We always want to scroll down
             // when the user writes a message as opposed to when a
             // message is received.
             this.model.set('scrolled', false);
-          } else if (this.model.get('scrolled', true) && !_converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_24__["default"].isOnlyChatStateNotification(message)) {
+          } else if (this.model.get('scrolled', true) && !_converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_23__["default"].isOnlyChatStateNotification(message)) {
             this.showNewMessagesIndicator();
           }
         }
@@ -28418,7 +28411,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_8__["default"].plugins
           return;
         }
 
-        if (!_converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_24__["default"].isNewMessage(message) && _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_24__["default"].isEmptyMessage(message)) {
+        if (!_converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_23__["default"].isNewMessage(message) && _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_23__["default"].isEmptyMessage(message)) {
           // Ignore archived or delayed messages without any text to show.
           return message.destroy();
         }
@@ -28479,7 +28472,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_8__["default"].plugins
           spoiler_hint = hint_el.value;
         }
 
-        _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_24__["default"].addClass('disabled', textarea);
+        _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_23__["default"].addClass('disabled', textarea);
         textarea.setAttribute('disabled', 'disabled');
         const is_command = this.parseMessageForCommands(message_text);
         const message = is_command ? null : await this.model.sendMessage(message_text, spoiler_hint);
@@ -28487,7 +28480,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_8__["default"].plugins
         if (is_command || message) {
           hint_el.value = '';
           textarea.value = '';
-          _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_24__["default"].removeClass('correcting', textarea);
+          _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_23__["default"].removeClass('correcting', textarea);
           textarea.style.height = 'auto'; // Fixes weirdness
         }
 
@@ -28502,7 +28495,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_8__["default"].plugins
         }
 
         textarea.removeAttribute('disabled');
-        _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_24__["default"].removeClass('disabled', textarea);
+        _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_23__["default"].removeClass('disabled', textarea);
         textarea.focus(); // Suppress events, otherwise superfluous CSN gets set
         // immediately after the message, causing rate-limiting issues.
 
@@ -28518,9 +28511,9 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_8__["default"].plugins
           message_limit.textContent = counter;
 
           if (counter < 1) {
-            _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_24__["default"].addClass('error', message_limit);
+            _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_23__["default"].addClass('error', message_limit);
           } else {
-            _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_24__["default"].removeClass('error', message_limit);
+            _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_23__["default"].removeClass('error', message_limit);
           }
         }
       },
@@ -28567,7 +28560,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_8__["default"].plugins
           } else if (ev.keyCode === _converse.keycodes.ESCAPE) {
             return this.onEscapePressed(ev);
           } else if (ev.keyCode === _converse.keycodes.ENTER) {
-            if (this.emoji_dropdown && _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_24__["default"].isVisible(this.emoji_dropdown.el.querySelector('.emoji-picker'))) {
+            if (this.emoji_dropdown && _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_23__["default"].isVisible(this.emoji_dropdown.el.querySelector('.emoji-picker'))) {
               this.emoji_dropdown.toggle();
             }
 
@@ -28575,10 +28568,10 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_8__["default"].plugins
           } else if (ev.keyCode === _converse.keycodes.UP_ARROW && !ev.target.selectionEnd) {
             const textarea = this.el.querySelector('.chat-textarea');
 
-            if (!textarea.value || _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_24__["default"].hasClass('correcting', textarea)) {
+            if (!textarea.value || _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_23__["default"].hasClass('correcting', textarea)) {
               return this.editEarlierMessage();
             }
-          } else if (ev.keyCode === _converse.keycodes.DOWN_ARROW && ev.target.selectionEnd === ev.target.value.length && _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_24__["default"].hasClass('correcting', this.el.querySelector('.chat-textarea'))) {
+          } else if (ev.keyCode === _converse.keycodes.DOWN_ARROW && ev.target.selectionEnd === ev.target.value.length && _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_23__["default"].hasClass('correcting', this.el.querySelector('.chat-textarea'))) {
             return this.editLaterMessage();
           }
         }
@@ -28616,7 +28609,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_8__["default"].plugins
         ev.preventDefault();
         const idx = this.model.messages.findLastIndex('correcting'),
               currently_correcting = idx >= 0 ? this.model.messages.at(idx) : null,
-              message_el = _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_24__["default"].ancestor(ev.target, '.chat-msg'),
+              message_el = _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_23__["default"].ancestor(ev.target, '.chat-msg'),
               message = this.model.messages.findWhere({
           'msgid': message_el.getAttribute('data-msgid')
         });
@@ -28634,7 +28627,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_8__["default"].plugins
           }
 
           message.save('correcting', true);
-          this.insertIntoTextArea(_converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_24__["default"].prefixMentions(message), true, true);
+          this.insertIntoTextArea(_converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_23__["default"].prefixMentions(message), true, true);
         } else {
           message.save('correcting', false);
           this.insertIntoTextArea('', true, false);
@@ -28722,9 +28715,9 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_8__["default"].plugins
         const textarea = this.el.querySelector('.chat-textarea');
 
         if (correcting) {
-          _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_24__["default"].addClass('correcting', textarea);
+          _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_23__["default"].addClass('correcting', textarea);
         } else {
-          _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_24__["default"].removeClass('correcting', textarea);
+          _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_23__["default"].removeClass('correcting', textarea);
         }
 
         if (replace) {
@@ -28742,7 +28735,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_8__["default"].plugins
         }
 
         this.updateCharCounter(textarea.value);
-        _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_24__["default"].placeCaretAtEnd(textarea);
+        _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_23__["default"].placeCaretAtEnd(textarea);
       },
 
       createEmojiPicker() {
@@ -28813,7 +28806,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_8__["default"].plugins
 
         const toggle_el = ev.target,
               icon_el = toggle_el.firstElementChild;
-        _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_24__["default"].slideToggleElement(toggle_el.parentElement.parentElement.querySelector('.spoiler'));
+        _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_23__["default"].slideToggleElement(toggle_el.parentElement.parentElement.querySelector('.spoiler'));
 
         if (toggle_el.getAttribute("data-toggle-state") == "closed") {
           toggle_el.textContent = 'Show less';
@@ -28835,7 +28828,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_8__["default"].plugins
               fullname = this.model.getDisplayName();
         let text;
 
-        if (_converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_24__["default"].isVisible(this.el)) {
+        if (_converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_23__["default"].isVisible(this.el)) {
           if (show === 'offline') {
             text = __('%1$s has gone offline', fullname);
           } else if (show === 'away') {
@@ -28847,7 +28840,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_8__["default"].plugins
           }
 
           if (text) {
-            this.content.insertAdjacentHTML('beforeend', templates_status_message_html__WEBPACK_IMPORTED_MODULE_20___default()({
+            this.content.insertAdjacentHTML('beforeend', templates_status_message_html__WEBPACK_IMPORTED_MODULE_19___default()({
               'message': text,
               'isodate': new Date().toISOString()
             }));
@@ -28936,7 +28929,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_8__["default"].plugins
       },
 
       show() {
-        if (_converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_24__["default"].isVisible(this.el)) {
+        if (_converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_23__["default"].isVisible(this.el)) {
           if (_converse.auto_focus) {
             this.focus();
           }
@@ -28955,15 +28948,15 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_8__["default"].plugins
         _converse.api.trigger('beforeShowingChatView', this);
 
         if (_converse.animate) {
-          _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_24__["default"].fadeIn(this.el, () => this.afterShown());
+          _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_23__["default"].fadeIn(this.el, () => this.afterShown());
         } else {
-          _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_24__["default"].showElement(this.el);
+          _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_23__["default"].showElement(this.el);
           this.afterShown();
         }
       },
 
       showNewMessagesIndicator() {
-        _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_24__["default"].showElement(this.el.querySelector('.new-msgs-indicator'));
+        _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_23__["default"].showElement(this.el.querySelector('.new-msgs-indicator'));
       },
 
       hideNewMessagesIndicator() {
@@ -28993,7 +28986,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_8__["default"].plugins
           this.onScrolledDown();
         }
 
-        _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_24__["default"].safeSave(this.model, {
+        _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_23__["default"].safeSave(this.model, {
           'scrolled': scrolled,
           'top_visible_message': null
         });
@@ -29013,7 +29006,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_8__["default"].plugins
           return;
         }
 
-        if (_converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_24__["default"].isVisible(this.content) && !this.model.get('scrolled')) {
+        if (_converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_23__["default"].isVisible(this.content) && !this.model.get('scrolled')) {
           this.content.scrollTop = this.content.scrollHeight;
         }
       },
@@ -30665,22 +30658,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var urijs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! urijs */ "./node_modules/urijs/src/URI.js");
 /* harmony import */ var urijs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(urijs__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @converse/headless/converse-core */ "./src/headless/converse-core.js");
-/* harmony import */ var filesize__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! filesize */ "./node_modules/filesize/lib/filesize.js");
-/* harmony import */ var filesize__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(filesize__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _utils_html__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./utils/html */ "./src/utils/html.js");
-/* harmony import */ var templates_csn_html__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! templates/csn.html */ "./src/templates/csn.html");
-/* harmony import */ var templates_csn_html__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(templates_csn_html__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var templates_file_progress_html__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! templates/file_progress.html */ "./src/templates/file_progress.html");
-/* harmony import */ var templates_file_progress_html__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(templates_file_progress_html__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var templates_info_html__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! templates/info.html */ "./src/templates/info.html");
-/* harmony import */ var templates_info_html__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(templates_info_html__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var templates_message_html__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! templates/message.html */ "./src/templates/message.html");
-/* harmony import */ var templates_message_html__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(templates_message_html__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var templates_message_versions_modal_html__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! templates/message_versions_modal.html */ "./src/templates/message_versions_modal.html");
-/* harmony import */ var templates_message_versions_modal_html__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(templates_message_versions_modal_html__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @converse/headless/utils/emoji */ "./src/headless/utils/emoji.js");
-/* harmony import */ var xss_dist_xss__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! xss/dist/xss */ "./node_modules/xss/dist/xss.js");
-/* harmony import */ var xss_dist_xss__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(xss_dist_xss__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lodash */ "lodash");
+/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var filesize__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! filesize */ "./node_modules/filesize/lib/filesize.js");
+/* harmony import */ var filesize__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(filesize__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _utils_html__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./utils/html */ "./src/utils/html.js");
+/* harmony import */ var templates_csn_html__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! templates/csn.html */ "./src/templates/csn.html");
+/* harmony import */ var templates_csn_html__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(templates_csn_html__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var templates_file_progress_html__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! templates/file_progress.html */ "./src/templates/file_progress.html");
+/* harmony import */ var templates_file_progress_html__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(templates_file_progress_html__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var templates_info_html__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! templates/info.html */ "./src/templates/info.html");
+/* harmony import */ var templates_info_html__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(templates_info_html__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var templates_message_html__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! templates/message.html */ "./src/templates/message.html");
+/* harmony import */ var templates_message_html__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(templates_message_html__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var templates_message_versions_modal_html__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! templates/message_versions_modal.html */ "./src/templates/message_versions_modal.html");
+/* harmony import */ var templates_message_versions_modal_html__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(templates_message_versions_modal_html__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var templates_spinner_html__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! templates/spinner.html */ "./src/templates/spinner.html");
+/* harmony import */ var templates_spinner_html__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(templates_spinner_html__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @converse/headless/utils/emoji */ "./src/headless/utils/emoji.js");
+/* harmony import */ var xss_dist_xss__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! xss/dist/xss */ "./node_modules/xss/dist/xss.js");
+/* harmony import */ var xss_dist_xss__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(xss_dist_xss__WEBPACK_IMPORTED_MODULE_12__);
 // Converse.js
 // https://conversejs.org
 //
@@ -30701,9 +30698,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
 const {
   Backbone,
-  _,
   dayjs
 } = _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_1__["default"].env;
 _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_1__["default"].plugins.add('converse-message-view', {
@@ -30740,7 +30738,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_1__["default"].plugins
       const uri = new urijs__WEBPACK_IMPORTED_MODULE_0___default.a(tag);
       const protocol = uri.protocol().toLowerCase();
 
-      if (!_.includes(["https", "http", "xmpp", "ftp"], protocol)) {
+      if (!["https", "http", "xmpp", "ftp"].includes(protocol)) {
         // Not a URL, the tag will get filtered as usual
         return;
       }
@@ -30758,20 +30756,27 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_1__["default"].plugins
 
     _converse.MessageVersionsModal = _converse.BootstrapModal.extend({
       toHTML() {
-        return templates_message_versions_modal_html__WEBPACK_IMPORTED_MODULE_8___default()(Object.assign(this.model.toJSON(), {
+        return templates_message_versions_modal_html__WEBPACK_IMPORTED_MODULE_9___default()(Object.assign(this.model.toJSON(), {
           '__': __,
           'dayjs': dayjs
         }));
       }
 
     });
+    /**
+     * @class
+     * @namespace _converse.MessageView
+     * @memberOf _converse
+     */
+
     _converse.MessageView = _converse.ViewWithAvatar.extend({
       events: {
-        'click .chat-msg__edit-modal': 'showMessageVersionsModal'
+        'click .chat-msg__edit-modal': 'showMessageVersionsModal',
+        'click .retry': 'onRetryClicked'
       },
 
       initialize() {
-        this.debouncedRender = _.debounce(() => {
+        this.debouncedRender = Object(lodash__WEBPACK_IMPORTED_MODULE_2__["debounce"])(() => {
           // If the model gets destroyed in the meantime,
           // it no longer has a collection
           if (this.model.collection) {
@@ -30790,12 +30795,10 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_1__["default"].plugins
           });
         }
 
-        if (this.model.occupantAdded) {
-          this.model.occupantAdded.then(() => {
-            this.model.occupant.on('change:role', this.debouncedRender, this);
-            this.model.occupant.on('change:affiliation', this.debouncedRender, this);
-            this.debouncedRender();
-          });
+        if (this.model.occupant) {
+          this.model.occupant.on('change:role', this.debouncedRender, this);
+          this.model.occupant.on('change:affiliation', this.debouncedRender, this);
+          this.debouncedRender();
         }
 
         this.model.on('change', this.onChanged, this);
@@ -30803,7 +30806,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_1__["default"].plugins
       },
 
       async render() {
-        const is_followup = _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_9__["default"].hasClass('chat-msg--followup', this.el);
+        const is_followup = _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_11__["default"].hasClass('chat-msg--followup', this.el);
 
         if (this.model.isOnlyChatStateNotification()) {
           this.renderChatStateNotification();
@@ -30824,7 +30827,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_1__["default"].plugins
         }
 
         if (is_followup) {
-          _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_9__["default"].addClass('chat-msg--followup', this.el);
+          _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_11__["default"].addClass('chat-msg--followup', this.el);
         }
 
         return this.el;
@@ -30840,7 +30843,9 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_1__["default"].plugins
           return this.renderFileUploadProgresBar();
         }
 
-        if (_.filter(['correcting', 'message', 'type', 'upload', 'received'], prop => Object.prototype.hasOwnProperty.call(this.model.changed, prop)).length) {
+        const isValidChange = prop => Object.prototype.hasOwnProperty.call(this.model.changed, prop);
+
+        if (['correcting', 'message', 'type', 'upload', 'received'].filter(isValidChange).length) {
           await this.debouncedRender();
         }
 
@@ -30852,10 +30857,20 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_1__["default"].plugins
       fadeOut() {
         if (_converse.animate) {
           setTimeout(() => this.remove(), 600);
-          _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_9__["default"].addClass('fade-out', this.el);
+          _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_11__["default"].addClass('fade-out', this.el);
         } else {
           this.remove();
         }
+      },
+
+      async onRetryClicked() {
+        this.showSpinner();
+        await this.model.error.retry();
+        this.model.destroy();
+      },
+
+      showSpinner() {
+        this.el.innerHTML = templates_spinner_html__WEBPACK_IMPORTED_MODULE_10___default()();
       },
 
       onMessageEdited() {
@@ -30863,10 +30878,10 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_1__["default"].plugins
           return;
         }
 
-        this.el.addEventListener('animationend', () => _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_9__["default"].removeClass('onload', this.el), {
+        this.el.addEventListener('animationend', () => _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_11__["default"].removeClass('onload', this.el), {
           'once': true
         });
-        _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_9__["default"].addClass('onload', this.el);
+        _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_11__["default"].addClass('onload', this.el);
       },
 
       replaceElement(msg) {
@@ -30878,12 +30893,56 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_1__["default"].plugins
         return this.el;
       },
 
+      transformOOBURL(url) {
+        url = _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_11__["default"].renderFileURL(_converse, url);
+        url = _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_11__["default"].renderMovieURL(_converse, url);
+        url = _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_11__["default"].renderAudioURL(_converse, url);
+        return _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_11__["default"].renderImageURL(_converse, url);
+      },
+
+      async transformBodyText(text) {
+        /**
+         * Synchronous event which provides a hook for transforming a chat message's body text
+         * before the default transformations have been applied.
+         * @event _converse#beforeMessageBodyTransformed
+         * @param { _converse.MessageView } view - The view representing the message
+         * @param { string } text - The message text
+         * @example _converse.api.listen.on('beforeMessageBodyTransformed', (view, text) => { ... });
+         */
+        await _converse.api.trigger('beforeMessageBodyTransformed', this, text, {
+          'Synchronous': true
+        });
+        text = this.model.isMeCommand() ? text.substring(4) : text;
+        text = xss_dist_xss__WEBPACK_IMPORTED_MODULE_12___default.a.filterXSS(text, {
+          'whiteList': {},
+          'onTag': onTagFoundDuringXSSFilter
+        });
+        text = _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_11__["default"].geoUriToHttp(text, _converse.geouri_replacement);
+        text = _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_11__["default"].addMentionsMarkup(text, this.model.get('references'), this.model.collection.chatbox);
+        text = _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_11__["default"].addHyperlinks(text);
+        text = _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_11__["default"].renderNewLines(text);
+        text = _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_11__["default"].addEmoji(_converse, text);
+        /**
+         * Synchronous event which provides a hook for transforming a chat message's body text
+         * after the default transformations have been applied.
+         * @event _converse#afterMessageBodyTransformed
+         * @param { _converse.MessageView } view - The view representing the message
+         * @param { string } text - The message text
+         * @example _converse.api.listen.on('afterMessageBodyTransformed', (view, text) => { ... });
+         */
+
+        await _converse.api.trigger('afterMessageBodyTransformed', this, text, {
+          'Synchronous': true
+        });
+        return text;
+      },
+
       async renderChatMessage() {
-        const is_me_message = this.isMeCommand();
+        const is_me_message = this.model.isMeCommand();
         const time = dayjs(this.model.get('time'));
         const role = this.model.vcard ? this.model.vcard.get('role') : null;
         const roles = role ? role.split(',') : [];
-        const msg = _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_9__["default"].stringToElement(templates_message_html__WEBPACK_IMPORTED_MODULE_7___default()(Object.assign(this.model.toJSON(), {
+        const msg = _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_11__["default"].stringToElement(templates_message_html__WEBPACK_IMPORTED_MODULE_8___default()(Object.assign(this.model.toJSON(), {
           '__': __,
           'is_groupchat_message': this.model.get('type') === 'groupchat',
           'occupant': this.model.occupant,
@@ -30898,31 +30957,21 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_1__["default"].plugins
         const url = this.model.get('oob_url');
 
         if (url) {
-          msg.querySelector('.chat-msg__media').innerHTML = _.flow(_.partial(_converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_9__["default"].renderFileURL, _converse), _.partial(_converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_9__["default"].renderMovieURL, _converse), _.partial(_converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_9__["default"].renderAudioURL, _converse), _.partial(_converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_9__["default"].renderImageURL, _converse))(url);
+          msg.querySelector('.chat-msg__media').innerHTML = this.transformOOBURL(url);
         }
 
-        let text = this.getMessageText();
+        const text = this.model.getMessageText();
         const msg_content = msg.querySelector('.chat-msg__text');
 
         if (text && text !== url) {
-          if (is_me_message) {
-            text = text.substring(4);
-          }
-
-          text = xss_dist_xss__WEBPACK_IMPORTED_MODULE_10___default.a.filterXSS(text, {
-            'whiteList': {},
-            'onTag': onTagFoundDuringXSSFilter
-          });
-          msg_content.innerHTML = _.flow(_.partial(_converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_9__["default"].geoUriToHttp, _, _converse.geouri_replacement), _.partial(_converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_9__["default"].addMentionsMarkup, _, this.model.get('references'), this.model.collection.chatbox), _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_9__["default"].addHyperlinks, _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_9__["default"].renderNewLines, _.partial(_converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_9__["default"].addEmoji, _converse, _))(text);
+          msg_content.innerHTML = await this.transformBodyText(text);
+          await _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_11__["default"].renderImageURLs(_converse, msg_content);
         }
-
-        const promise = _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_9__["default"].renderImageURLs(_converse, msg_content);
 
         if (this.model.get('type') !== 'headline') {
           this.renderAvatar(msg);
         }
 
-        await promise;
         this.replaceElement(msg);
 
         if (this.model.collection) {
@@ -30933,7 +30982,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_1__["default"].plugins
       },
 
       renderInfoMessage() {
-        const msg = _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_9__["default"].stringToElement(templates_info_html__WEBPACK_IMPORTED_MODULE_6___default()(Object.assign(this.model.toJSON(), {
+        const msg = _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_11__["default"].stringToElement(templates_info_html__WEBPACK_IMPORTED_MODULE_7___default()(Object.assign(this.model.toJSON(), {
           'extra_classes': 'chat-info',
           'isodate': dayjs(this.model.get('time')).toISOString()
         })));
@@ -30941,7 +30990,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_1__["default"].plugins
       },
 
       renderErrorMessage() {
-        const msg = _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_9__["default"].stringToElement(templates_info_html__WEBPACK_IMPORTED_MODULE_6___default()(Object.assign(this.model.toJSON(), {
+        const msg = _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_11__["default"].stringToElement(templates_info_html__WEBPACK_IMPORTED_MODULE_7___default()(Object.assign(this.model.toJSON(), {
           'extra_classes': 'chat-error',
           'isodate': dayjs(this.model.get('time')).toISOString()
         })));
@@ -30972,7 +31021,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_1__["default"].plugins
         }
 
         const isodate = new Date().toISOString();
-        this.replaceElement(_converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_9__["default"].stringToElement(templates_csn_html__WEBPACK_IMPORTED_MODULE_4___default()({
+        this.replaceElement(_converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_11__["default"].stringToElement(templates_csn_html__WEBPACK_IMPORTED_MODULE_5___default()({
           'message': text,
           'from': from,
           'isodate': isodate
@@ -30980,10 +31029,10 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_1__["default"].plugins
       },
 
       renderFileUploadProgresBar() {
-        const msg = _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_9__["default"].stringToElement(templates_file_progress_html__WEBPACK_IMPORTED_MODULE_5___default()(Object.assign(this.model.toJSON(), {
+        const msg = _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_11__["default"].stringToElement(templates_file_progress_html__WEBPACK_IMPORTED_MODULE_6___default()(Object.assign(this.model.toJSON(), {
           '__': __,
           'filename': this.model.file.name,
-          'filesize': filesize__WEBPACK_IMPORTED_MODULE_2___default()(this.model.file.size)
+          'filesize': filesize__WEBPACK_IMPORTED_MODULE_3___default()(this.model.file.size)
         })));
         this.replaceElement(msg);
         this.renderAvatar();
@@ -30999,29 +31048,6 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_1__["default"].plugins
         }
 
         this.model.message_versions_modal.show(ev);
-      },
-
-      getMessageText() {
-        if (this.model.get('is_encrypted')) {
-          return this.model.get('plaintext') || (_converse.debug ? __('Unencryptable OMEMO message') : null);
-        }
-
-        return this.model.get('message');
-      },
-
-      isMeCommand() {
-        const text = this.getMessageText();
-
-        if (!text) {
-          return false;
-        }
-
-        return text.startsWith('/me ');
-      },
-
-      processMessageText() {
-        var text = this.get('message');
-        text = _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_9__["default"].geoUriToHttp(text, _converse.geouri_replacement);
       },
 
       getExtraMessageClasses() {
@@ -31769,8 +31795,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var bootstrap_native__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! bootstrap.native */ "./node_modules/bootstrap.native/dist/bootstrap-native.js");
 /* harmony import */ var bootstrap_native__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(bootstrap_native__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @converse/headless/converse-core */ "./src/headless/converse-core.js");
-/* harmony import */ var templates_alert_modal_html__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! templates/alert_modal.html */ "./src/templates/alert_modal.html");
-/* harmony import */ var templates_alert_modal_html__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(templates_alert_modal_html__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var templates_alert_html__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! templates/alert.html */ "./src/templates/alert.html");
+/* harmony import */ var templates_alert_html__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(templates_alert_html__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var templates_alert_modal_html__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! templates/alert_modal.html */ "./src/templates/alert_modal.html");
+/* harmony import */ var templates_alert_modal_html__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(templates_alert_modal_html__WEBPACK_IMPORTED_MODULE_4__);
 // Converse.js
 // https://conversejs.org
 //
@@ -31784,9 +31812,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 const {
   Strophe,
   Backbone,
+  sizzle,
   _
 } = _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_2__["default"].env;
 const u = _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_2__["default"].env.utils;
@@ -31796,6 +31826,10 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_2__["default"].plugins
       _converse
     } = this;
     _converse.BootstrapModal = Backbone.VDOMView.extend({
+      events: {
+        'click  .nav-item .nav-link': 'switchTab'
+      },
+
       initialize() {
         this.render().insertIntoDOM();
         this.modal = new bootstrap_native__WEBPACK_IMPORTED_MODULE_1___default.a.Modal(this.el, {
@@ -31809,6 +31843,31 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_2__["default"].plugins
         const container_el = _converse.chatboxviews.el.querySelector("#converse-modals");
 
         container_el.insertAdjacentElement('beforeEnd', this.el);
+      },
+
+      switchTab(ev) {
+        ev.stopPropagation();
+        ev.preventDefault();
+        sizzle('.nav-link.active', this.el).forEach(el => {
+          u.removeClass('active', this.el.querySelector(el.getAttribute('href')));
+          u.removeClass('active', el);
+        });
+        u.addClass('active', ev.target);
+        u.addClass('active', this.el.querySelector(ev.target.getAttribute('href')));
+      },
+
+      alert(message) {
+        let type = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'primary';
+        const body = this.el.querySelector('.modal-body');
+        body.insertAdjacentHTML('afterBegin', templates_alert_html__WEBPACK_IMPORTED_MODULE_3___default()({
+          'type': "alert-".concat(type),
+          'message': message
+        }));
+        const el = body.firstElementChild;
+        setTimeout(() => {
+          u.addClass('fade-out', el);
+          setTimeout(() => u.removeElement(el), 600);
+        }, 5000);
       },
 
       show(ev) {
@@ -31830,7 +31889,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_2__["default"].plugins
       },
 
       toHTML() {
-        return templates_alert_modal_html__WEBPACK_IMPORTED_MODULE_3___default()(this.model.toJSON());
+        return templates_alert_modal_html__WEBPACK_IMPORTED_MODULE_4___default()(this.model.toJSON());
       }
 
     });
@@ -31912,54 +31971,58 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var backbone_overview__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(backbone_overview__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var formdata_polyfill__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! formdata-polyfill */ "./node_modules/formdata-polyfill/FormData.js");
 /* harmony import */ var formdata_polyfill__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(formdata_polyfill__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @converse/headless/converse-core */ "./src/headless/converse-core.js");
-/* harmony import */ var _converse_headless_utils_muc__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @converse/headless/utils/muc */ "./src/headless/utils/muc.js");
-/* harmony import */ var templates_add_chatroom_modal_html__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! templates/add_chatroom_modal.html */ "./src/templates/add_chatroom_modal.html");
-/* harmony import */ var templates_add_chatroom_modal_html__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(templates_add_chatroom_modal_html__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var templates_chatarea_html__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! templates/chatarea.html */ "./src/templates/chatarea.html");
-/* harmony import */ var templates_chatarea_html__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(templates_chatarea_html__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var templates_chatroom_html__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! templates/chatroom.html */ "./src/templates/chatroom.html");
-/* harmony import */ var templates_chatroom_html__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(templates_chatroom_html__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var templates_chatroom_bottom_panel_html__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! templates/chatroom_bottom_panel.html */ "./src/templates/chatroom_bottom_panel.html");
-/* harmony import */ var templates_chatroom_bottom_panel_html__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(templates_chatroom_bottom_panel_html__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var templates_chatroom_destroyed_html__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! templates/chatroom_destroyed.html */ "./src/templates/chatroom_destroyed.html");
-/* harmony import */ var templates_chatroom_destroyed_html__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(templates_chatroom_destroyed_html__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var templates_chatroom_details_modal_html__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! templates/chatroom_details_modal.html */ "./src/templates/chatroom_details_modal.html");
-/* harmony import */ var templates_chatroom_details_modal_html__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(templates_chatroom_details_modal_html__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var templates_chatroom_disconnect_html__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! templates/chatroom_disconnect.html */ "./src/templates/chatroom_disconnect.html");
-/* harmony import */ var templates_chatroom_disconnect_html__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(templates_chatroom_disconnect_html__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var templates_chatroom_features_html__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! templates/chatroom_features.html */ "./src/templates/chatroom_features.html");
-/* harmony import */ var templates_chatroom_features_html__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(templates_chatroom_features_html__WEBPACK_IMPORTED_MODULE_14__);
-/* harmony import */ var templates_chatroom_form_html__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! templates/chatroom_form.html */ "./src/templates/chatroom_form.html");
-/* harmony import */ var templates_chatroom_form_html__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(templates_chatroom_form_html__WEBPACK_IMPORTED_MODULE_15__);
-/* harmony import */ var templates_chatroom_head_html__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! templates/chatroom_head.html */ "./src/templates/chatroom_head.html");
-/* harmony import */ var templates_chatroom_head_html__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(templates_chatroom_head_html__WEBPACK_IMPORTED_MODULE_16__);
-/* harmony import */ var templates_chatroom_invite_html__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! templates/chatroom_invite.html */ "./src/templates/chatroom_invite.html");
-/* harmony import */ var templates_chatroom_invite_html__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(templates_chatroom_invite_html__WEBPACK_IMPORTED_MODULE_17__);
-/* harmony import */ var templates_chatroom_nickname_form_html__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! templates/chatroom_nickname_form.html */ "./src/templates/chatroom_nickname_form.html");
-/* harmony import */ var templates_chatroom_nickname_form_html__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(templates_chatroom_nickname_form_html__WEBPACK_IMPORTED_MODULE_18__);
-/* harmony import */ var templates_chatroom_password_form_html__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! templates/chatroom_password_form.html */ "./src/templates/chatroom_password_form.html");
-/* harmony import */ var templates_chatroom_password_form_html__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(templates_chatroom_password_form_html__WEBPACK_IMPORTED_MODULE_19__);
-/* harmony import */ var templates_chatroom_sidebar_html__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! templates/chatroom_sidebar.html */ "./src/templates/chatroom_sidebar.html");
-/* harmony import */ var templates_chatroom_sidebar_html__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(templates_chatroom_sidebar_html__WEBPACK_IMPORTED_MODULE_20__);
-/* harmony import */ var templates_info_html__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! templates/info.html */ "./src/templates/info.html");
-/* harmony import */ var templates_info_html__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(templates_info_html__WEBPACK_IMPORTED_MODULE_21__);
-/* harmony import */ var templates_list_chatrooms_modal_html__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! templates/list_chatrooms_modal.html */ "./src/templates/list_chatrooms_modal.html");
-/* harmony import */ var templates_list_chatrooms_modal_html__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(templates_list_chatrooms_modal_html__WEBPACK_IMPORTED_MODULE_22__);
-/* harmony import */ var templates_occupant_html__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! templates/occupant.html */ "./src/templates/occupant.html");
-/* harmony import */ var templates_occupant_html__WEBPACK_IMPORTED_MODULE_23___default = /*#__PURE__*/__webpack_require__.n(templates_occupant_html__WEBPACK_IMPORTED_MODULE_23__);
-/* harmony import */ var templates_room_description_html__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! templates/room_description.html */ "./src/templates/room_description.html");
-/* harmony import */ var templates_room_description_html__WEBPACK_IMPORTED_MODULE_24___default = /*#__PURE__*/__webpack_require__.n(templates_room_description_html__WEBPACK_IMPORTED_MODULE_24__);
-/* harmony import */ var templates_room_item_html__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! templates/room_item.html */ "./src/templates/room_item.html");
-/* harmony import */ var templates_room_item_html__WEBPACK_IMPORTED_MODULE_25___default = /*#__PURE__*/__webpack_require__.n(templates_room_item_html__WEBPACK_IMPORTED_MODULE_25__);
-/* harmony import */ var templates_room_panel_html__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! templates/room_panel.html */ "./src/templates/room_panel.html");
-/* harmony import */ var templates_room_panel_html__WEBPACK_IMPORTED_MODULE_26___default = /*#__PURE__*/__webpack_require__.n(templates_room_panel_html__WEBPACK_IMPORTED_MODULE_26__);
-/* harmony import */ var templates_rooms_results_html__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! templates/rooms_results.html */ "./src/templates/rooms_results.html");
-/* harmony import */ var templates_rooms_results_html__WEBPACK_IMPORTED_MODULE_27___default = /*#__PURE__*/__webpack_require__.n(templates_rooms_results_html__WEBPACK_IMPORTED_MODULE_27__);
-/* harmony import */ var templates_spinner_html__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! templates/spinner.html */ "./src/templates/spinner.html");
-/* harmony import */ var templates_spinner_html__WEBPACK_IMPORTED_MODULE_28___default = /*#__PURE__*/__webpack_require__.n(templates_spinner_html__WEBPACK_IMPORTED_MODULE_28__);
-/* harmony import */ var xss_dist_xss__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! xss/dist/xss */ "./node_modules/xss/dist/xss.js");
-/* harmony import */ var xss_dist_xss__WEBPACK_IMPORTED_MODULE_29___default = /*#__PURE__*/__webpack_require__.n(xss_dist_xss__WEBPACK_IMPORTED_MODULE_29__);
+/* harmony import */ var bootstrap_native__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! bootstrap.native */ "./node_modules/bootstrap.native/dist/bootstrap-native.js");
+/* harmony import */ var bootstrap_native__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(bootstrap_native__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @converse/headless/converse-core */ "./src/headless/converse-core.js");
+/* harmony import */ var _converse_headless_utils_muc__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @converse/headless/utils/muc */ "./src/headless/utils/muc.js");
+/* harmony import */ var templates_add_chatroom_modal_html__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! templates/add_chatroom_modal.html */ "./src/templates/add_chatroom_modal.html");
+/* harmony import */ var templates_add_chatroom_modal_html__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(templates_add_chatroom_modal_html__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var templates_chatarea_html__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! templates/chatarea.html */ "./src/templates/chatarea.html");
+/* harmony import */ var templates_chatarea_html__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(templates_chatarea_html__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var templates_chatroom_html__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! templates/chatroom.html */ "./src/templates/chatroom.html");
+/* harmony import */ var templates_chatroom_html__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(templates_chatroom_html__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var templates_chatroom_bottom_panel_html__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! templates/chatroom_bottom_panel.html */ "./src/templates/chatroom_bottom_panel.html");
+/* harmony import */ var templates_chatroom_bottom_panel_html__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(templates_chatroom_bottom_panel_html__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var templates_chatroom_destroyed_html__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! templates/chatroom_destroyed.html */ "./src/templates/chatroom_destroyed.html");
+/* harmony import */ var templates_chatroom_destroyed_html__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(templates_chatroom_destroyed_html__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var templates_chatroom_details_modal_html__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! templates/chatroom_details_modal.html */ "./src/templates/chatroom_details_modal.html");
+/* harmony import */ var templates_chatroom_details_modal_html__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(templates_chatroom_details_modal_html__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var templates_chatroom_disconnect_html__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! templates/chatroom_disconnect.html */ "./src/templates/chatroom_disconnect.html");
+/* harmony import */ var templates_chatroom_disconnect_html__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(templates_chatroom_disconnect_html__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var templates_chatroom_features_html__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! templates/chatroom_features.html */ "./src/templates/chatroom_features.html");
+/* harmony import */ var templates_chatroom_features_html__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(templates_chatroom_features_html__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var templates_chatroom_form_html__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! templates/chatroom_form.html */ "./src/templates/chatroom_form.html");
+/* harmony import */ var templates_chatroom_form_html__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(templates_chatroom_form_html__WEBPACK_IMPORTED_MODULE_16__);
+/* harmony import */ var templates_chatroom_head_html__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! templates/chatroom_head.html */ "./src/templates/chatroom_head.html");
+/* harmony import */ var templates_chatroom_head_html__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(templates_chatroom_head_html__WEBPACK_IMPORTED_MODULE_17__);
+/* harmony import */ var templates_chatroom_invite_html__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! templates/chatroom_invite.html */ "./src/templates/chatroom_invite.html");
+/* harmony import */ var templates_chatroom_invite_html__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(templates_chatroom_invite_html__WEBPACK_IMPORTED_MODULE_18__);
+/* harmony import */ var templates_chatroom_nickname_form_html__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! templates/chatroom_nickname_form.html */ "./src/templates/chatroom_nickname_form.html");
+/* harmony import */ var templates_chatroom_nickname_form_html__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(templates_chatroom_nickname_form_html__WEBPACK_IMPORTED_MODULE_19__);
+/* harmony import */ var templates_chatroom_password_form_html__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! templates/chatroom_password_form.html */ "./src/templates/chatroom_password_form.html");
+/* harmony import */ var templates_chatroom_password_form_html__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(templates_chatroom_password_form_html__WEBPACK_IMPORTED_MODULE_20__);
+/* harmony import */ var templates_chatroom_sidebar_html__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! templates/chatroom_sidebar.html */ "./src/templates/chatroom_sidebar.html");
+/* harmony import */ var templates_chatroom_sidebar_html__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(templates_chatroom_sidebar_html__WEBPACK_IMPORTED_MODULE_21__);
+/* harmony import */ var templates_info_html__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! templates/info.html */ "./src/templates/info.html");
+/* harmony import */ var templates_info_html__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(templates_info_html__WEBPACK_IMPORTED_MODULE_22__);
+/* harmony import */ var templates_list_chatrooms_modal_html__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! templates/list_chatrooms_modal.html */ "./src/templates/list_chatrooms_modal.html");
+/* harmony import */ var templates_list_chatrooms_modal_html__WEBPACK_IMPORTED_MODULE_23___default = /*#__PURE__*/__webpack_require__.n(templates_list_chatrooms_modal_html__WEBPACK_IMPORTED_MODULE_23__);
+/* harmony import */ var templates_moderator_tools_modal_html__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! templates/moderator_tools_modal.html */ "./src/templates/moderator_tools_modal.html");
+/* harmony import */ var templates_moderator_tools_modal_html__WEBPACK_IMPORTED_MODULE_24___default = /*#__PURE__*/__webpack_require__.n(templates_moderator_tools_modal_html__WEBPACK_IMPORTED_MODULE_24__);
+/* harmony import */ var templates_occupant_html__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! templates/occupant.html */ "./src/templates/occupant.html");
+/* harmony import */ var templates_occupant_html__WEBPACK_IMPORTED_MODULE_25___default = /*#__PURE__*/__webpack_require__.n(templates_occupant_html__WEBPACK_IMPORTED_MODULE_25__);
+/* harmony import */ var templates_room_description_html__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! templates/room_description.html */ "./src/templates/room_description.html");
+/* harmony import */ var templates_room_description_html__WEBPACK_IMPORTED_MODULE_26___default = /*#__PURE__*/__webpack_require__.n(templates_room_description_html__WEBPACK_IMPORTED_MODULE_26__);
+/* harmony import */ var templates_room_item_html__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! templates/room_item.html */ "./src/templates/room_item.html");
+/* harmony import */ var templates_room_item_html__WEBPACK_IMPORTED_MODULE_27___default = /*#__PURE__*/__webpack_require__.n(templates_room_item_html__WEBPACK_IMPORTED_MODULE_27__);
+/* harmony import */ var templates_room_panel_html__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! templates/room_panel.html */ "./src/templates/room_panel.html");
+/* harmony import */ var templates_room_panel_html__WEBPACK_IMPORTED_MODULE_28___default = /*#__PURE__*/__webpack_require__.n(templates_room_panel_html__WEBPACK_IMPORTED_MODULE_28__);
+/* harmony import */ var templates_rooms_results_html__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! templates/rooms_results.html */ "./src/templates/rooms_results.html");
+/* harmony import */ var templates_rooms_results_html__WEBPACK_IMPORTED_MODULE_29___default = /*#__PURE__*/__webpack_require__.n(templates_rooms_results_html__WEBPACK_IMPORTED_MODULE_29__);
+/* harmony import */ var templates_spinner_html__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! templates/spinner.html */ "./src/templates/spinner.html");
+/* harmony import */ var templates_spinner_html__WEBPACK_IMPORTED_MODULE_30___default = /*#__PURE__*/__webpack_require__.n(templates_spinner_html__WEBPACK_IMPORTED_MODULE_30__);
+/* harmony import */ var xss_dist_xss__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! xss/dist/xss */ "./node_modules/xss/dist/xss.js");
+/* harmony import */ var xss_dist_xss__WEBPACK_IMPORTED_MODULE_31___default = /*#__PURE__*/__webpack_require__.n(xss_dist_xss__WEBPACK_IMPORTED_MODULE_31__);
 // Converse.js
 // https://conversejs.org
 //
@@ -32002,6 +32065,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
 const {
   Backbone,
   Promise,
@@ -32012,10 +32077,13 @@ const {
   $iq,
   $msg,
   $pres
-} = _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].env;
-const u = _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].env.utils;
+} = _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_6__["default"].env;
+const u = _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_6__["default"].env.utils;
+const ROLES = ['moderator', 'participant', 'visitor'];
+const AFFILIATIONS = ['admin', 'member', 'outcast', 'owner'];
+const AFFILIATION_CHANGE_COMANDS = ['admin', 'ban', 'owner', 'member', 'revoke'];
 const OWNER_COMMANDS = ['owner'];
-const ADMIN_COMMANDS = ['admin', 'ban', 'deop', 'destroy', 'member', 'op', 'revoke'];
+const ADMIN_COMMANDS = ['admin', 'ban', 'deop', 'destroy', 'modtools', 'member', 'op', 'revoke'];
 const MODERATOR_COMMANDS = ['kick', 'mute', 'voice'];
 const VISITOR_COMMANDS = ['nick'];
 const COMMAND_TO_ROLE = {
@@ -32032,7 +32100,7 @@ const COMMAND_TO_AFFILIATION = {
   'owner': 'owner',
   'revoke': 'none'
 };
-_converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins.add('converse-muc-views', {
+_converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_6__["default"].plugins.add('converse-muc-views', {
   /* Dependencies are other plugins which might be
    * overridden or relied upon, and therefore need to be loaded before
    * this plugin. They are "optional" because they might not be
@@ -32131,7 +32199,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
       // All MUC features found here: https://xmpp.org/registrar/disco-features.html
       el.querySelector('span.spinner').remove();
       el.querySelector('a.room-info').classList.add('selected');
-      el.insertAdjacentHTML('beforeEnd', templates_room_description_html__WEBPACK_IMPORTED_MODULE_24___default()({
+      el.insertAdjacentHTML('beforeEnd', templates_room_description_html__WEBPACK_IMPORTED_MODULE_26___default()({
         'jid': stanza.getAttribute('from'),
         'desc': _.get(_.head(sizzle('field[var="muc#roominfo_description"] value', stanza)), 'textContent'),
         'occ': _.get(_.head(sizzle('field[var="muc#roominfo_occupants"] value', stanza)), 'textContent'),
@@ -32173,12 +32241,194 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
         u.slideIn(div_el).then(u.removeElement);
         parent_el.querySelector('a.room-info').classList.remove('selected');
       } else {
-        parent_el.insertAdjacentHTML('beforeend', templates_spinner_html__WEBPACK_IMPORTED_MODULE_28___default()());
+        parent_el.insertAdjacentHTML('beforeend', templates_spinner_html__WEBPACK_IMPORTED_MODULE_30___default()());
 
         _converse.api.disco.info(ev.target.getAttribute('data-room-jid'), null).then(stanza => insertRoomInfo(parent_el, stanza)).catch(_.partial(_converse.log, _, Strophe.LogLevel.ERROR));
       }
     }
 
+    _converse.ModeratorToolsModal = _converse.BootstrapModal.extend({
+      events: {
+        'submit .affiliation-form': 'assignAffiliation',
+        'submit .role-form': 'assignRole',
+        'submit .query-affiliation': 'queryAffiliation',
+        'submit .query-role': 'queryRole',
+        'click  .nav-item .nav-link': 'switchTab',
+        'click .toggle-form': 'toggleForm'
+      },
+
+      initialize(attrs) {
+        this.chatroomview = attrs.chatroomview;
+
+        _converse.BootstrapModal.prototype.initialize.apply(this, arguments);
+
+        this.model.on('change:role', () => {
+          this.users_with_role = this.getUsersWithRole();
+          this.render();
+        });
+        this.model.on('change:affiliation', async () => {
+          this.loading_users_with_affiliation = true;
+          this.users_with_affiliation = null;
+          this.render();
+          const affiliation = this.model.get('affiliation');
+
+          if (!_converse.muc_fetch_members || affiliation === 'outcast') {
+            this.users_with_affiliation = await this.chatroomview.model.getAffiliationList(affiliation);
+          } else {
+            this.users_with_affiliation = this.getUsersWithAffiliation();
+          }
+
+          this.loading_users_with_affiliation = false;
+          this.render();
+        });
+      },
+
+      toHTML() {
+        const allowed_commands = this.chatroomview.getAllowedCommands();
+        const allowed_affiliations = allowed_commands.map(c => COMMAND_TO_AFFILIATION[c]).filter(c => c);
+
+        const allowed_roles = _.uniq(allowed_commands.map(c => COMMAND_TO_ROLE[c]).filter(c => c));
+
+        allowed_affiliations.sort();
+        allowed_roles.sort();
+        return templates_moderator_tools_modal_html__WEBPACK_IMPORTED_MODULE_24___default()(Object.assign(this.model.toJSON(), {
+          '__': __,
+          'affiliations': AFFILIATIONS,
+          'allowed_affiliations': allowed_affiliations,
+          'allowed_roles': allowed_roles,
+          'loading_users_with_affiliation': this.loading_users_with_affiliation,
+          'roles': ROLES,
+          'users_with_affiliation': this.users_with_affiliation,
+          'users_with_role': this.users_with_role
+        }));
+      },
+
+      toggleForm(ev) {
+        ev.stopPropagation();
+        ev.preventDefault();
+        const form_class = ev.target.getAttribute('data-form');
+        const form = u.ancestor(ev.target, '.list-group-item').querySelector(".".concat(form_class));
+
+        if (u.hasClass('hidden', form)) {
+          u.removeClass('hidden', form);
+        } else {
+          u.addClass('hidden', form);
+        }
+      },
+
+      getUsersWithAffiliation() {
+        return this.chatroomview.model.occupants.where({
+          'affiliation': this.model.get('affiliation')
+        }).map(item => {
+          return {
+            'jid': item.get('jid'),
+            'nick': item.get('nick'),
+            'affiliation': item.get('affiliation')
+          };
+        });
+      },
+
+      getUsersWithRole() {
+        return this.chatroomview.model.occupants.where({
+          'role': this.model.get('role')
+        }).map(item => {
+          return {
+            'jid': item.get('jid'),
+            'nick': item.get('nick'),
+            'role': item.get('role')
+          };
+        });
+      },
+
+      queryRole(ev) {
+        ev.stopPropagation();
+        ev.preventDefault();
+        const data = new FormData(ev.target);
+        const role = data.get('role');
+        this.model.set({
+          'role': null
+        }, {
+          'silent': true
+        });
+        this.model.set({
+          'role': role
+        });
+      },
+
+      queryAffiliation(ev) {
+        ev.stopPropagation();
+        ev.preventDefault();
+        const data = new FormData(ev.target);
+        const affiliation = data.get('affiliation');
+        this.model.set({
+          'affiliation': null
+        }, {
+          'silent': true
+        });
+        this.model.set({
+          'affiliation': affiliation
+        });
+      },
+
+      assignAffiliation(ev) {
+        ev.stopPropagation();
+        ev.preventDefault();
+        const data = new FormData(ev.target);
+        const affiliation = data.get('affiliation');
+        const attrs = {
+          'jid': data.get('jid'),
+          'reason': data.get('reason')
+        };
+        const current_affiliation = this.model.get('affiliation');
+        this.chatroomview.model.setAffiliation(affiliation, [attrs]).then(async () => {
+          this.alert(__('Affiliation changed'), 'primary');
+          await this.chatroomview.model.occupants.fetchMembers();
+          this.model.set({
+            'affiliation': null
+          }, {
+            'silent': true
+          });
+          this.model.set({
+            'affiliation': current_affiliation
+          });
+        }).catch(err => {
+          this.alert(__('Sorry, something went wrong while trying to set the affiliation'), 'danger');
+
+          _converse.log(err, Strophe.LogLevel.ERROR);
+        });
+      },
+
+      assignRole(ev) {
+        ev.stopPropagation();
+        ev.preventDefault();
+        const data = new FormData(ev.target);
+        const jid = data.get('jid');
+        const occupant = this.chatroomview.model.getOccupant(jid);
+        const role = data.get('role');
+        const reason = data.get('reason');
+        const current_role = this.model.get('role');
+        this.chatroomview.model.setRole(occupant, role, reason, () => {
+          this.alert(__('Role changed'), 'primary');
+          this.model.set({
+            'role': null
+          }, {
+            'silent': true
+          });
+          this.model.set({
+            'role': current_role
+          });
+        }, e => {
+          if (sizzle("not-allowed[xmlns=\"".concat(Strophe.NS.STANZAS, "\"]"), e).length) {
+            this.alert(__('You\'re not allowed to make that change'), 'danger');
+          } else {
+            this.alert(__('Sorry, something went wrong while trying to set the role'), 'danger');
+          }
+
+          _converse.log(e, Strophe.LogLevel.ERROR);
+        });
+      }
+
+    });
     _converse.ListChatRoomsModal = _converse.BootstrapModal.extend({
       events: {
         'submit form': 'showRooms',
@@ -32201,7 +32451,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
       toHTML() {
         const muc_domain = this.model.get('muc_domain') || _converse.muc_domain;
 
-        return templates_list_chatrooms_modal_html__WEBPACK_IMPORTED_MODULE_22___default()(Object.assign(this.model.toJSON(), {
+        return templates_list_chatrooms_modal_html__WEBPACK_IMPORTED_MODULE_23___default()(Object.assign(this.model.toJSON(), {
           'heading_list_chatrooms': __('Query for Groupchats'),
           'label_server_address': __('Server address'),
           'label_query': __('Show groupchats'),
@@ -32243,7 +32493,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
       roomStanzaItemToHTMLElement(groupchat) {
         const name = Strophe.unescapeNode(groupchat.getAttribute('name') || groupchat.getAttribute('jid'));
         const div = document.createElement('div');
-        div.innerHTML = templates_room_item_html__WEBPACK_IMPORTED_MODULE_25___default()({
+        div.innerHTML = templates_room_item_html__WEBPACK_IMPORTED_MODULE_27___default()({
           'name': Strophe.xmlunescape(name),
           'jid': groupchat.getAttribute('jid'),
           'open_title': __('Click to open this groupchat'),
@@ -32258,7 +32508,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
 
       informNoRoomsFound() {
         const chatrooms_el = this.el.querySelector('.available-chatrooms');
-        chatrooms_el.innerHTML = templates_rooms_results_html__WEBPACK_IMPORTED_MODULE_27___default()({
+        chatrooms_el.innerHTML = templates_rooms_results_html__WEBPACK_IMPORTED_MODULE_29___default()({
           'feedback_text': __('No groupchats found')
         });
         const input_el = this.el.querySelector('input[name="server"]');
@@ -32274,7 +32524,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
         const rooms = sizzle('query item', iq);
 
         if (rooms.length) {
-          available_chatrooms.innerHTML = templates_rooms_results_html__WEBPACK_IMPORTED_MODULE_27___default()({
+          available_chatrooms.innerHTML = templates_rooms_results_html__WEBPACK_IMPORTED_MODULE_29___default()({
             'feedback_text': __('Groupchats found:')
           });
           const fragment = document.createDocumentFragment();
@@ -32340,7 +32590,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
           placeholder = muc_domain ? "name@".concat(muc_domain) : __('name@conference.example.org');
         }
 
-        return templates_add_chatroom_modal_html__WEBPACK_IMPORTED_MODULE_7___default()(Object.assign(this.model.toJSON(), {
+        return templates_add_chatroom_modal_html__WEBPACK_IMPORTED_MODULE_8___default()(Object.assign(this.model.toJSON(), {
           '__': _converse.__,
           '_converse': _converse,
           'label_room_address': _converse.muc_domain ? __('Groupchat name') : __('Groupchat address'),
@@ -32412,13 +32662,13 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
       },
 
       toHTML() {
-        return templates_chatroom_details_modal_html__WEBPACK_IMPORTED_MODULE_12___default()(Object.assign(this.model.toJSON(), {
+        return templates_chatroom_details_modal_html__WEBPACK_IMPORTED_MODULE_13___default()(Object.assign(this.model.toJSON(), {
           '_': _,
           '__': __,
           'display_name': __('Groupchat info for %1$s', this.model.getDisplayName()),
           'features': this.model.features.toJSON(),
           'num_occupants': this.model.occupants.length,
-          'topic': u.addHyperlinks(xss_dist_xss__WEBPACK_IMPORTED_MODULE_29___default.a.filterXSS(_.get(this.model.get('subject'), 'text'), {
+          'topic': u.addHyperlinks(xss_dist_xss__WEBPACK_IMPORTED_MODULE_31___default.a.filterXSS(_.get(this.model.get('subject'), 'text'), {
             'whiteList': {}
           }))
         }));
@@ -32427,7 +32677,6 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
     });
     /**
      * The View of an open/ongoing groupchat conversation
-     *
      * @class
      * @namespace _converse.ChatRoomView
      * @memberOf _converse
@@ -32505,12 +32754,12 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
 
       render() {
         this.el.setAttribute('id', this.model.get('box_id'));
-        this.el.innerHTML = templates_chatroom_html__WEBPACK_IMPORTED_MODULE_9___default()();
+        this.el.innerHTML = templates_chatroom_html__WEBPACK_IMPORTED_MODULE_10___default()();
         this.renderHeading();
         this.renderChatArea();
         this.renderBottomPanel();
 
-        if (this.model.get('connection_status') !== _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].ROOMSTATUS.ENTERED) {
+        if (this.model.get('connection_status') !== _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_6__["default"].ROOMSTATUS.ENTERED) {
           this.showSpinner();
         }
 
@@ -32534,7 +32783,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
         const container = this.el.querySelector('.bottom-panel');
 
         if (this.model.features.get('moderated') && this.model.getOwnRole() === 'visitor') {
-          container.innerHTML = templates_chatroom_bottom_panel_html__WEBPACK_IMPORTED_MODULE_10___default()({
+          container.innerHTML = templates_chatroom_bottom_panel_html__WEBPACK_IMPORTED_MODULE_11___default()({
             '__': __
           });
         } else {
@@ -32550,7 +32799,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
          */
         if (this.el.querySelector('.chat-area') === null) {
           const container_el = this.el.querySelector('.chatroom-body');
-          container_el.insertAdjacentHTML('beforeend', templates_chatarea_html__WEBPACK_IMPORTED_MODULE_8___default()({
+          container_el.insertAdjacentHTML('beforeend', templates_chatarea_html__WEBPACK_IMPORTED_MODULE_9___default()({
             'show_send_button': _converse.show_send_button
           }));
           this.content = this.el.querySelector('.chat-content');
@@ -32600,6 +32849,22 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
       onKeyUp(ev) {
         this.mention_auto_complete.evaluate(ev);
         return _converse.ChatBoxView.prototype.onKeyUp.call(this, ev);
+      },
+
+      showModeratorToolsModal(affiliation) {
+        if (_.isUndefined(this.model.modtools_modal)) {
+          const model = new Backbone.Model({
+            'affiliation': affiliation
+          });
+          this.modtools_modal = new _converse.ModeratorToolsModal({
+            'model': model,
+            'chatroomview': this
+          });
+        } else {
+          this.modtools_modal.set('affiliation', affiliation);
+        }
+
+        this.modtools_modal.show();
       },
 
       showRoomDetailsModal(ev) {
@@ -32697,7 +32962,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
       generateHeadingHTML() {
         /* Returns the heading HTML to be rendered.
          */
-        return templates_chatroom_head_html__WEBPACK_IMPORTED_MODULE_16___default()(Object.assign(this.model.toJSON(), {
+        return templates_chatroom_head_html__WEBPACK_IMPORTED_MODULE_17___default()(Object.assign(this.model.toJSON(), {
           'isOwner': this.model.getOwnAffiliation() === 'owner',
           'title': this.model.getDisplayName(),
           'Strophe': Strophe,
@@ -32705,7 +32970,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
           'info_close': __('Close and leave this groupchat'),
           'info_configure': __('Configure this groupchat'),
           'info_details': __('Show more details about this groupchat'),
-          'description': u.addHyperlinks(xss_dist_xss__WEBPACK_IMPORTED_MODULE_29___default.a.filterXSS(_.get(this.model.get('subject'), 'text'), {
+          'description': u.addHyperlinks(xss_dist_xss__WEBPACK_IMPORTED_MODULE_31___default.a.filterXSS(_.get(this.model.get('subject'), 'text'), {
             'whiteList': {}
           }))
         }));
@@ -32729,21 +32994,21 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
       onConnectionStatusChanged() {
         const conn_status = this.model.get('connection_status');
 
-        if (conn_status === _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].ROOMSTATUS.NICKNAME_REQUIRED) {
+        if (conn_status === _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_6__["default"].ROOMSTATUS.NICKNAME_REQUIRED) {
           this.renderNicknameForm();
-        } else if (conn_status === _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].ROOMSTATUS.PASSWORD_REQUIRED) {
+        } else if (conn_status === _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_6__["default"].ROOMSTATUS.PASSWORD_REQUIRED) {
           this.renderPasswordForm();
-        } else if (conn_status === _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].ROOMSTATUS.CONNECTING) {
+        } else if (conn_status === _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_6__["default"].ROOMSTATUS.CONNECTING) {
           this.showSpinner();
-        } else if (conn_status === _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].ROOMSTATUS.ENTERED) {
+        } else if (conn_status === _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_6__["default"].ROOMSTATUS.ENTERED) {
           this.hideSpinner();
 
           if (_converse.auto_focus) {
             this.focus();
           }
-        } else if (conn_status === _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].ROOMSTATUS.DISCONNECTED) {
+        } else if (conn_status === _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_6__["default"].ROOMSTATUS.DISCONNECTED) {
           this.showDisconnectMessage();
-        } else if (conn_status === _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].ROOMSTATUS.DESTROYED) {
+        } else if (conn_status === _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_6__["default"].ROOMSTATUS.DESTROYED) {
           this.showDestroyedMessage();
         }
       },
@@ -33001,6 +33266,31 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
         this.showErrorMessage(__("Sorry, an error happened while running the command. Check your browser's developer console for details."));
       },
 
+      getAllowedCommands() {
+        // FIXME: The availability of some of these commands
+        // depend on the MUCs configuration (e.g. whether it's
+        // moderated or not). We need to take that into
+        // consideration.
+        let allowed_commands = ['clear', 'help', 'me', 'nick', 'subject', 'topic', 'register'];
+        const occupant = this.model.occupants.findWhere({
+          'jid': _converse.bare_jid
+        });
+
+        if (this.verifyAffiliations(['owner'], occupant, false)) {
+          allowed_commands = allowed_commands.concat(OWNER_COMMANDS).concat(ADMIN_COMMANDS);
+        } else if (this.verifyAffiliations(['admin'], occupant, false)) {
+          allowed_commands = allowed_commands.concat(ADMIN_COMMANDS);
+        }
+
+        if (this.verifyRoles(['moderator'], occupant, false)) {
+          allowed_commands = allowed_commands.concat(MODERATOR_COMMANDS).concat(VISITOR_COMMANDS);
+        } else if (!this.verifyRoles(['visitor', 'participant', 'moderator'], occupant, false)) {
+          allowed_commands = allowed_commands.concat(VISITOR_COMMANDS);
+        }
+
+        return allowed_commands;
+      },
+
       parseMessageForCommands(text) {
         if (_converse.muc_disable_slash_commands && !Array.isArray(_converse.muc_disable_slash_commands)) {
           return _converse.ChatBoxView.prototype.parseMessageForCommands.apply(this, arguments);
@@ -33013,7 +33303,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
           return false;
         }
 
-        const args = text.slice(('/' + command).length + 1);
+        const args = text.slice(('/' + command).length + 1).trim();
         let disabled_commands = [];
 
         if (Array.isArray(_converse.muc_disable_slash_commands)) {
@@ -33034,6 +33324,12 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
           case 'ban':
             {
               this.setAffiliation(command, args, ['admin', 'owner']);
+              break;
+            }
+
+          case 'modtools':
+            {
+              this.showModeratorToolsModal(args);
               break;
             }
 
@@ -33061,29 +33357,9 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
 
           case 'help':
             {
-              // FIXME: The availability of some of these commands
-              // depend on the MUCs configuration (e.g. whether it's
-              // moderated or not). We need to take that into
-              // consideration.
-              let allowed_commands = ['clear', 'help', 'me', 'nick', 'subject', 'topic', 'register'];
-              const occupant = this.model.occupants.findWhere({
-                'jid': _converse.bare_jid
-              });
-
-              if (this.verifyAffiliations(['owner'], occupant, false)) {
-                allowed_commands = allowed_commands.concat(OWNER_COMMANDS).concat(ADMIN_COMMANDS);
-              } else if (this.verifyAffiliations(['admin'], occupant, false)) {
-                allowed_commands = allowed_commands.concat(ADMIN_COMMANDS);
-              }
-
-              if (this.verifyRoles(['moderator'], occupant, false)) {
-                allowed_commands = allowed_commands.concat(MODERATOR_COMMANDS).concat(VISITOR_COMMANDS);
-              } else if (!this.verifyRoles(['visitor', 'participant', 'moderator'], occupant, false)) {
-                allowed_commands = allowed_commands.concat(VISITOR_COMMANDS);
-              }
-
+              const allowed_commands = this.getAllowedCommands();
               this.showHelpMessages(["<strong>".concat(__("You can run the following commands"), "</strong>")]);
-              this.showHelpMessages(["<strong>/admin</strong>: ".concat(__("Change user's affiliation to admin")), "<strong>/ban</strong>: ".concat(__('Ban user by changing their affiliation to outcast')), "<strong>/clear</strong>: ".concat(__('Clear the chat area')), "<strong>/deop</strong>: ".concat(__('Change user role to participant')), "<strong>/destroy</strong>: ".concat(__('Remove this groupchat')), "<strong>/help</strong>: ".concat(__('Show this menu')), "<strong>/kick</strong>: ".concat(__('Kick user from groupchat')), "<strong>/me</strong>: ".concat(__('Write in 3rd person')), "<strong>/member</strong>: ".concat(__('Grant membership to a user')), "<strong>/mute</strong>: ".concat(__("Remove user's ability to post messages")), "<strong>/nick</strong>: ".concat(__('Change your nickname')), "<strong>/op</strong>: ".concat(__('Grant moderator role to user')), "<strong>/owner</strong>: ".concat(__('Grant ownership of this groupchat')), "<strong>/register</strong>: ".concat(__("Register your nickname")), "<strong>/revoke</strong>: ".concat(__("Revoke the user's current affiliation")), "<strong>/subject</strong>: ".concat(__('Set groupchat subject')), "<strong>/topic</strong>: ".concat(__('Set groupchat subject (alias for /subject)')), "<strong>/voice</strong>: ".concat(__('Allow muted user to post messages'))].filter(line => disabled_commands.every(c => !line.startsWith(c + '<', 9))).filter(line => allowed_commands.some(c => line.startsWith(c + '<', 9))));
+              this.showHelpMessages(["<strong>/admin</strong>: ".concat(__("Change user's affiliation to admin")), "<strong>/ban</strong>: ".concat(__('Ban user by changing their affiliation to outcast')), "<strong>/clear</strong>: ".concat(__('Clear the chat area')), "<strong>/deop</strong>: ".concat(__('Change user role to participant')), "<strong>/destroy</strong>: ".concat(__('Remove this groupchat')), "<strong>/help</strong>: ".concat(__('Show this menu')), "<strong>/kick</strong>: ".concat(__('Kick user from groupchat')), "<strong>/me</strong>: ".concat(__('Write in 3rd person')), "<strong>/member</strong>: ".concat(__('Grant membership to a user')), "<strong>/modtools</strong>: ".concat(__('Opens up the moderator tools GUI')), "<strong>/mute</strong>: ".concat(__("Remove user's ability to post messages")), "<strong>/nick</strong>: ".concat(__('Change your nickname')), "<strong>/op</strong>: ".concat(__('Grant moderator role to user')), "<strong>/owner</strong>: ".concat(__('Grant ownership of this groupchat')), "<strong>/register</strong>: ".concat(__("Register your nickname")), "<strong>/revoke</strong>: ".concat(__("Revoke the user's current affiliation")), "<strong>/subject</strong>: ".concat(__('Set groupchat subject')), "<strong>/topic</strong>: ".concat(__('Set groupchat subject (alias for /subject)')), "<strong>/voice</strong>: ".concat(__('Allow muted user to post messages'))].filter(line => disabled_commands.every(c => !line.startsWith(c + '<', 9))).filter(line => allowed_commands.some(c => line.startsWith(c + '<', 9))));
               break;
             }
 
@@ -33261,7 +33537,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
 
         u.showElement(this.nickname_form.el);
         u.safeSave(this.model, {
-          'connection_status': _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].ROOMSTATUS.NICKNAME_REQUIRED
+          'connection_status': _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_6__["default"].ROOMSTATUS.NICKNAME_REQUIRED
         });
       },
 
@@ -33284,7 +33560,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
         }
 
         u.showElement(this.password_form.el);
-        this.model.save('connection_status', _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].ROOMSTATUS.PASSWORD_REQUIRED);
+        this.model.save('connection_status', _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_6__["default"].ROOMSTATUS.PASSWORD_REQUIRED);
       },
 
       showDestroyedMessage() {
@@ -33298,7 +33574,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
           'moved_jid': undefined
         });
         const container = this.el.querySelector('.disconnect-container');
-        container.innerHTML = templates_chatroom_destroyed_html__WEBPACK_IMPORTED_MODULE_11___default()({
+        container.innerHTML = templates_chatroom_destroyed_html__WEBPACK_IMPORTED_MODULE_12___default()({
           '_': _,
           '__': __,
           'jid': moved_jid,
@@ -33348,7 +33624,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
           'disconnection_actor': undefined
         });
         const container = this.el.querySelector('.disconnect-container');
-        container.innerHTML = templates_chatroom_disconnect_html__WEBPACK_IMPORTED_MODULE_13___default()({
+        container.innerHTML = templates_chatroom_disconnect_html__WEBPACK_IMPORTED_MODULE_14___default()({
           '_': _,
           'disconnect_messages': messages
         });
@@ -33374,7 +33650,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
       },
 
       insertNotification(message) {
-        this.content.insertAdjacentHTML('beforeend', templates_info_html__WEBPACK_IMPORTED_MODULE_21___default()({
+        this.content.insertAdjacentHTML('beforeend', templates_info_html__WEBPACK_IMPORTED_MODULE_22___default()({
           'isodate': new Date().toISOString(),
           'extra_classes': 'chat-event',
           'message': message
@@ -33393,7 +33669,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
       },
 
       onOccupantRemoved(occupant) {
-        if (this.model.get('connection_status') === _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].ROOMSTATUS.ENTERED && occupant.get('show') === 'online') {
+        if (this.model.get('connection_status') === _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_6__["default"].ROOMSTATUS.ENTERED && occupant.get('show') === 'online') {
           this.showLeaveNotification(occupant);
         }
       },
@@ -33445,7 +33721,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
       },
 
       showJoinNotification(occupant) {
-        if (!_converse.muc_show_join_leave || this.model.get('connection_status') !== _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].ROOMSTATUS.ENTERED) {
+        if (!_converse.muc_show_join_leave || this.model.get('connection_status') !== _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_6__["default"].ROOMSTATUS.ENTERED) {
           return;
         }
 
@@ -33471,7 +33747,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
             'message': message
           };
           this.content.removeChild(prev_info_el);
-          this.content.insertAdjacentHTML('beforeend', templates_info_html__WEBPACK_IMPORTED_MODULE_21___default()(data));
+          this.content.insertAdjacentHTML('beforeend', templates_info_html__WEBPACK_IMPORTED_MODULE_22___default()(data));
           const el = this.content.lastElementChild;
           setTimeout(() => u.addClass('fade-out', el), 5000);
           setTimeout(() => el.parentElement && el.parentElement.removeChild(el), 5500);
@@ -33494,9 +33770,9 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
 
           if (prev_info_el) {
             this.content.removeChild(prev_info_el);
-            this.content.insertAdjacentHTML('beforeend', templates_info_html__WEBPACK_IMPORTED_MODULE_21___default()(data));
+            this.content.insertAdjacentHTML('beforeend', templates_info_html__WEBPACK_IMPORTED_MODULE_22___default()(data));
           } else {
-            this.content.insertAdjacentHTML('beforeend', templates_info_html__WEBPACK_IMPORTED_MODULE_21___default()(data));
+            this.content.insertAdjacentHTML('beforeend', templates_info_html__WEBPACK_IMPORTED_MODULE_22___default()(data));
             this.insertDayIndicator(this.content.lastElementChild);
           }
         }
@@ -33531,7 +33807,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
             'message': message
           };
           this.content.removeChild(prev_info_el);
-          this.content.insertAdjacentHTML('beforeend', templates_info_html__WEBPACK_IMPORTED_MODULE_21___default()(data));
+          this.content.insertAdjacentHTML('beforeend', templates_info_html__WEBPACK_IMPORTED_MODULE_22___default()(data));
           const el = this.content.lastElementChild;
           setTimeout(() => u.addClass('fade-out', el), 5000);
           setTimeout(() => el.parentElement && el.parentElement.removeChild(el), 5500);
@@ -33554,9 +33830,9 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
 
           if (prev_info_el) {
             this.content.removeChild(prev_info_el);
-            this.content.insertAdjacentHTML('beforeend', templates_info_html__WEBPACK_IMPORTED_MODULE_21___default()(data));
+            this.content.insertAdjacentHTML('beforeend', templates_info_html__WEBPACK_IMPORTED_MODULE_22___default()(data));
           } else {
-            this.content.insertAdjacentHTML('beforeend', templates_info_html__WEBPACK_IMPORTED_MODULE_21___default()(data));
+            this.content.insertAdjacentHTML('beforeend', templates_info_html__WEBPACK_IMPORTED_MODULE_22___default()(data));
             this.insertDayIndicator(this.content.lastElementChild);
           }
         }
@@ -33569,11 +33845,11 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
          * example after the spinner has been removed or after a
          * form has been submitted and removed.
          */
-        if (this.model.get('connection_status') == _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].ROOMSTATUS.NICKNAME_REQUIRED) {
+        if (this.model.get('connection_status') == _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_6__["default"].ROOMSTATUS.NICKNAME_REQUIRED) {
           this.renderNicknameForm();
-        } else if (this.model.get('connection_status') == _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].ROOMSTATUS.PASSWORD_REQUIRED) {
+        } else if (this.model.get('connection_status') == _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_6__["default"].ROOMSTATUS.PASSWORD_REQUIRED) {
           this.renderPasswordForm();
-        } else if (this.model.get('connection_status') == _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].ROOMSTATUS.ENTERED) {
+        } else if (this.model.get('connection_status') == _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_6__["default"].ROOMSTATUS.ENTERED) {
           this.hideChatRoomContents();
           u.showElement(this.el.querySelector('.chat-area'));
           u.showElement(this.el.querySelector('.occupants'));
@@ -33585,7 +33861,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
         sizzle('.spinner', this.el).forEach(u.removeElement);
         this.hideChatRoomContents();
         const container_el = this.el.querySelector('.chatroom-body');
-        container_el.insertAdjacentHTML('afterbegin', templates_spinner_html__WEBPACK_IMPORTED_MODULE_28___default()());
+        container_el.insertAdjacentHTML('afterbegin', templates_spinner_html__WEBPACK_IMPORTED_MODULE_30___default()());
       },
 
       hideSpinner() {
@@ -33610,17 +33886,17 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
         const subject = this.model.get('subject'),
               message = subject.text ? __('Topic set by %1$s', subject.author) : __('Topic cleared by %1$s', subject.author),
               date = new Date().toISOString();
-        this.content.insertAdjacentHTML('beforeend', templates_info_html__WEBPACK_IMPORTED_MODULE_21___default()({
+        this.content.insertAdjacentHTML('beforeend', templates_info_html__WEBPACK_IMPORTED_MODULE_22___default()({
           'isodate': date,
           'extra_classes': 'chat-event',
           'message': message
         }));
 
         if (subject.text) {
-          this.content.insertAdjacentHTML('beforeend', templates_info_html__WEBPACK_IMPORTED_MODULE_21___default()({
+          this.content.insertAdjacentHTML('beforeend', templates_info_html__WEBPACK_IMPORTED_MODULE_22___default()({
             'isodate': date,
             'extra_classes': 'chat-topic',
-            'message': u.addHyperlinks(xss_dist_xss__WEBPACK_IMPORTED_MODULE_29___default.a.filterXSS(_.get(this.model.get('subject'), 'text'), {
+            'message': u.addHyperlinks(xss_dist_xss__WEBPACK_IMPORTED_MODULE_31___default.a.filterXSS(_.get(this.model.get('subject'), 'text'), {
               'whiteList': {}
             })),
             'render_message': true
@@ -33643,7 +33919,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
       },
 
       render() {
-        this.el.innerHTML = templates_room_panel_html__WEBPACK_IMPORTED_MODULE_26___default()({
+        this.el.innerHTML = templates_room_panel_html__WEBPACK_IMPORTED_MODULE_28___default()({
           'heading_chatrooms': __('Groupchats'),
           'title_new_room': __('Add a new groupchat'),
           'title_list_rooms': __('Query for groupchats')
@@ -33700,7 +33976,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
           'new_password': !password_protected,
           'fixed_username': this.model.get('jid')
         };
-        return templates_chatroom_form_html__WEBPACK_IMPORTED_MODULE_15___default()({
+        return templates_chatroom_form_html__WEBPACK_IMPORTED_MODULE_16___default()({
           '__': __,
           'title': _.get(stanza.querySelector('title'), 'textContent'),
           'instructions': _.get(stanza.querySelector('instructions'), 'textContent'),
@@ -33734,7 +34010,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
 
       toHTML() {
         const err_msg = this.model.get('validation_message');
-        return templates_chatroom_password_form_html__WEBPACK_IMPORTED_MODULE_19___default()({
+        return templates_chatroom_password_form_html__WEBPACK_IMPORTED_MODULE_20___default()({
           'jid': this.model.get('jid'),
           'heading': __('This groupchat requires a password'),
           'label_password': __('Password: '),
@@ -33766,7 +34042,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
 
       toHTML() {
         const err_msg = this.model.get('validation_message');
-        return templates_chatroom_nickname_form_html__WEBPACK_IMPORTED_MODULE_18___default()({
+        return templates_chatroom_nickname_form_html__WEBPACK_IMPORTED_MODULE_19___default()({
           'heading': __('Please choose your nickname'),
           'label_nickname': __('Nickname'),
           'label_join': __('Enter groupchat'),
@@ -33807,7 +34083,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
 
       toHTML() {
         const show = this.model.get('show');
-        return templates_occupant_html__WEBPACK_IMPORTED_MODULE_23___default()(Object.assign({
+        return templates_occupant_html__WEBPACK_IMPORTED_MODULE_25___default()(Object.assign({
           '_': _,
           'jid': '',
           'show': show,
@@ -33851,7 +34127,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
       },
 
       render() {
-        this.el.innerHTML = templates_chatroom_sidebar_html__WEBPACK_IMPORTED_MODULE_20___default()(Object.assign(this.chatroomview.model.toJSON(), {
+        this.el.innerHTML = templates_chatroom_sidebar_html__WEBPACK_IMPORTED_MODULE_21___default()(Object.assign(this.chatroomview.model.toJSON(), {
           'allow_muc_invitations': _converse.allow_muc_invitations,
           'label_occupants': __('Participants')
         }));
@@ -33885,7 +34161,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
         if (this.shouldInviteWidgetBeShown()) {
           if (widget === null) {
             const heading = this.el.querySelector('.occupants-heading');
-            heading.insertAdjacentHTML('afterend', templates_chatroom_invite_html__WEBPACK_IMPORTED_MODULE_17___default()({
+            heading.insertAdjacentHTML('afterend', templates_chatroom_invite_html__WEBPACK_IMPORTED_MODULE_18___default()({
               'error_message': null,
               'label_invitation': __('Invite')
             }));
@@ -33900,12 +34176,12 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
 
       renderRoomFeatures() {
         const features = this.chatroomview.model.features,
-              picks = _.pick(features.attributes, _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].ROOM_FEATURES),
+              picks = _.pick(features.attributes, _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_6__["default"].ROOM_FEATURES),
               iteratee = (a, v) => a || v;
 
         if (_.reduce(Object.values(picks), iteratee)) {
           const el = this.el.querySelector('.chatroom-features');
-          el.innerHTML = templates_chatroom_features_html__WEBPACK_IMPORTED_MODULE_14___default()(Object.assign(features.toJSON(), {
+          el.innerHTML = templates_chatroom_features_html__WEBPACK_IMPORTED_MODULE_15___default()(Object.assign(features.toJSON(), {
             __
           }));
           this.setOccupantsHeight();
@@ -33947,7 +34223,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
               jid = el.value;
 
         if (!jid || _.compact(jid.split('@')).length < 2) {
-          evt.target.outerHTML = templates_chatroom_invite_html__WEBPACK_IMPORTED_MODULE_17___default()({
+          evt.target.outerHTML = templates_chatroom_invite_html__WEBPACK_IMPORTED_MODULE_18___default()({
             'error_message': __('Please enter a valid XMPP address'),
             'label_invitation': __('Invite')
           });
@@ -35648,9 +35924,13 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_2__["default"].plugins
           try {
             ids = await this.fetchDevicesFromServer();
           } catch (e) {
-            _converse.log("Could not fetch devices for ".concat(this.get('jid')));
+            if (e === null) {
+              _converse.log("Timeout error while fetching devices for ".concat(this.get('jid')), Strophe.LogLevel.ERROR);
+            } else {
+              _converse.log("Could not fetch devices for ".concat(this.get('jid')), Strophe.LogLevel.ERROR);
 
-            _converse.log(e, Strophe.LogLevel.ERROR);
+              _converse.log(e, Strophe.LogLevel.ERROR);
+            }
 
             this.destroy();
           }
@@ -37541,14 +37821,16 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_2__["default"].plugins
 
       getRoomsListElementName() {
         if (this.model.get('bookmarked') && _converse.bookmarks) {
-          const bookmark = _.head(_converse.bookmarks.where({
+          const bookmark = _converse.bookmarks.findWhere({
             'jid': this.model.get('jid')
-          }));
+          });
 
-          return bookmark.get('name');
-        } else {
-          return this.model.get('name');
+          if (bookmark) {
+            return bookmark.get('name');
+          }
         }
+
+        return this.model.get('name');
       }
 
     });
@@ -39223,10 +39505,12 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_2__["default"].plugins
             'jid': this.get('jid')
           });
 
-          return bookmark.get('name');
-        } else {
-          return this.__super__.getDisplayName.apply(this, arguments);
+          if (bookmark) {
+            return bookmark.get('name');
+          }
         }
+
+        return this.__super__.getDisplayName.apply(this, arguments);
       },
 
       getAndPersistNickname(nick) {
@@ -39894,7 +40178,8 @@ _converse_core__WEBPACK_IMPORTED_MODULE_3__["default"].plugins.add('converse-cha
       defaults() {
         return {
           'msgid': _converse.connection.getUniqueId(),
-          'time': new Date().toISOString()
+          'time': new Date().toISOString(),
+          'ephemeral': false
         };
       },
 
@@ -39944,7 +40229,7 @@ _converse_core__WEBPACK_IMPORTED_MODULE_3__["default"].plugins.add('converse-cha
       },
 
       isEphemeral() {
-        return this.isOnlyChatStateNotification() || this.get('type') === 'error';
+        return this.isOnlyChatStateNotification() || this.get('ephemeral');
       },
 
       getDisplayName() {
@@ -39957,6 +40242,24 @@ _converse_core__WEBPACK_IMPORTED_MODULE_3__["default"].plugins.add('converse-cha
         } else {
           return this.get('from');
         }
+      },
+
+      getMessageText() {
+        if (this.get('is_encrypted')) {
+          return this.get('plaintext') || (_converse.debug ? __('Unencryptable OMEMO message') : null);
+        }
+
+        return this.get('message');
+      },
+
+      isMeCommand() {
+        const text = this.getMessageText();
+
+        if (!text) {
+          return false;
+        }
+
+        return text.startsWith('/me ');
       },
 
       sendSlotRequestStanza() {
@@ -39991,7 +40294,8 @@ _converse_core__WEBPACK_IMPORTED_MODULE_3__["default"].plugins.add('converse-cha
 
           return this.save({
             'type': 'error',
-            'message': __("Sorry, could not determine upload URL.")
+            'message': __("Sorry, could not determine upload URL."),
+            'ephemeral': true
           });
         }
 
@@ -40005,7 +40309,8 @@ _converse_core__WEBPACK_IMPORTED_MODULE_3__["default"].plugins.add('converse-cha
         } else {
           return this.save({
             'type': 'error',
-            'message': __("Sorry, could not determine file upload URL.")
+            'message': __("Sorry, could not determine file upload URL."),
+            'ephemeral': true
           });
         }
       },
@@ -40047,7 +40352,8 @@ _converse_core__WEBPACK_IMPORTED_MODULE_3__["default"].plugins.add('converse-cha
           this.save({
             'type': 'error',
             'upload': _converse.FAILURE,
-            'message': message
+            'message': message,
+            'ephemeral': true
           });
         };
 
@@ -40156,6 +40462,12 @@ _converse_core__WEBPACK_IMPORTED_MODULE_3__["default"].plugins.add('converse-cha
       },
 
       fetchMessages() {
+        if (this.messages.fetched) {
+          _converse.log("Not re-fetching messages for ".concat(this.get('jid')), Strophe.LogLevel.INFO);
+
+          return;
+        }
+
         this.messages.fetched = u.getResolveablePromise();
         const resolve = this.messages.fetched.resolve;
         this.messages.fetch({
@@ -40163,16 +40475,20 @@ _converse_core__WEBPACK_IMPORTED_MODULE_3__["default"].plugins.add('converse-cha
           'success': _.flow(this.afterMessagesFetched.bind(this), resolve),
           'error': _.flow(this.afterMessagesFetched.bind(this), resolve)
         });
+        return this.messages.fetched;
       },
 
       clearMessages() {
         try {
+          this.messages.models.forEach(m => m.destroy());
           this.messages.reset();
         } catch (e) {
           this.messages.trigger('reset');
 
           _converse.log(e, Strophe.LogLevel.ERROR);
         } finally {
+          delete this.messages.fetched;
+
           this.messages.browserStorage._clear();
         }
       },
@@ -40232,6 +40548,17 @@ _converse_core__WEBPACK_IMPORTED_MODULE_3__["default"].plugins.add('converse-cha
           return this.vcard.getDisplayName();
         } else {
           return this.get('jid');
+        }
+      },
+
+      createMessageFromError(error) {
+        if (error instanceof _converse.TimeoutError) {
+          const msg = this.messages.create({
+            'type': 'error',
+            'message': error.message,
+            'retry': true
+          });
+          msg.error = error;
         }
       },
 
@@ -40718,7 +41045,8 @@ _converse_core__WEBPACK_IMPORTED_MODULE_3__["default"].plugins.add('converse-cha
         if (!item) {
           this.messages.create({
             'message': __("Sorry, looks like file upload is not supported by your server."),
-            'type': 'error'
+            'type': 'error',
+            'ephemeral': true
           });
           return;
         }
@@ -40735,7 +41063,8 @@ _converse_core__WEBPACK_IMPORTED_MODULE_3__["default"].plugins.add('converse-cha
         if (!slot_request_url) {
           this.messages.create({
             'message': __("Sorry, looks like file upload is not supported by your server."),
-            'type': 'error'
+            'type': 'error',
+            'ephemeral': true
           });
           return;
         }
@@ -40744,7 +41073,8 @@ _converse_core__WEBPACK_IMPORTED_MODULE_3__["default"].plugins.add('converse-cha
           if (!window.isNaN(max_file_size) && window.parseInt(file.size) > max_file_size) {
             return this.messages.create({
               'message': __('The size of your file, %1$s, exceeds the maximum allowed by your server, which is %2$s.', file.name, filesize__WEBPACK_IMPORTED_MODULE_4___default()(max_file_size)),
-              'type': 'error'
+              'type': 'error',
+              'ephemeral': true
             });
           } else {
             const message = this.messages.create(Object.assign(this.getOutgoingMessageAttributes(), {
@@ -40817,9 +41147,12 @@ _converse_core__WEBPACK_IMPORTED_MODULE_3__["default"].plugins.add('converse-cha
         return _.propertyOf(error.querySelector('text'))('textContent') || __('Sorry, an error occurred:') + ' ' + error.innerHTML;
       },
 
+      /**
+       * Given a message stanza, return the text contained in its body.
+       * @private
+       * @param { XMLElement } stanza
+       */
       getMessageBody(stanza) {
-        /* Given a message stanza, return the text contained in its body.
-         */
         const type = stanza.getAttribute('type');
 
         if (type === 'error') {
@@ -40907,17 +41240,23 @@ _converse_core__WEBPACK_IMPORTED_MODULE_3__["default"].plugins.add('converse-cha
         return this.trigger("show");
       },
 
+      /**
+       * Indicates whether the chat is hidden and therefore
+       * whether a newly received message will be visible
+       * to the user or not.
+       * @returns {boolean}
+       */
       isHidden() {
-        /* Returns a boolean to indicate whether a newly received
-         * message will be visible to the user or not.
-         */
         return this.get('hidden') || this.get('minimized') || this.isScrolledUp() || _converse.windowState === 'hidden';
       },
 
+      /**
+       * Given a newly received {@link _converse.Message} instance,
+       * update the unread counter if necessary.
+       * @private
+       * @param {_converse.Message} message
+       */
       incrementUnreadMsgCounter(message) {
-        /* Given a newly received message, update the unread counter if
-         * necessary.
-         */
         if (!message || !message.get('message')) {
           return;
         }
@@ -41519,7 +41858,7 @@ const _converse = {
   'templates': {},
   'promises': {}
 };
-_converse.VERSION_NAME = "v5.0.0";
+_converse.VERSION_NAME = "v5.0.1";
 Object.assign(_converse, Backbone.Events);
 _converse.Collection = Backbone.Collection.extend({
   clearSession() {
@@ -41530,7 +41869,15 @@ _converse.Collection = Backbone.Collection.extend({
     this.reset();
   }
 
-}); // Make converse pluggable
+});
+/**
+ * Custom error for indicating timeouts
+ * @namespace _converse
+ */
+
+class TimeoutError extends Error {}
+
+_converse.TimeoutError = TimeoutError; // Make converse pluggable
 
 pluggable_js_src_pluggable__WEBPACK_IMPORTED_MODULE_10__["default"].enable(_converse, '_converse', 'pluggable');
 _converse.keycodes = {
@@ -42978,16 +43325,18 @@ _converse.api = {
    * {@link _converse.api.listen.on} or {@link _converse.api.listen.once}
    * (see [_converse.api.listen](http://localhost:8000/docs/html/api/-_converse.api.listen.html)).
    *
+   * Some events also double as promises and can be waited on via {@link _converse.api.waitUntil}.
+   *
    * @method _converse.api.trigger
    * @param {string} name - The event name
    * @param {...any} [argument] - Argument to be passed to the event handler
    * @param {object} [options]
    * @param {boolean} [options.synchronous] - Whether the event is synchronous or not.
-   *    When a synchronous event is fired, Converse will wait for all
-   *    promises returned by the event's handlers to finish before continuing.
+   *  When a synchronous event is fired, a promise will be returned
+   *  by {@link _converse.api.trigger} which resolves once all the
+   *  event handlers' promises have been resolved.
    */
   async trigger(name) {
-    /* Event emitter and promise resolver */
     const args = Array.from(arguments);
     const options = args.pop();
 
@@ -44634,6 +44983,12 @@ _converse_core__WEBPACK_IMPORTED_MODULE_3__["default"].plugins.add('converse-mam
         const result = await _converse.api.archive.query(query);
         result.messages.forEach(message_handler);
 
+        if (result.error) {
+          result.error.retry = () => this.fetchArchivedMessages(options, page);
+
+          this.createMessageFromError(result.error);
+        }
+
         if (page && result.rsm) {
           if (page === 'forwards') {
             options = result.rsm.next(_converse.archived_messages_page_size, options.before);
@@ -44754,9 +45109,14 @@ _converse_core__WEBPACK_IMPORTED_MODULE_3__["default"].plugins.add('converse-mam
 
     _converse.api.listen.on('serviceDiscovered', getMAMPrefsFromFeature);
 
-    _converse.api.listen.on('chatReconnected', chat => chat.fetchNewestMessages());
-
     _converse.api.listen.on('enteredNewRoom', chat => chat.fetchNewestMessages());
+
+    _converse.api.listen.on('chatReconnected', chat => {
+      // XXX: For MUCs, we listen to enteredNewRoom instead
+      if (chat.get('type') === _converse.PRIVATE_CHAT_TYPE) {
+        chat.fetchNewestMessages();
+      }
+    });
 
     _converse.api.listen.on('afterMessagesFetched', chat => {
       // XXX: We don't want to query MAM every time this is triggered
@@ -44816,9 +45176,9 @@ _converse_core__WEBPACK_IMPORTED_MODULE_3__["default"].plugins.add('converse-mam
          * * `index`
          * * `count`
          * @throws {Error} An error is thrown if the XMPP server responds with an error.
-         * @returns {Promise<Object>} A promise which resolves to an object which
-         * will have keys `messages` and `rsm` which contains a _converse.RSM object
-         * on which "next" or "previous" can be called before passing it in again
+         * @returns { (Promise<Object> | _converse.TimeoutError) } A promise which resolves
+         * to an object which will have keys `messages` and `rsm` which contains a _converse.RSM
+         * object on which "next" or "previous" can be called before passing it in again
          * to this method, to get the next or previous page in the result set.
          *
          * @example
@@ -45050,18 +45410,32 @@ _converse_core__WEBPACK_IMPORTED_MODULE_3__["default"].plugins.add('converse-mam
             return true;
           }, Strophe.NS.MAM);
 
-          let iq_result, rsm;
+          let error;
+          const iq_result = await _converse.api.sendIQ(stanza, _converse.message_archiving_timeout, false);
 
-          try {
-            iq_result = await _converse.api.sendIQ(stanza, _converse.message_archiving_timeout);
-          } catch (e) {
-            _converse.log("Error or timeout while trying to fetch " + "archived messages", Strophe.LogLevel.ERROR);
+          if (iq_result === null) {
+            const err_msg = "Timeout while trying to fetch archived messages.";
 
-            _converse.log(e, Strophe.LogLevel.ERROR);
+            _converse.log(err_msg, Strophe.LogLevel.ERROR);
+
+            error = new _converse.TimeoutError(err_msg);
+            return {
+              messages,
+              error
+            };
+          } else if (u.isErrorStanza(iq_result)) {
+            _converse.log("Error stanza received while trying to fetch archived messages", Strophe.LogLevel.ERROR);
+
+            _converse.log(iq_result, Strophe.LogLevel.ERROR);
+
+            return {
+              messages
+            };
           }
 
           _converse.connection.deleteHandler(message_handler);
 
+          let rsm;
           const fin = iq_result && sizzle__WEBPACK_IMPORTED_MODULE_4___default()("fin[xmlns=\"".concat(Strophe.NS.MAM, "\"]"), iq_result).pop();
 
           if (fin && [null, 'false'].includes(fin.getAttribute('complete'))) {
@@ -45077,7 +45451,8 @@ _converse_core__WEBPACK_IMPORTED_MODULE_3__["default"].plugins.add('converse-mam
 
           return {
             messages,
-            rsm
+            rsm,
+            error
           };
         }
 
@@ -45374,13 +45749,35 @@ _converse_core__WEBPACK_IMPORTED_MODULE_4__["default"].plugins.add('converse-muc
             }
           }, 10000);
         } else {
-          this.occupantAdded = _utils_form__WEBPACK_IMPORTED_MODULE_5__["default"].getResolveablePromise();
           this.setOccupant();
           this.setVCard();
         }
       },
 
+      onOccupantRemoved(occupant) {
+        delete this.occupant;
+
+        const chatbox = _.get(this, 'collection.chatbox');
+
+        chatbox.occupants.on('add', this.onOccupantAdded, this);
+      },
+
+      onOccupantAdded(occupant) {
+        if (occupant.get('nick') === Strophe.getResourceFromJid(this.get('from'))) {
+          this.occupant = occupant;
+          this.occupant.on('destroy', this.onOccupantRemoved, this);
+
+          const chatbox = _.get(this, 'collection.chatbox');
+
+          chatbox.occupants.off('add', this.onOccupantAdded, this);
+        }
+      },
+
       setOccupant() {
+        if (this.get('type') !== 'groupchat') {
+          return;
+        }
+
         const chatbox = _.get(this, 'collection.chatbox');
 
         if (!chatbox) {
@@ -45391,7 +45788,12 @@ _converse_core__WEBPACK_IMPORTED_MODULE_4__["default"].plugins.add('converse-muc
         this.occupant = chatbox.occupants.findWhere({
           'nick': nick
         });
-        this.occupantAdded.resolve();
+
+        if (this.occupant) {
+          this.occupant.on('destroy', this.onOccupantRemoved, this);
+        } else {
+          chatbox.occupants.on('add', this.onOccupantAdded, this);
+        }
       },
 
       getVCardForChatroomOccupant() {
@@ -45502,7 +45904,7 @@ _converse_core__WEBPACK_IMPORTED_MODULE_4__["default"].plugins.add('converse-muc
         };
       },
 
-      initialize() {
+      async initialize() {
         if (_converse.vcards) {
           this.vcard = _converse.vcards.findWhere({
             'jid': this.get('jid')
@@ -45516,9 +45918,10 @@ _converse_core__WEBPACK_IMPORTED_MODULE_4__["default"].plugins.add('converse-muc
 
         this.on('change:chat_state', this.sendChatState, this);
         this.on('change:connection_status', this.onConnectionStatusChanged, this);
-        this.initOccupants();
-        this.registerHandlers();
         this.initMessages();
+        this.registerHandlers();
+        await this.initOccupants();
+        await this.fetchMessages();
         this.enterRoom();
       },
 
@@ -45528,8 +45931,7 @@ _converse_core__WEBPACK_IMPORTED_MODULE_4__["default"].plugins.add('converse-muc
         _converse.log("".concat(this.get('jid'), " initialized with connection_status ").concat(conn_status), Strophe.LogLevel.DEBUG);
 
         if (conn_status !== _converse_core__WEBPACK_IMPORTED_MODULE_4__["default"].ROOMSTATUS.ENTERED) {
-          // We're not restoring a room from cache, so let's clear
-          // the cache (which might be stale).
+          // We're not restoring a room from cache, so let's clear the potentially stale cache.
           this.removeNonMembers();
           await this.refreshRoomFeatures();
 
@@ -45545,8 +45947,8 @@ _converse_core__WEBPACK_IMPORTED_MODULE_4__["default"].plugins.add('converse-muc
 
           this.join();
         } else if (!(await this.rejoinIfNecessary())) {
+          // We've restored the room from cache and we're still joined.
           this.features.fetch();
-          this.fetchMessages();
         }
       },
 
@@ -45554,20 +45956,14 @@ _converse_core__WEBPACK_IMPORTED_MODULE_4__["default"].plugins.add('converse-muc
         if (this.get('connection_status') === _converse_core__WEBPACK_IMPORTED_MODULE_4__["default"].ROOMSTATUS.ENTERED) {
           if (_converse.muc_fetch_members) {
             await this.occupants.fetchMembers();
-          } // It's possible to fetch messages before entering a MUC,
-          // but we don't support this use-case currently. By
-          // fetching messages after members we can immediately
-          // assign an occupant to the message before rendering it,
-          // thereby avoiding re-renders (and therefore DOM reflows).
-
-
-          this.fetchMessages();
+          }
           /**
-           * Triggered when the user has entered a new MUC and *after* cached messages have been fetched.
+           * Triggered when the user has entered a new MUC
            * @event _converse#enteredNewRoom
            * @type { _converse.ChatRoom}
            * @example _converse.api.listen.on('enteredNewRoom', model => { ... });
            */
+
 
           _converse.api.trigger('enteredNewRoom', this);
 
@@ -45614,12 +46010,11 @@ _converse_core__WEBPACK_IMPORTED_MODULE_4__["default"].plugins.add('converse-muc
             'error': resolve
           });
         });
+        return this.occupants.fetched;
       },
 
       registerHandlers() {
-        /* Register presence and message handlers for this chat
-         * groupchat
-         */
+        // Register presence and message handlers for this groupchat
         const room_jid = this.get('jid');
         this.removeHandlers();
         this.presence_handler = _converse.connection.addHandler(stanza => {
@@ -46363,14 +46758,26 @@ _converse_core__WEBPACK_IMPORTED_MODULE_4__["default"].plugins.add('converse-muc
         });
         const result = await _converse.api.sendIQ(iq, null, false);
 
-        if (result.getAttribute('type') === 'error') {
-          const err_msg = "Not allowed to fetch ".concat(affiliation, " list for MUC ").concat(this.get('jid'));
+        if (result === null) {
+          const err_msg = "Error: timeout while fetching ".concat(affiliation, " list for MUC ").concat(this.get('jid'));
+          const err = new Error(err_msg);
 
           _converse.log(err_msg, Strophe.LogLevel.WARN);
 
           _converse.log(result, Strophe.LogLevel.WARN);
 
-          return null;
+          return err;
+        }
+
+        if (_utils_form__WEBPACK_IMPORTED_MODULE_5__["default"].isErrorStanza(result)) {
+          const err_msg = "Error: not allowed to fetch ".concat(affiliation, " list for MUC ").concat(this.get('jid'));
+          const err = new Error(err_msg);
+
+          _converse.log(err_msg, Strophe.LogLevel.WARN);
+
+          _converse.log(result, Strophe.LogLevel.WARN);
+
+          return err;
         }
 
         return _utils_form__WEBPACK_IMPORTED_MODULE_5__["default"].parseMemberListIQ(result).filter(p => p);
@@ -46392,8 +46799,8 @@ _converse_core__WEBPACK_IMPORTED_MODULE_4__["default"].plugins.add('converse-muc
       async updateMemberLists(members) {
         const all_affiliations = ['member', 'admin', 'owner'];
         const aff_lists = await Promise.all(all_affiliations.map(a => this.getAffiliationList(a)));
-        const known_affiliations = all_affiliations.filter(a => aff_lists[all_affiliations.indexOf(a)] !== null);
-        const old_members = aff_lists.reduce((acc, val) => val !== null ? [...val, ...acc] : acc, []);
+        const known_affiliations = all_affiliations.filter(a => !_utils_form__WEBPACK_IMPORTED_MODULE_5__["default"].isErrorObject(aff_lists[all_affiliations.indexOf(a)]));
+        const old_members = aff_lists.reduce((acc, val) => _utils_form__WEBPACK_IMPORTED_MODULE_5__["default"].isErrorObject(val) ? acc : [...val, ...acc], []);
         await this.setAffiliations(_utils_form__WEBPACK_IMPORTED_MODULE_5__["default"].computeAffiliationsDelta(true, false, members, old_members));
 
         if (_converse.muc_fetch_members) {
@@ -46846,7 +47253,8 @@ _converse_core__WEBPACK_IMPORTED_MODULE_4__["default"].plugins.add('converse-muc
           } else {
             const attrs = {
               'type': 'error',
-              'message': text
+              'message': text,
+              'ephemeral': true
             };
             this.messages.create(attrs);
           }
@@ -46889,7 +47297,7 @@ _converse_core__WEBPACK_IMPORTED_MODULE_4__["default"].plugins.add('converse-muc
        * @param { XMLElement } stanza: The presence stanza received
        */
       createInfoMessages(stanza) {
-        const is_self = !_.isNull(stanza.querySelector("status[code='110']"));
+        const is_self = stanza.querySelector("status[code='110']") !== null;
         const x = sizzle("x[xmlns=\"".concat(Strophe.NS.MUC_USER, "\"]"), stanza).pop();
 
         if (!x) {
@@ -47255,8 +47663,8 @@ _converse_core__WEBPACK_IMPORTED_MODULE_4__["default"].plugins.add('converse-muc
       async fetchMembers() {
         const all_affiliations = ['member', 'admin', 'owner'];
         const aff_lists = await Promise.all(all_affiliations.map(a => this.chatroom.getAffiliationList(a)));
-        const new_members = aff_lists.reduce((acc, val) => val !== null ? [...val, ...acc] : acc, []);
-        const known_affiliations = all_affiliations.filter(a => aff_lists[all_affiliations.indexOf(a)] !== null);
+        const new_members = aff_lists.reduce((acc, val) => _utils_form__WEBPACK_IMPORTED_MODULE_5__["default"].isErrorObject(val) ? acc : [...val, ...acc], []);
+        const known_affiliations = all_affiliations.filter(a => !_utils_form__WEBPACK_IMPORTED_MODULE_5__["default"].isErrorObject(aff_lists[all_affiliations.indexOf(a)]));
         const new_jids = new_members.map(m => m.jid).filter(m => m !== undefined);
         const new_nicks = new_members.map(m => !m.jid && m.nick || undefined).filter(m => m !== undefined);
         const removed_members = this.filter(m => {
@@ -47689,13 +48097,13 @@ __webpack_require__.r(__webpack_exports__);
  * Converse.js plugin which add support for application-level pings
  * as specified in XEP-0199 XMPP Ping.
  */
- // Strophe methods for building stanzas
 
 const {
   Strophe,
   $iq,
   _
 } = _converse_core__WEBPACK_IMPORTED_MODULE_0__["default"].env;
+const u = _converse_core__WEBPACK_IMPORTED_MODULE_0__["default"].env.utils;
 Strophe.addNamespace('PING', "urn:xmpp:ping");
 _converse_core__WEBPACK_IMPORTED_MODULE_0__["default"].plugins.add('converse-ping', {
   initialize() {
@@ -47705,55 +48113,15 @@ _converse_core__WEBPACK_IMPORTED_MODULE_0__["default"].plugins.add('converse-pin
     const {
       _converse
     } = this;
+    let lastStanzaDate;
 
     _converse.api.settings.update({
-      ping_interval: 180 //in seconds
+      ping_interval: 60 //in seconds
 
     });
 
-    _converse.ping = function (jid, success, error, timeout) {
-      // XXX: We could first check here if the server advertised that
-      // it supports PING.
-      // However, some servers don't advertise while still keeping the
-      // connection option due to pings.
-      //
-      // var feature = _converse.disco_entities[_converse.domain].features.findWhere({'var': Strophe.NS.PING});
-      _converse.lastStanzaDate = new Date();
-      jid = jid || Strophe.getDomainFromJid(_converse.bare_jid);
-
-      if (timeout === undefined) {
-        timeout = null;
-      }
-
-      if (success === undefined) {
-        success = null;
-      }
-
-      if (error === undefined) {
-        error = null;
-      }
-
-      if (_converse.connection) {
-        const id = _converse.connection.getUniqueId('ping');
-
-        const iq = $iq({
-          'type': 'get',
-          'to': jid,
-          'id': id
-        }).c('ping', {
-          'xmlns': Strophe.NS.PING
-        });
-
-        _converse.connection.sendIQ(iq, success, error, timeout);
-
-        return true;
-      }
-
-      return false;
-    };
-
-    _converse.pong = function (ping) {
-      _converse.lastStanzaDate = new Date();
+    function pong(ping) {
+      lastStanzaDate = new Date();
       const from = ping.getAttribute('from');
       const id = ping.getAttribute('id');
       const iq = $iq({
@@ -47765,52 +48133,100 @@ _converse_core__WEBPACK_IMPORTED_MODULE_0__["default"].plugins.add('converse-pin
       _converse.connection.sendIQ(iq);
 
       return true;
-    };
+    }
 
-    _converse.registerPongHandler = function () {
+    function registerPongHandler() {
       if (_converse.connection.disco !== undefined) {
         _converse.api.disco.own.features.add(Strophe.NS.PING);
       }
 
-      return _converse.connection.addHandler(_converse.pong, Strophe.NS.PING, "iq", "get");
-    };
+      return _converse.connection.addHandler(pong, Strophe.NS.PING, "iq", "get");
+    }
 
-    _converse.registerPingHandler = function () {
-      _converse.registerPongHandler();
+    function registerPingHandler() {
+      _converse.connection.addHandler(() => {
+        if (_converse.ping_interval > 0) {
+          // Handler on each stanza, saves the received date
+          // in order to ping only when needed.
+          lastStanzaDate = new Date();
+          return true;
+        }
+      });
+    }
 
+    setTimeout(() => {
       if (_converse.ping_interval > 0) {
-        _converse.connection.addHandler(function () {
-          /* Handler on each stanza, saves the received date
-           * in order to ping only when needed.
-           */
-          _converse.lastStanzaDate = new Date();
-          return true;
-        });
+        const now = new Date();
 
-        _converse.connection.addTimedHandler(1000, function () {
-          const now = new Date();
+        if (!lastStanzaDate) {
+          lastStanzaDate = now;
+        }
 
-          if (!_converse.lastStanzaDate) {
-            _converse.lastStanzaDate = now;
-          }
+        if ((now - lastStanzaDate) / 1000 > _converse.ping_interval) {
+          return _converse.api.ping();
+        }
 
-          if ((now - _converse.lastStanzaDate) / 1000 > _converse.ping_interval) {
-            return _converse.ping();
-          }
-
-          return true;
-        });
+        return true;
       }
-    };
+    }, 1000);
 
     const onConnected = function onConnected() {
       // Wrapper so that we can spy on registerPingHandler in tests
-      _converse.registerPingHandler();
+      registerPongHandler();
+      registerPingHandler();
     };
 
     _converse.api.listen.on('connected', onConnected);
 
     _converse.api.listen.on('reconnected', onConnected);
+    /************************ BEGIN API ************************/
+
+
+    Object.assign(_converse.api, {
+      /**
+       * Pings the service represented by the passed in JID by sending an
+       * IQ stanza.
+       * @private
+       * @method _converse.api.ping
+       * @param { string } [jid] - The JID of the service to ping
+       */
+      async ping(jid) {
+        // XXX: We could first check here if the server advertised that it supports PING.
+        // However, some servers don't advertise while still responding to pings
+        //
+        // const feature = _converse.disco_entities[_converse.domain].features.findWhere({'var': Strophe.NS.PING});
+        lastStanzaDate = new Date();
+        jid = jid || Strophe.getDomainFromJid(_converse.bare_jid);
+
+        if (_converse.connection) {
+          const iq = $iq({
+            'type': 'get',
+            'to': jid,
+            'id': _converse.connection.getUniqueId('ping')
+          }).c('ping', {
+            'xmlns': Strophe.NS.PING
+          });
+          const result = await _converse.api.sendIQ(iq, 10000, false);
+
+          if (result === null) {
+            _converse.log("Timeout while pinging ".concat(jid), Strophe.LogLevel.WARN);
+
+            if (jid === Strophe.getDomainFromJid(_converse.bare_jid)) {
+              _converse.api.connection.reconnect();
+            }
+          } else if (u.isErrorStanza(result)) {
+            _converse.log("Error while pinging ".concat(jid), Strophe.LogLevel.ERROR);
+
+            _converse.log(result, Strophe.LogLevel.ERROR);
+          }
+
+          return true;
+        }
+
+        return false;
+      }
+
+    });
   }
 
 });
@@ -50544,6 +50960,18 @@ u.isHeadlineMessage = function (_converse, message) {
   }
 
   return false;
+};
+
+u.isErrorObject = function (o) {
+  return o instanceof Error;
+};
+
+u.isErrorStanza = function (stanza) {
+  if (!_lodash_noconflict__WEBPACK_IMPORTED_MODULE_3___default.a.isElement(stanza)) {
+    return false;
+  }
+
+  return stanza.getAttribute('type') === 'error';
 };
 
 u.isForbiddenError = function (stanza) {
@@ -74388,11 +74816,9 @@ var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./no
 module.exports = function(o) {
 var __t, __p = '', __e = _.escape, __j = Array.prototype.join;
 function print() { __p += __j.call(arguments, '') }
-__p += '<!-- src/templates/info.html -->\n';
- if (o.render_message) { ;
-__p += '\n    <!-- XXX: Should only ever be rendered if the message text has been sanitized already -->\n    <div class="message chat-info ' +
+__p += '<!-- src/templates/info.html -->\n<div class="message chat-info ' +
 __e(o.extra_classes) +
-'"\n        data-isodate="' +
+'" data-isodate="' +
 __e(o.isodate) +
 '" ';
  if (o.data_name) { ;
@@ -74402,27 +74828,23 @@ __e(o.data_name) +
 __e(o.data_value) +
 '"';
  } ;
-__p += '>' +
+__p += '>\n';
+ if (o.render_message) {
+    // XXX: Should only ever be rendered if the message text has been sanitized already
+;
+__p += '\n    ' +
 ((__t = (o.message)) == null ? '' : __t) +
-'</div>\n';
+'\n';
  } else { ;
-__p += '\n    <div class="message chat-info ' +
-__e(o.extra_classes) +
-'"\n        data-isodate="' +
-__e(o.isodate) +
-'" ';
- if (o.data_name) { ;
-__p += ' data-' +
-__e(o.data_name) +
-'="' +
-__e(o.data_value) +
-'"';
- } ;
-__p += '>' +
+__p += '\n    ' +
 __e(o.message) +
-'</div>\n';
+'\n';
  } ;
 __p += '\n';
+ if (o.retry) { ;
+__p += '\n    <a class="retry">Retry</a>\n';
+ } ;
+__p += '\n</div>\n';
 return __p
 };
 
@@ -74698,6 +75120,149 @@ __e(o.message) +
 '</p>\n            </div>\n            <div class="modal-footer">\n                <button type="button" class="btn btn-secondary" data-dismiss="modal">' +
 __e(o.__('Close')) +
 '</button>\n            </div>\n        </div>\n    </div>\n</div>\n';
+return __p
+};
+
+/***/ }),
+
+/***/ "./src/templates/moderator_tools_modal.html":
+/*!**************************************************!*\
+  !*** ./src/templates/moderator_tools_modal.html ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./node_modules/lodash/escape.js")};
+module.exports = function(o) {
+var __t, __p = '', __e = _.escape, __j = Array.prototype.join;
+function print() { __p += __j.call(arguments, '') }
+__p += '<!-- src/templates/moderator_tools_modal.html -->\n<div class="modal" id="list-chatrooms-modal" tabindex="-1" role="dialog" aria-labelledby="list-chatrooms-modal-label" aria-hidden="true">\n    <div class="modal-dialog" role="document">\n        <div class="modal-content">\n            <div class="modal-header">\n                <h5 class="modal-title"\n                    id="list-chatrooms-modal-label">' +
+__e(o.__('Moderator Tools')) +
+'</h5>\n                <button type="button" class="close" data-dismiss="modal" aria-label="Close">\n                    <span aria-hidden="true">×</span>\n                </button>\n            </div>\n            <div class="modal-body d-flex flex-column">\n                <ul class="nav nav-pills justify-content-center">\n                    <li role="presentation" class="nav-item">\n                        <a class="nav-link active" id="roles-tab" href="#roles-tabpanel" aria-controls="roles-tabpanel" role="tab" data-toggle="tab">Roles</a>\n                    </li>\n                    <li role="presentation" class="nav-item">\n                        <a class="nav-link" id="affiliations-tab" href="#affiliations-tabpanel" aria-controls="affiliations-tabpanel" role="tab" data-toggle="tab">Affiliations</a>\n                    </li>\n                </ul>\n\n                <div class="tab-content">\n                    <div class="tab-pane tab-pane--columns active" id="roles-tabpanel" role="tabpanel" aria-labelledby="roles-tab">\n                        <form class="converse-form query-role">\n                            <div class="form-group">\n                                <label for="role">\n                                    <strong>' +
+__e(o.__('Role')) +
+':</strong>\n                                </label>\n                                <div class="row">\n                                    <div class="col">\n                                        <select class="custom-select select-role" name="role">\n                                            ';
+ o.roles.forEach(function (role) { ;
+__p += '\n                                                <option value="' +
+__e(role) +
+'" ';
+ if (role === o.role)  { ;
+__p += ' selected="selected" ';
+ } ;
+__p += '>' +
+__e(role) +
+'</option>\n                                            ';
+ }); ;
+__p += '\n                                        </select>\n                                    </div>\n                                    <div class="col">\n                                        <input type="submit" class="btn btn-primary" name="users_with_role" value="' +
+__e(o.__('Show users')) +
+'"/>\n                                    </div>\n                                </div>\n                            </div>\n                        </form>\n                        <div class="scrollable-container">\n                        <ul class="list-group list-group--users">\n                            ';
+ if (o.loading_users_with_role)  { ;
+__p += '\n                                <li class="list-group-item"> <span class="spinner fa fa-spinner centered"/> </li>\n                            ';
+ } ;
+__p += '\n                            ';
+ if (o.users_with_role && o.users_with_role.length === 0) { ;
+__p += '\n                                <li class="list-group-item">' +
+__e(o.__('No users with that role found.')) +
+'</li>\n                            ';
+ } ;
+__p += '\n                            ';
+ (o.users_with_role || []).forEach(function (item) { ;
+__p += '\n                                <li class="list-group-item">\n                                    <ul class="list-group">\n                                        <li class="list-group-item active">\n                                            <div><strong>JID:</strong> ' +
+__e(item.jid) +
+'</div>\n                                        </li>\n                                        <li class="list-group-item">\n                                            <div><strong>Nickname:</strong> ' +
+__e(item.nick) +
+'</div>\n                                        </li>\n                                        <li class="list-group-item">\n                                            <div><strong>Role:</strong> ' +
+__e(item.role) +
+'<a href="#" data-form="role-form" class="toggle-form right fa fa-wrench"></a></div>\n                                            <form class="role-form hidden">\n                                                <div class="form-group">\n                                                    <input type="hidden" name="jid" value="' +
+__e(item.jid) +
+'"/>\n                                                    <input type="hidden" name="nick" value="' +
+__e(item.nick) +
+'"/>\n                                                    <div class="row">\n                                                        <div class="col">\n                                                            <label><strong>' +
+__e(o.__('New Role')) +
+':</strong></label>\n                                                            <select class="custom-select select-role" name="role">\n                                                                ';
+ o.allowed_roles.forEach(function (role) { ;
+__p += '\n                                                                    <option value="' +
+__e(role) +
+'" ';
+ if (role === item.role)  { ;
+__p += ' selected="selected" ';
+ } ;
+__p += '>' +
+__e(role) +
+'</option>\n                                                                ';
+ }); ;
+__p += '\n                                                            </select>\n                                                        </div>\n                                                        <div class="col">\n                                                            <label><strong>' +
+__e(o.__('Reason')) +
+':</strong></label>\n                                                            <input class="form-control" type="text" name="reason"/>\n                                                        </div>\n                                                    </div>\n                                                </div>\n                                                <div class="form-group">\n                                                    <input type="submit" class="btn btn-primary" value="' +
+__e(o.__('Change role')) +
+'"/>\n                                                </div>\n                                            </form>\n                                        </li>\n                                    </ul>\n                                </li>\n                            ';
+ }); ;
+__p += '\n                        </ul>\n                        </div>\n                    </div>\n\n\n                    <div class="tab-pane tab-pane--columns" id="affiliations-tabpanel" role="tabpanel" aria-labelledby="affiliations-tab">\n                        <form class="converse-form query-affiliation">\n                            <div class="form-group">\n                                <label for="affiliation">\n                                    <strong>' +
+__e(o.__('Affiliation')) +
+':</strong>\n                                </label>\n                                <div class="row">\n                                    <div class="col">\n                                        <select class="custom-select select-affiliation" name="affiliation">\n                                            ';
+ o.affiliations.forEach(function (aff) { ;
+__p += '\n                                                <option value="' +
+__e(aff) +
+'" ';
+ if (aff === o.affiliation)  { ;
+__p += ' selected="selected" ';
+ } ;
+__p += '>' +
+__e(aff) +
+'</option>\n                                            ';
+ }); ;
+__p += '\n                                        </select>\n                                    </div>\n                                    <div class="col">\n                                        <input type="submit" class="btn btn-primary" name="users_with_affiliation" value="' +
+__e(o.__('Show users')) +
+'"/>\n                                    </div>\n                                </div>\n                            </div>\n                        </form>\n                        <div class="scrollable-container">\n                        <ul class="list-group list-group--users">\n                            ';
+ if (o.loading_users_with_affiliation)  { ;
+__p += '\n                                <li class="list-group-item"> <span class="spinner fa fa-spinner centered"/> </li>\n                            ';
+ } else { ;
+__p += '\n                                ';
+ if (o.users_with_affiliation && o.users_with_affiliation.length === 0) { ;
+__p += '\n                                    <li class="list-group-item">' +
+__e(o.__('No users with that affiliation found.')) +
+'</li>\n                                ';
+ } else if (o.users_with_affiliation instanceof Error) { ;
+__p += '\n                                    <li class="list-group-item">' +
+__e(o.users_with_affiliation.message) +
+'</li>\n                                ';
+ } else { ;
+__p += '\n                                    ';
+ (o.users_with_affiliation || []).forEach(function (item) { ;
+__p += '\n                                        <li class="list-group-item">\n                                            <ul class="list-group">\n                                                <li class="list-group-item active">\n                                                    <div><strong>JID:</strong> ' +
+__e(item.jid) +
+'</div>\n                                                </li>\n                                                <li class="list-group-item">\n                                                    <div><strong>Nickname:</strong> ' +
+__e(item.nick) +
+'</div>\n                                                </li>\n                                                <li class="list-group-item">\n                                                    <div><strong>Affiliation:</strong> ' +
+__e(item.affiliation) +
+' <a href="#" data-form="affiliation-form" class="toggle-form right fa fa-wrench"></a></div>\n                                                    <form class="affiliation-form hidden">\n                                                        <div class="form-group">\n                                                            <input type="hidden" name="jid" value="' +
+__e(item.jid) +
+'"/>\n                                                            <input type="hidden" name="nick" value="' +
+__e(item.nick) +
+'"/>\n                                                            <div class="row">\n                                                                <div class="col">\n                                                                    <label><strong>' +
+__e(o.__('New affiliation')) +
+':</strong></label>\n                                                                    <select class="custom-select select-affiliation" name="affiliation">\n                                                                        ';
+ o.allowed_affiliations.forEach(function (aff) { ;
+__p += '\n                                                                            <option value="' +
+__e(aff) +
+'" ';
+ if (aff === item.affiliation)  { ;
+__p += ' selected="selected" ';
+ } ;
+__p += '>' +
+__e(aff) +
+'</option>\n                                                                        ';
+ }); ;
+__p += '\n                                                                    </select>\n                                                                </div>\n                                                                <div class="col">\n                                                                    <label><strong>' +
+__e(o.__('Reason')) +
+':</strong></label>\n                                                                    <input class="form-control" type="text" name="reason"/>\n                                                                </div>\n                                                            </div>\n                                                        </div>\n                                                        <div class="form-group">\n                                                            <input type="submit" class="btn btn-primary" name="change" value="' +
+__e(o.__('Change affiliation')) +
+'"/>\n                                                        </div>\n                                                    </form>\n                                                </li>\n                                            </ul>\n                                        </li>\n                                    ';
+ }); ;
+__p += '\n                                ';
+ } ;
+__p += '\n                            ';
+ } ;
+__p += '\n                        </ul>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n';
 return __p
 };
 
@@ -76300,37 +76865,34 @@ _headless_utils_core__WEBPACK_IMPORTED_MODULE_16__["default"].renderImageURL = f
 
   return url;
 };
+/**
+ * Returns a Promise which resolves once all images have been loaded.
+ * @returns {Promise}
+ */
+
 
 _headless_utils_core__WEBPACK_IMPORTED_MODULE_16__["default"].renderImageURLs = function (_converse, el) {
-  /* Returns a Promise which resolves once all images have been loaded.
-   */
   if (!_converse.show_images_inline) {
     return Promise.resolve();
   }
 
-  const {
-    __
-  } = _converse;
   const list = el.textContent.match(URL_REGEX) || [];
-  return Promise.all(_headless_lodash_noconflict__WEBPACK_IMPORTED_MODULE_1___default.a.map(list, url => new Promise((resolve, reject) => {
+  return Promise.all(list.map(url => new Promise((resolve, reject) => {
     if (_headless_utils_core__WEBPACK_IMPORTED_MODULE_16__["default"].isImageURL(url)) {
       return isImage(url).then(img => {
         const i = new Image();
         i.src = img.src;
-        i.addEventListener('load', resolve); // We also resolve for non-images, otherwise the
-        // Promise.all resolves prematurely.
+        i.addEventListener('load', resolve); // We also resolve (instead of reject) for non-images,
+        // otherwise the Promise.all resolves prematurely.
 
         i.addEventListener('error', resolve);
         const {
           __
         } = _converse;
-
-        _headless_lodash_noconflict__WEBPACK_IMPORTED_MODULE_1___default.a.each(sizzle__WEBPACK_IMPORTED_MODULE_2___default()("a[href=\"".concat(url, "\"]"), el), a => {
-          a.outerHTML = _templates_image_html__WEBPACK_IMPORTED_MODULE_13___default()({
-            'url': url,
-            'label_download': __('Download')
-          });
-        });
+        sizzle__WEBPACK_IMPORTED_MODULE_2___default()("a[href=\"".concat(url, "\"]"), el).forEach(a => a.outerHTML = _templates_image_html__WEBPACK_IMPORTED_MODULE_13___default()({
+          url,
+          'label_download': __('Download')
+        }));
       }).catch(resolve);
     } else {
       return resolve();
@@ -76369,7 +76931,7 @@ _headless_utils_core__WEBPACK_IMPORTED_MODULE_16__["default"].getNextElement = f
   let selector = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '*';
   let next_el = el.nextElementSibling;
 
-  while (next_el instanceof Element && !sizzle__WEBPACK_IMPORTED_MODULE_2___default.a.matchesSelector(next_el, selector)) {
+  while (next_el !== null && !sizzle__WEBPACK_IMPORTED_MODULE_2___default.a.matchesSelector(next_el, selector)) {
     next_el = next_el.nextElementSibling;
   }
 
@@ -76380,8 +76942,8 @@ _headless_utils_core__WEBPACK_IMPORTED_MODULE_16__["default"].getPreviousElement
   let selector = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '*';
   let prev_el = el.previousElementSibling;
 
-  while (prev_el instanceof Element && !sizzle__WEBPACK_IMPORTED_MODULE_2___default.a.matchesSelector(prev_el, selector)) {
-    prev_el = prev_el.previousSibling;
+  while (prev_el !== null && !sizzle__WEBPACK_IMPORTED_MODULE_2___default.a.matchesSelector(prev_el, selector)) {
+    prev_el = prev_el.previousElementSibling;
   }
 
   return prev_el;
@@ -76391,8 +76953,8 @@ _headless_utils_core__WEBPACK_IMPORTED_MODULE_16__["default"].getFirstChildEleme
   let selector = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '*';
   let first_el = el.firstElementChild;
 
-  while (first_el instanceof Element && !sizzle__WEBPACK_IMPORTED_MODULE_2___default.a.matchesSelector(first_el, selector)) {
-    first_el = first_el.nextSibling;
+  while (first_el !== null && !sizzle__WEBPACK_IMPORTED_MODULE_2___default.a.matchesSelector(first_el, selector)) {
+    first_el = first_el.nextElementSibling;
   }
 
   return first_el;
@@ -76402,8 +76964,8 @@ _headless_utils_core__WEBPACK_IMPORTED_MODULE_16__["default"].getLastChildElemen
   let selector = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '*';
   let last_el = el.lastElementChild;
 
-  while (last_el instanceof Element && !sizzle__WEBPACK_IMPORTED_MODULE_2___default.a.matchesSelector(last_el, selector)) {
-    last_el = last_el.previousSibling;
+  while (last_el !== null && !sizzle__WEBPACK_IMPORTED_MODULE_2___default.a.matchesSelector(last_el, selector)) {
+    last_el = last_el.previousElementSibling;
   }
 
   return last_el;
@@ -76438,7 +77000,7 @@ _headless_utils_core__WEBPACK_IMPORTED_MODULE_16__["default"].hideElement = func
 _headless_utils_core__WEBPACK_IMPORTED_MODULE_16__["default"].ancestor = function (el, selector) {
   let parent = el;
 
-  while (parent instanceof Element && !sizzle__WEBPACK_IMPORTED_MODULE_2___default.a.matchesSelector(parent, selector)) {
+  while (parent !== null && !sizzle__WEBPACK_IMPORTED_MODULE_2___default.a.matchesSelector(parent, selector)) {
     parent = parent.parentElement;
   }
 
@@ -76452,7 +77014,7 @@ _headless_utils_core__WEBPACK_IMPORTED_MODULE_16__["default"].nextUntil = functi
   const matches = [];
   let sibling_el = el.nextElementSibling;
 
-  while (sibling_el instanceof Element && !sibling_el.matches(selector)) {
+  while (sibling_el !== null && !sibling_el.matches(selector)) {
     matches.push(sibling_el);
     sibling_el = sibling_el.nextElementSibling;
   }

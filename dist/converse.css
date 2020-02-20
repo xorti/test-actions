@@ -6332,27 +6332,27 @@
   font-family: 'Baumans';
   font-style: normal;
   font-weight: 400;
-  src: local("Baumans Regular"), local("Baumans-Regular"), url(../dist/webfonts/baumans.ttf) format("truetype"); }
+  src: local("Baumans Regular"), local("Baumans-Regular"), url(webfonts/baumans.ttf) format("truetype"); }
 
 @font-face {
   font-family: 'Muli';
   font-style: normal;
   font-weight: 400;
-  src: local("Muli Regular"), local("Muli-Regular"), url(../dist/webfonts/muli.ttf) format("truetype"); }
+  src: local("Muli Regular"), local("Muli-Regular"), url(webfonts/muli.ttf) format("truetype"); }
 
 @font-face {
   font-family: 'ConverseFontAwesomeBrands';
   font-style: normal;
   font-weight: normal;
-  src: url(../dist/webfonts/fa-brands-400.eot);
-  src: url(../dist/webfonts/fa-brands-400.eot?#iefix) format("embedded-opentype"), url(../dist/webfonts/fa-brands-400.woff2) format("woff2"), url(../dist/webfonts/fa-brands-400.woff) format("woff"), url(../dist/webfonts/fa-brands-400.ttf) format("truetype"), url(../dist/webfonts/fa-brands-400.svg#fontawesome) format("svg"); }
+  src: url(webfonts/fa-brands-400.eot);
+  src: url(webfonts/fa-brands-400.eot?#iefix) format("embedded-opentype"), url(webfonts/fa-brands-400.woff2) format("woff2"), url(webfonts/fa-brands-400.woff) format("woff"), url(webfonts/fa-brands-400.ttf) format("truetype"), url(webfonts/fa-brands-400.svg#fontawesome) format("svg"); }
 
 @font-face {
   font-family: 'ConverseFontAwesomeRegular';
   font-style: normal;
   font-weight: 400;
-  src: url(../dist/webfonts/fa-regular-400.eot);
-  src: url(../dist/webfonts/fa-regular-400.eot?#iefix) format("embedded-opentype"), url(../dist/webfonts/fa-regular-400.woff2) format("woff2"), url(../dist/webfonts/fa-regular-400.woff) format("woff"), url(../dist/webfonts/fa-regular-400.ttf) format("truetype"), url(../dist/webfonts/fa-regular-400.svg#fontawesome) format("svg");
+  src: url(webfonts/fa-regular-400.eot);
+  src: url(webfonts/fa-regular-400.eot?#iefix) format("embedded-opentype"), url(webfonts/fa-regular-400.woff2) format("woff2"), url(webfonts/fa-regular-400.woff) format("woff"), url(webfonts/fa-regular-400.ttf) format("truetype"), url(webfonts/fa-regular-400.svg#fontawesome) format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -6360,8 +6360,8 @@
   font-family: 'ConverseFontAwesomeSolid';
   font-style: normal;
   font-weight: 900;
-  src: url(../dist/webfonts/fa-solid-900.eot);
-  src: url(../dist/webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"), url(../dist/webfonts/fa-solid-900.svg#fontawesome) format("svg"), url(../dist/webfonts/fa-solid-900.woff2) format("woff2"), url(../dist/webfonts/fa-solid-900.woff) format("woff"), url(../dist/webfonts/fa-solid-900.ttf) format("truetype"); }
+  src: url(webfonts/fa-solid-900.eot);
+  src: url(webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"), url(webfonts/fa-solid-900.svg#fontawesome) format("svg"), url(webfonts/fa-solid-900.woff2) format("woff2"), url(webfonts/fa-solid-900.woff) format("woff"), url(webfonts/fa-solid-900.ttf) format("truetype"); }
 
 .fa,
 .fas,
@@ -10700,24 +10700,25 @@ readers do not read off random characters that represent icons */
   position: static;
   width: auto; }
 
-#conversejs {
+#conversejs, .converse-website {
   /* Apparent font-awesome bug? The circle has some kind of bottom margin */ }
-  #conversejs .far {
+  #conversejs .far, .converse-website .far {
     font-family: 'ConverseFontAwesomeRegular' !important;
     font-weight: 400; }
   #conversejs .fa,
-  #conversejs .fas {
+  #conversejs .fas, .converse-website .fa,
+  .converse-website .fas {
     font-family: 'ConverseFontAwesomeSolid' !important;
     font-weight: 900; }
-  #conversejs .fab {
+  #conversejs .fab, .converse-website .fab {
     font-family: 'ConverseFontAwesomeBrands'; }
-  #conversejs .fa, #conversejs .far, #conversejs .fas, #conversejs .fab {
+  #conversejs .fa, #conversejs .far, #conversejs .fas, #conversejs .fab, .converse-website .fa, .converse-website .far, .converse-website .fas, .converse-website .fab {
     display: inline-block;
     font-size: inherit;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; }
-  #conversejs .fa-info-circle {
+  #conversejs .fa-info-circle, .converse-website .fa-info-circle {
     height: 1em; }
 
 #conversejs, #conversejs-bg, .converse-fullscreen {
@@ -11126,7 +11127,6 @@ body.converse-fullscreen {
   #conversejs input[type=text], #conversejs input[type=password],
   #conversejs button {
     font-size: var(--font-size);
-    padding: 0.25em;
     min-height: 0; }
   #conversejs strong {
     font-weight: 700; }
@@ -11336,7 +11336,7 @@ body.converse-fullscreen {
     width: 1em;
     display: block;
     text-align: center;
-    margin: 2em;
+    padding: 0.5em 0;
     font-size: 24px; }
   #conversejs .left {
     float: left; }
@@ -11545,7 +11545,6 @@ body.converse-fullscreen {
   #conversejs form.converse-form input[type=submit] {
     padding-left: 1em;
     padding-right: 1em;
-    margin: 0.5em 0;
     border: none; }
   #conversejs form.converse-form input.error {
     border: 1px solid var(--error-color);
@@ -12703,6 +12702,16 @@ body.converse-fullscreen {
 
 #conversejs.converse-overlayed #controlbox #converse-login-panel {
   height: 100%; }
+
+#conversejs #converse-modals .modal-body {
+  margin-bottom: 2em; }
+
+#conversejs #converse-modals .scrollable-container {
+  max-height: 50vh;
+  overflow-y: auto; }
+
+#conversejs #converse-modals .role-form, #conversejs #converse-modals .affiliation-form {
+  padding: 2em 0 1em 0; }
 
 #conversejs #converse-modals .set-xmpp-status {
   margin: 1em; }
