@@ -1,9 +1,9 @@
 {
-    "require": {
-        "composer/semver": "^1.5",
-        "cpliakas/git-wrapper": "^2.2",
-        "monolog/monolog": "^1.24",
-        "symfony/dotenv": "^4.3",
-        "symfony/filesystem": "^4.3"
-    }
+  "name": "jcbrand/converse.js-dist",
+  "description": "Browser based XMPP instant messaging client",
+  "type": "library",
+  "license": "MPL-2.0",
+  "minimum-stability": "stable",
+  "homepage": "https://conversejs.org/",
+  "keywords": ["xmpp", "messaging", "chat", "presence"]
 }

@@ -1,34 +1,24 @@
-# converse/converse.js-dist package builder
+# Converse
 
-## Overview
+[![XMPP Chat](https://inverse.chat/badge.svg?room=discuss@conference.conversejs.org)](https://inverse.chat/#converse/room?jid=discuss@conference.conversejs.org)
+[![Travis](https://api.travis-ci.org/conversejs/converse.js.png?branch=master)](https://travis-ci.org/conversejs/converse.js)
+[![Bountysource bounties](https://img.shields.io/bountysource/team/converse.js/activity.svg?maxAge=2592000)](https://www.bountysource.com/teams/converse.js/issues?tracker_ids=194169)
+[![Translation status](https://hosted.weblate.org/widgets/conversejs/-/svg-badge.svg)](https://hosted.weblate.org/engage/conversejs/?utm_source=widget)
 
-This repository helps build and update converse/converse.js-dist package versions that mirrors converse/converse.js repository release versions.
+[Converse](https://conversejs.org) is a web based [XMPP/Jabber](https://xmpp.org) chat client.
 
-## Installation
+You can either use it as a webchat app, or you can integrate it into your own website.
 
-### Install composer dependencies
+It's 100% client-side JavaScript, HTML and CSS and the only backend required
+is a modern XMPP server.
 
-```
-composer install
-```
+Please support this project via [Patreon](https://www.patreon.com/jcbrand) or [Liberapay](https://liberapay.com/jcbrand)
 
-### Setup .env
+## Notice
 
-```
-cp .env.dist .env
-```
+This package can be installed using composer and ready to use.
+It includes the dist files that are available in conversejs releases.
 
-Edit the `SOURCE_FOLDER` and `TARGET_FOLDER` to the directories of your choice.
+## More information
 
-The SOURCE_FOLDER will be the extracted path for converse.js assets.
-The TARGET_FOLDER can be an existing git repositories, avoiding the need to checkout them again.
-
-## Execution
-
-```
-php index.php
-```
-
-## Packagist
-
-https://packagist.org/packages/jcbrand/converse.js-dist
+[Converse.js](https://github.com/conversejs/converse.js)

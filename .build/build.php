@@ -6,7 +6,6 @@ use GitWrapper\GitWrapper;
 use GitWrapper\Event\GitLoggerEventSubscriber;
 use Monolog\Logger;
 use Monolog\Handler\StreamHandler;
-use Symfony\Component\Dotenv\Dotenv;
 
 require 'vendor/autoload.php';
 
@@ -41,6 +40,10 @@ foreach($data as $release) {
     continue;
   }
 
+  if (!isset($release['assets'][0]['browser_download_url'])) {
+      continue;
+  }
+
   $releaseData = [
     'tag_name' => $release['tag_name'],
     'download_url' => $release['assets'][0]['browser_download_url']
@@ -55,18 +58,14 @@ foreach($data as $release) {
 
 ksort($parsedData);
 
-$dotenv = new Dotenv();
-$dotenv->load(__DIR__.'/.env.dist');
-$dotenv->loadEnv(__DIR__.'/.env');
-
-$target = $_ENV['TARGET_REPO'];
+$target = dirname(__DIR__);
 
 // Log to a file named "git.log"
 $log = new Logger('git');
 $log->pushHandler(new StreamHandler('git.log', Logger::DEBUG));
 
-$sourceFolder = $_ENV['SOURCE_FOLDER'];
-$targetFolder = $_ENV['TARGET_FOLDER'];
+$sourceFolder = __DIR__ . '/tmp/source';
+$targetFolder = __DIR__ . '/tmp/target';
 
 // TARGET
 $gitTargetWrapper = new GitWrapper();
@@ -124,7 +123,7 @@ foreach ($parsedData as $release) {
     // Rsync repositories
     $rsync = sprintf(
         "rsync -aL --delete --exclude=.git --exclude=/composer.json --exclude=/README.md '%s' '%s' 2>&1",
-        $sourceFolder . '/package/dist/',
+        $sourceFolder . '/package/dist',
         $gitTargetRepo->getDirectory()
     );
     `$rsync`;
@@ -140,5 +139,5 @@ foreach ($parsedData as $release) {
     echo 'Added conversejs/converse.js-dist ' . $version . PHP_EOL;
 }
 
-$gitTargetRepo->push();
-$gitTargetRepo->pushTags();
+//$gitTargetRepo->push();
+//$gitTargetRepo->pushTags();

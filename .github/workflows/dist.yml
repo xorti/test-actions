@@ -1,0 +1,26 @@
+name: Update dist
+
+on:
+  push
+
+jobs:
+  build-dist:
+    name: Build the dist for the lastest released from conversejs/converse.js
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: composer install --prefer-dist --no-progress --no-suggest -d .build
+
+      - name: Build
+        run: |
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+          composer build -d .build
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
