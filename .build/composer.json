@@ -1,0 +1,11 @@
+{
+    "require": {
+        "composer/semver": "^1.5",
+        "cpliakas/git-wrapper": "^2.2",
+        "monolog/monolog": "^1.24",
+        "symfony/filesystem": "^4.3"
+    },
+    "scripts": {
+        "build" : "php build.php"
+    }
+}

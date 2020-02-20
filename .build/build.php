@@ -6,7 +6,6 @@ use GitWrapper\GitWrapper;
 use GitWrapper\Event\GitLoggerEventSubscriber;
 use Monolog\Logger;
 use Monolog\Handler\StreamHandler;
-use Symfony\Component\Dotenv\Dotenv;
 
 require 'vendor/autoload.php';
 
@@ -41,6 +40,10 @@ foreach($data as $release) {
     continue;
   }
 
+  if (!isset($release['assets'][0]['browser_download_url'])) {
+      continue;
+  }
+
   $releaseData = [
     'tag_name' => $release['tag_name'],
     'download_url' => $release['assets'][0]['browser_download_url']
@@ -55,34 +58,22 @@ foreach($data as $release) {
 
 ksort($parsedData);
 
-$dotenv = new Dotenv();
-$dotenv->load(__DIR__.'/.env.dist');
-$dotenv->loadEnv(__DIR__.'/.env');
+$target = dirname(__DIR__);
 
-$target = $_ENV['TARGET_REPO'];
+echo $target . PHP_EOL;
 
 // Log to a file named "git.log"
 $log = new Logger('git');
 $log->pushHandler(new StreamHandler('git.log', Logger::DEBUG));
 
-$sourceFolder = $_ENV['SOURCE_FOLDER'];
-$targetFolder = $_ENV['TARGET_FOLDER'];
+$sourceFolder = __DIR__ . '/tmp/source';
+$targetFolder = dirname(__DIR__);
 
 // TARGET
 $gitTargetWrapper = new GitWrapper();
 $gitTargetWrapper->addLoggerEventSubscriber(new GitLoggerEventSubscriber($log));
 
-if (file_exists($targetFolder)) {
-    $gitTargetRepo = $gitTargetWrapper->workingCopy($targetFolder);
-    $gitTargetRepo->fetch();
-} else {
-    $gitTargetWrapper->setTimeout(600); // 10min
-    $gitTargetRepo = $gitTargetWrapper->cloneRepository($target, $targetFolder);
-}
-
-// Clean changes
-$gitTargetRepo->reset('--hard');
-$gitTargetRepo->clean('-fd');
+$gitTargetRepo = $gitTargetWrapper->workingCopy($targetFolder);
 
 $listTagsCommand = new GitCommand('tag', '-l', '--sort=version:refname', 'v*');
 
@@ -101,7 +92,7 @@ foreach ($parsedData as $release) {
       `rm -rf $sourceFolder`;
     }
 
-    `mkdir $sourceFolder`;
+    mkdir($sourceFolder, 0777, true);
 
     $version = $release['tag_name'];
 
@@ -123,14 +114,14 @@ foreach ($parsedData as $release) {
 
     // Rsync repositories
     $rsync = sprintf(
-        "rsync -aL --delete --exclude=.git --exclude=/composer.json --exclude=/README.md '%s' '%s' 2>&1",
-        $sourceFolder . '/package/dist/',
+        "rsync -aL --delete '%s' '%s' 2>&1",
+        $sourceFolder . '/package/dist',
         $gitTargetRepo->getDirectory()
     );
     `$rsync`;
 
     // Add all changes (if file was to be ignored with .gitignore it should not be versioned in source repo)
-    $command = new GitCommand('add', '.', '--force');
+    $command = new GitCommand('add', 'dist');
     $gitTargetWrapper->run($command, $gitTargetRepo->getDirectory());
 
     // Commit
@@ -139,6 +130,3 @@ foreach ($parsedData as $release) {
 
     echo 'Added conversejs/converse.js-dist ' . $version . PHP_EOL;
 }
-
-$gitTargetRepo->push();
-$gitTargetRepo->pushTags();
